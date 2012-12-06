@@ -1,0 +1,14 @@
+div.skills table {
+    width: 60em;
+}
+
+div.skills table td {
+    padding-bottom: 1em;
+}
+
+
+div.skills table td:first-child,
+div.skills table th:first-child {
+    width: 20%;
+}
+
