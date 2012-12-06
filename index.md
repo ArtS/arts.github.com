@@ -1,11 +1,34 @@
 ---
 layout: page
 title: Art Skvira
-tagline: Full-stack Web and Mobile Developer
+tagline: Freelance Web and Mobile Developer
 ---
 {% include JB/setup %}
 
-Hello there! I am Art Skvira, a freelance web and mobile developer from Melbourne, Australia. I love creating great products that help people and businesses.
-Below are some of my recent projects.
+{% include my/includes %}
+
+##Hello, my name is Art.
+I am a freelance Web and Mobile developer from Melbourne, Australia. I love creating great products that help people and businesses.
+
+###Me at a glance
+- 10+ years of extensive experience in Web, Mobile and Database development
+- Architecture, Design Patterns, Code Review/Refactoring, Continuous Integration, Test-Driven Development
+- Thorough experience in Object-Oriented Programming and Design, Functional Programming, Integration
+- Hands-on experience in SDLC, Agile / Extreme Programming, Continuous Integration
+- User Experience and Interface Design
+
+###Skills
+
+<div class="skills" markdown="1">
+|                     |                                        |
+--------------------- | ----------------------------------------
+Programming languages | C#, JavaScript, Python, Objective C, Java
+Web Development       | .NET  1.1-4.0, Ajax, REST, Web Services, jQuery/Sencha Touch/Prototype, HTML5/CSS3 MVC.NET, ASP.NET, Silverlight, Django, node.js
+Frameworks/Mobile     | AWS / EC2 J2EE, Django, node.js iOS, Windows Phone 7
+Database / Modelling  | SQL Server, Oracle, PostgreSQL, MySql, MongoDB, T-SQL, PL/SQL, LINQ, UML, XML/XSL, XPath, Hibernate/NHibernate, ADO.NET, Spring.NET
+Toolset               | Visual Studio .NET 2003/05/08/10, Eclipse, XCode, AppCode, Enterprise Architect, TeamCity, Jenkins, NUnit/JUnit, NUnitAsp, TFS, SVN, CVS, Git, Mercurial
+</div>
+
+
 
 
