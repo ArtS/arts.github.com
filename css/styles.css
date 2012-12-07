@@ -15,3 +15,12 @@ div.skills table th:first-child {
 .page-header {
     margin-top:4.2em;
 }
+
+footer {
+    background-color: whiteSmoke;
+    height: 60px;
+}
+
+.container .credit {
+    margin: 20px 0;
+}
