@@ -24,3 +24,28 @@ footer {
 .container .credit {
     margin: 20px 0;
 }
+
+.project {
+    height: 173px;
+    position: relative;
+}
+
+.project:hover {
+    -webkit-transition: background 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out;
+    -o-transition: background 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out;
+}
+
+.project img {
+    position: absolute;
+    width: 270px;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.project img.top:hover {
+    opacity: 0;
+}

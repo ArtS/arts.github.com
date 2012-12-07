@@ -5,42 +5,66 @@ tagline: Freelance Web and Mobile Developer
 ---
 {% include JB/setup %}
 
-###Hello, my name is Art.
-I am a freelance Web and Mobile developer from Melbourne, Australia. I love creating great products that help people and businesses.
+<h3>Hello, my name is Art.</h3>
+<p class="lead">I am a freelance Web and Mobile developer from Melbourne, Australia. I love creating great products that help people and businesses.</p>
 
-###Me at a glance
+<h3>Recent Projects</h3>
+
+<div class="projects">
+    <div class="row">
+        <div class="span3 project">
+            <img src="/img/scheduleflow-tile.png" alt="Scheduleflow"/>
+            <img src="/img/scheduleflow-tile-bw.png" alt="Scheduleflow" class="top"/>
+        </div>
+        <div class="span3 project">
+            <img src="/img/anz/ipad/anz-ipad-tile.png" alt="ANZ iPad Cash Management App" />
+            <img src="/img/anz/ipad/anz-ipad-tile-bw.png" alt="ANZ Cash Management App" class="top"/>
+        </div>
+        <div class="span3 project">
+            <img src="/img/anz/anz-tile.png" alt="ANZ HTML5 App" />
+            <img src="/img/anz/anz-tile-bw.png" alt="ANZ HTML5 App" class="top"/>
+        </div>
+        <div class="span3 project">
+            <img src="/img/nab/nab-tile.png" alt="NAB WP7 app" />
+            <img src="/img/nab/nab-tile-bw.png" alt="NAB WP7 app" class="top"/>
+        </div>
+    </div>
+</div>
+
+<h3>Me at a glance</h3>
 - 10+ years of extensive experience in Web, Mobile and Database development
 - Architecture, Design Patterns, Code Review/Refactoring, Continuous Integration, Test-Driven Development
 - Thorough experience in Object-Oriented Programming and Design, Functional Programming, Integration
 - Hands-on experience in SDLC, Agile / Extreme Programming, Continuous Integration
 - User Experience and Interface Design
 
-###Skills
+<h3>Skills</h3>
 
-<div class="row">
-    <div class="span2">Programming languages</div>
-    <div class="span6">C#, JavaScript, Python, Objective C, Java</div>
+<div class="skills">
+    <div class="row">
+        <div class="span2">Programming languages</div>
+        <div class="span6">C#, JavaScript, Python, Objective C, Java</div>
+    </div>
+
+    <div class="row">
+        <div class="span2">Web Development</div>
+        <div class="span6">.NET  1.1-4.0, Ajax, REST, Web Services, jQuery/Sencha Touch/Prototype, HTML5/CSS3 MVC.NET, ASP.NET, Silverlight, Django, node.js</div>
+    </div>
+    <div class="row">
+        <div class="span2">Frameworks/Mobile</div>
+        <div class="span6">AWS / EC2 J2EE, Django, node.js iOS, Windows Phone 7</div>
+    </div>
+    <div class="row">
+        <div class="span2">Database / Modelling</div>
+        <div class="span6">SQL Server, Oracle, PostgreSQL, MySql, MongoDB, T-SQL, PL/SQL, LINQ, UML, XML/XSL, XPath, Hibernate/NHibernate, ADO.NET, Spring.NET</div>
+    </div>
+    <div class="row">
+        <div class="span2">Toolset</div>
+        <div class="span6">Visual Studio .NET 2003/05/08/10, Eclipse, XCode, AppCode, Enterprise Architect, TeamCity, Jenkins, NUnit/JUnit, NUnitAsp, TFS, SVN, CVS, Git, Mercurial</div>
+    </div>
 </div>
 
-<div class="row">
-    <div class="span2">Web Development</div>
-    <div class="span6">.NET  1.1-4.0, Ajax, REST, Web Services, jQuery/Sencha Touch/Prototype, HTML5/CSS3 MVC.NET, ASP.NET, Silverlight, Django, node.js</div>
-</div>
-<div class="row">
-    <div class="span2">Frameworks/Mobile</div>
-    <div class="span6">AWS / EC2 J2EE, Django, node.js iOS, Windows Phone 7</div>
-</div>
-<div class="row">
-    <div class="span2">Database / Modelling</div>
-    <div class="span6">SQL Server, Oracle, PostgreSQL, MySql, MongoDB, T-SQL, PL/SQL, LINQ, UML, XML/XSL, XPath, Hibernate/NHibernate, ADO.NET, Spring.NET</div>
-</div>
-<div class="row">
-    <div class="span2">Toolset</div>
-    <div class="span6">Visual Studio .NET 2003/05/08/10, Eclipse, XCode, AppCode, Enterprise Architect, TeamCity, Jenkins, NUnit/JUnit, NUnitAsp, TFS, SVN, CVS, Git, Mercurial</div>
-</div>
-
-
-###Contact
+<a name="contact"></a><h3>Contact</h3>
 
 Have you got anything interesting going on? Drop me a line so we can discuss it.
 
