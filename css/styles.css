@@ -12,5 +12,6 @@ div.skills table th:first-child {
     width: 20%;
 }
 
-small.contact {
+.page-header {
+    margin-top:4.2em;
 }

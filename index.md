@@ -5,9 +5,7 @@ tagline: Freelance Web and Mobile Developer
 ---
 {% include JB/setup %}
 
-{% include my/includes %}
-
-##Hello, my name is Art.
+###Hello, my name is Art.
 I am a freelance Web and Mobile developer from Melbourne, Australia. I love creating great products that help people and businesses.
 
 ###Me at a glance
@@ -34,4 +32,3 @@ Toolset               | Visual Studio .NET 2003/05/08/10, Eclipse, XCode, AppCod
 Have you got anything interesting going on? Drop me a line so we can discuss it.  
 My email is <a href="mailto:art.skvira@gmail.com">art.skvira@gmail.com</a>  
 Or give me a call at <a href="call:0416394620">0416 394 620</a> (outside of Australia dial <a href="call:+61416394620">+61 416 394 620</a>)
-
