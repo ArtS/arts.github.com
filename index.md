@@ -29,6 +29,11 @@ Database / Modelling  | SQL Server, Oracle, PostgreSQL, MySql, MongoDB, T-SQL, P
 Toolset               | Visual Studio .NET 2003/05/08/10, Eclipse, XCode, AppCode, Enterprise Architect, TeamCity, Jenkins, NUnit/JUnit, NUnitAsp, TFS, SVN, CVS, Git, Mercurial
 </div>
 
+###Contact
 
+Have you got anything interesting going on? Drop me a so we can discuss it.
 
+My email is <a href="mailto:art.skvira@gmail.com">art.skvira@gmail.com</a>
+
+Or give me a call at <a href="call:0416394620">0416 394 620</a> (outside of Australia dial <a href="call:+61416394620">+61 416 394 620</a>)
 

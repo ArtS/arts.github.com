@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <title>{{ site.title}} {{ page.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
 
@@ -38,7 +38,8 @@
           </ul>
           {% endcomment %}
           <ul class="nav">
-            <!--li><a href="{{ BASE_PATH }}">{{ site.author.twitter }}</a></li-->
+            <li><a href="http://blog.nimblegecko.com">Blog</a></li>
+            <li><a href="#contact">Contact me</a></li>
             <li>&nbsp;</li>
           </ul>
         </div>
