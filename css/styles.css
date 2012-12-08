@@ -1,3 +1,7 @@
+body {
+    color: #555;
+}
+
 div.skills table {
     width: 60em;
 }
@@ -26,20 +30,38 @@ footer {
 }
 
 .project {
-    height: 173px;
+    height: 130px;
+    width: 210px;
     position: relative;
 }
 
 .project:hover {
-    -webkit-transition: background 0.5s ease-in-out;
+    -webkit-transition: border 0.5s ease-in-out;
     -moz-transition: background 0.5s ease-in-out;
     -o-transition: background 0.5s ease-in-out;
     transition: background 0.5s ease-in-out;
 }
 
+/*
+.anz:hover {
+    border: 1px solid lightblue;
+}
+
+.nab:hover {
+    border: 1px solid #de453a;
+}
+
+.anz-ipad:hover {
+    border: 1px solid lightblue;
+}
+
+.scheduleflow:hover {
+    border: 1px solid lightcoral;
+}*/
+
 .project img {
     position: absolute;
-    width: 270px;
+    width: 210px;
     -webkit-transition: opacity 0.5s ease-in-out;
     -moz-transition: opacity 0.5s ease-in-out;
     -o-transition: opacity 0.5s ease-in-out;
@@ -48,4 +70,12 @@ footer {
 
 .project img.top:hover {
     opacity: 0;
+}
+
+.summary ul {
+    margin-left: 0;
+}
+
+.skills .row {
+    padding-bottom: 0.5em;
 }
