@@ -79,7 +79,7 @@ tagline: Freelance Web and Mobile Developer
 Have you got anything interesting going on? Drop me a line so we can discuss it.
 
 My email is <a href="mailto:art.skvira@gmail.com">art.skvira@gmail.com</a>  
-Or give me a call on <a href="call:0416394620">0416 394 620</a> (outside of Australia dial <a href="call:+61416394620">+61 416 394 620</a>)
+Or simply call me on <a href="call:0416394620">0416 394 620</a> (outside of Australia dial <a href="call:+61416394620">+61 416 394 620</a>)
 
 
 
