@@ -8,7 +8,7 @@ tagline: Freelance Web and Mobile Developer
 <h3>Hello, my name is Art.</h3>
 <p class="lead">I am a freelance Web and Mobile developer from Melbourne, Australia. I love creating great products that help people and businesses.</p>
 
-<h3>Recent Projects</h3>
+<h3>My Work</h3>
 
 <div class="projects">
     <div class="row">
@@ -31,7 +31,7 @@ tagline: Freelance Web and Mobile Developer
     </div>
 </div>
 
-<h3>Me at a glance</h3>
+<h3>At a glance</h3>
 <div class="summary" markdown="1">
 - 10+ years of extensive experience in Web, Mobile and Database development
 - Architecture, Design Patterns, Code Review/Refactoring, Continuous Integration, Test-Driven Development
