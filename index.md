@@ -33,10 +33,11 @@ tagline: Freelance Web and Mobile Developer
 
 <h3>At a glance</h3>
 <div class="summary" markdown="1">
-- 10+ years of extensive experience in Web, Mobile and Database development
+- 10+ years of experience in Web, Mobile and Database development
+- Reverse-engineering and dealing with legacy codebases
 - Architecture, Design Patterns, Code Review/Refactoring, Continuous Integration, Test-Driven Development
-- Thorough experience in Object-Oriented Programming and Design, Functional Programming, Integration
-- Hands-on experience in SDLC, Agile / Extreme Programming, Continuous Integration
+- Thorough experience in Object-Oriented Programming and Design and Functional Programming
+- Hands-on experience in SDLC, Agile / Extreme Programming
 - User Experience and Interface Design
 </div>
 
