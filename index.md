@@ -82,16 +82,20 @@ Have you got anything interesting going on? Drop me a line so we can discuss it.
 My email is <a href="mailto:art.skvira@gmail.com">art.skvira@gmail.com</a>  
 Or simply call me on <a href="call:0416394620">0416 394 620</a> (outside of Australia dial <a href="call:+61416394620">+61 416 394 620</a>)
 
+###Social
 
-
-
-.
-
-
-
-.
-
-
-
-
-.
+<div class="row">
+    <div class="span3">
+        <img src="/img/github.png" alt="Github"/><a href="https://github.com/ArtS">ArtS on Github</a>
+    </div>
+</div>
+<div class="row">
+    <div class="span3">
+        <img src="/img/stackoverflow.png" width="32" height="32" alt="Stackoverflow"/><a href="http://stackoverflow.com/users/62194/art">Stackoverflow profile</a>
+    </div>
+</div>
+<div class="row">
+    <div class="span3">
+        <img src="/img/twitter.png" alt="Twitter" width="32" height="32" /><a href="https://twitter.com/#!smartial_arts">Twitter stream</a>
+    </div>
+</div>
