@@ -10,26 +10,90 @@ tagline: Freelance Web and Mobile Developer
 
 <h3>My Work</h3>
 
-<div class="projects">
+<!--div class="projects">
     <div class="row">
-        <div class="span3 project anz">
+        <div class="span3 project">
             <img src="/img/anz/anz-tile.png" alt="ANZ HTML5 App" />
             <img src="/img/anz/anz-tile-bw.png" alt="ANZ HTML5 App" class="top"/>
         </div>
-        <div class="span3 project nab">
+        <div class="span3 project">
             <img src="/img/nab/nab-tile.png" alt="NAB WP7 app" />
             <img src="/img/nab/nab-tile-bw.png" alt="NAB WP7 app" class="top"/>
         </div>
-        <div class="span3 project anz-ipad">
+        <div class="span3 project">
             <img src="/img/anz/ipad/anz-ipad-tile.png" alt="ANZ iPad Cash Management App" />
             <img src="/img/anz/ipad/anz-ipad-tile-bw.png" alt="ANZ Cash Management App" class="top"/>
         </div>
-        <div class="span3 project scheduleflow">
+        <div class="span3 project">
             <img src="/img/scheduleflow-tile.png" alt="Scheduleflow"/>
             <img src="/img/scheduleflow-tile-bw.png" alt="Scheduleflow" class="top"/>
         </div>
     </div>
-</div>
+</div-->
+
+<ul class="thumbnails">
+  <li class="span3">
+    <a href="#" class="thumbnail project">
+      <img src="/img/anz/anz-tile.png" alt="ANZ HTML5 App" />
+      <img src="/img/anz/anz-tile-bw.png" alt="ANZ HTML5 App" class="top"/>
+    </a>
+  </li>
+  <li class="span3">
+    <a href="#" class="thumbnail project">
+        <img src="/img/nab/nab-tile.png" alt="NAB WP7 app" />
+        <img src="/img/nab/nab-tile-bw.png" alt="NAB WP7 app" class="top"/>
+    </a>
+  </li>
+  <li class="span3">
+    <a href="#" class="thumbnail project">
+        <img src="/img/anz/ipad/anz-ipad-tile.png" alt="ANZ iPad Cash Management App" />
+        <img src="/img/anz/ipad/anz-ipad-tile-bw.png" alt="ANZ Cash Management App" class="top"/>
+    </a>
+  </li>
+  <li class="span3">
+    <a href="#" class="thumbnail project">
+        <img src="/img/scheduleflow-tile.png" alt="Scheduleflow"/>
+        <img src="/img/scheduleflow-tile-bw.png" alt="Scheduleflow" class="top"/>
+    </a>
+  </li>
+</ul>
+
+###What my clients say
+<blockquote>
+    <p>
+    Art has the two most important aspects of a great developer. He can work autonomously
+    and gets work done in a timely manner and in a practical way, yet still escalate issues
+    which need to be escalated. And he is very intelligent and solves problems with smart
+    and enduring solutions. Art has a very good handle on building software which is usable
+    and useful.
+    </p>
+    <small><cite>Paul Tyrrel, CEO, <a href="http://scheduleflow.com">Scheduleflow.com</a></cite></small>
+</blockquote>
+<blockquote>
+    <p>
+    Art ranks amongst the best web developers I have worked with. He has the rare combination
+    of strong technical skills, people skills and a good awareness of the larger business challenges.
+    He is always proactive with his research and contributions to the rest of the team. I recommend
+    Art thoroughly to any prospective employer and would happily work with him on any future engagements.
+    </p>
+    <small><cite>David Hodgman, Business Analyst, <a href="http://linkme.com.au">LinkMe.com.au</a></cite></small>
+</blockquote>
+<blockquote>
+    <p>
+    Art is an extremely talented developer with a passion to do things better. Art was always willing to tackle the 
+    problems others would hate. Never scared to refactor the most complex code. The quality of his work and attention 
+    to detail was a great asset to SEEK during some really challenging and complex projects.
+    </p>
+    <small><cite>Alan Mastrantoni, Solutions Lead, <a href="http://www.seek.com.au">seek.com.au</a></cite></small>
+</blockquote>
+<blockquote>
+    <p>
+    Art is a highly skilled and highly motivated developer. He has an excellent grasp of software architecture and .net technologies.
+    His skills combined with his enthusiasm for software development make him a valuable asset to any team. He is definitely
+    one of the best developers I have worked with.
+    </p>
+    <small><cite>Andrew Harvey, Senior Developer, Department of Education, Victoria</cite></small>
+</blockquote>
 
 <h3>At a glance</h3>
 <div class="summary" markdown="1">
