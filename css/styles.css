@@ -2,6 +2,10 @@ body {
     color: #444;
 }
 
+h3 {
+    margin: 0.7em 0 0.05em;
+}
+
 div.skills table {
     width: 60em;
 }
@@ -17,16 +21,23 @@ div.skills table th:first-child {
 }
 
 .page-header {
-    margin-top:4.2em;
+    margin-top: 4.2em;
+    margin-bottom: 10px;
 }
 
 footer {
-    background-color: whiteSmoke;
-    height: 60px;
+    text-align: center;
+    margin: 1.5em 0 1.5em 0;
+    color: #aaa;
+    font-size: 0.9em;
 }
 
 .container .credit {
     margin: 20px 0;
+}
+
+.projects {
+    margin-top: 0.7em;
 }
 
 .project {
