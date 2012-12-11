@@ -51,9 +51,21 @@
         <div class="container">
             {{ content }}
         </div> <!-- /container -->
+        <script>
+            (function($) {
+                $('a.more').each(function(i, link) {
+                    $(link).click(function(elem) {
+                        var l = $(link)
+                        l.hide('slow')
+                        l.next('.more-content').show('slow')
+                        return false
+                    })
+                })
+            })(jQuery)
+        </script>
 
         <footer>
-            Copyright 2012 by Art Skvira
+            <small>Copyright 2012 by Art Skvira</small>
         </footer>
 
     {% include JB/analytics %}

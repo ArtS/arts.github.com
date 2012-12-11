@@ -63,9 +63,9 @@ tagline: Freelance Web and Mobile Developer
     <p>
     Art has the two most important aspects of a great developer. He can work autonomously
     and gets work done in a timely manner and in a practical way, yet still escalate issues
-    which need to be escalated. And he is very intelligent and solves problems with smart
-    and enduring solutions. Art has a very good handle on building software which is usable
-    and useful.
+    which need to be escalated. <a class="more" href="#">more...</a><span class="more-content">And he is very
+    intelligent and solves problems with smart and enduring solutions. Art has a very good
+    handle on building software which is usable and useful.</span>
     </p>
     <small><cite>Paul Tyrrel, CEO, <a href="http://scheduleflow.com">Scheduleflow.com</a></cite></small>
 </blockquote>
@@ -73,24 +73,24 @@ tagline: Freelance Web and Mobile Developer
     <p>
     Art ranks amongst the best web developers I have worked with. He has the rare combination
     of strong technical skills, people skills and a good awareness of the larger business challenges.
-    He is always proactive with his research and contributions to the rest of the team. I recommend
-    Art thoroughly to any prospective employer and would happily work with him on any future engagements.
+    <a class="more" href="#">more...</a><span class="more-content">He is always proactive with his research and contributions to the rest of the team. I recommend
+    Art thoroughly to any prospective employer and would happily work with him on any future engagements.</span>
     </p>
     <small><cite>David Hodgman, Business Analyst, <a href="http://linkme.com.au">LinkMe.com.au</a></cite></small>
 </blockquote>
 <blockquote>
     <p>
     Art is an extremely talented developer with a passion to do things better. Art was always willing to tackle the 
-    problems others would hate. Never scared to refactor the most complex code. The quality of his work and attention 
-    to detail was a great asset to SEEK during some really challenging and complex projects.
+    problems others would hate. Never scared to refactor the most complex code. <a class="more" href="#">more...</a><span class="more-content">The quality of his work and attention 
+    to detail was a great asset to SEEK during some really challenging and complex projects.</span>
     </p>
     <small><cite>Alan Mastrantoni, Solutions Lead, <a href="http://www.seek.com.au">seek.com.au</a></cite></small>
 </blockquote>
 <blockquote>
     <p>
     Art is a highly skilled and highly motivated developer. He has an excellent grasp of software architecture and .net technologies.
-    His skills combined with his enthusiasm for software development make him a valuable asset to any team. He is definitely
-    one of the best developers I have worked with.
+    His skills combined with his enthusiasm for software development make him a valuable asset to any team. <a class="more" href="#">more...</a><span class="more-content">He is definitely
+    one of the best developers I have worked with.</span>
     </p>
     <small><cite>Andrew Harvey, Senior Developer, Department of Education, Victoria</cite></small>
 </blockquote>

@@ -83,6 +83,15 @@ footer {
     opacity: 0;
 }
 
+a.more {
+    font-size: 85%;
+    color: #666;
+}
+
+span.more-content {
+    display: none;
+}
+
 .summary ul {
     margin-left: 0;
 }
