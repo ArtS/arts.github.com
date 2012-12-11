@@ -43,37 +43,30 @@ tagline: Freelance Web and Mobile Developer
 
 <h3>Skills</h3>
 
-<div class="skills">
-    <div class="row">
-        <div class="span2">Languages</div>
-        <div class="span6">C#, JavaScript, Python, Objective C, Java</div>
-    </div>
+<dl class="skills">
+        <dt>Languages</dt>
+        <dd>C#, JavaScript, Python, Objective C, Java</dd>
 
-    <div class="row">
-        <div class="span2">Web Development</div>
-        <div class="span6">.NET  1.1-4.0, Ajax, REST, Web Services<br/> 
+        <dt>Web Development</dt>
+        <dd>.NET  1.1-4.0, Ajax, REST, Web Services<br/>
         jQuery/Sencha Touch/Prototype, HTML5/CSS3<br/>
-        MVC.NET, ASP.NET, Silverlight, Django, node.js</div>
-    </div>
-    <div class="row">
-        <div class="span2">Frameworks/Mobile</div>
-        <div class="span6">AWS / EC2<br/>
-        J2EE, Django, node.js<br/>
-        iOS, Windows Phone 7</div>
-    </div>
-    <div class="row">
-        <div class="span2">Database / Modelling</div>
-        <div class="span6">SQL Server, Oracle, PostgreSQL, MySql, MongoDB<br/>
+        MVC.NET, ASP.NET, Silverlight, Django, node.js</dd>
+
+        <dt>Frameworks/Mobile</dt>
+        <dd>AWS / EC2, J2EE<br/>
+        Django, node.js<br/>
+        iOS, Windows Phone 7</dd>
+
+        <dt>Database / Modelling</dt>
+        <dd>SQL Server, Oracle, PostgreSQL, MySql, MongoDB<br/>
         T-SQL, PL/SQL, LINQ, UML, XML/XSL, XPath<br/>
-        Hibernate/NHibernate, ADO.NET, Spring.NET</div>
-    </div>
-    <div class="row">
-        <div class="span2">Toolset</div>
-        <div class="span6">Visual Studio .NET 2003/05/08/10, Eclipse, XCode, AppCode<br/>
+        Hibernate/NHibernate, ADO.NET, Spring.NET</dd>
+
+        <dt>Toolset</dt>
+        <dd>Visual Studio .NET 2003/05/08/10, Eclipse, XCode, AppCode<br/>
         Enterprise Architect, TeamCity, Jenkins, NUnit/JUnit, NUnitAsp<br/>
-        TFS, SVN, CVS, Git, Mercurial</div>
-    </div>
-</div>
+        TFS, SVN, CVS, Git, Mercurial</dd>
+</dl>
 
 <h3 id="contact">Contact</h3>
 
