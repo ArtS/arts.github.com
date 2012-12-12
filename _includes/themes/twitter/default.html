@@ -60,7 +60,7 @@
                 $('a.more').each(function(i, link) {
                     $(link).click(function(elem) {
                         var l = $(link)
-                        l.hide('slow')
+                        l.hide()
                         l.next('.more-content').show('slow')
                         return false
                     })
