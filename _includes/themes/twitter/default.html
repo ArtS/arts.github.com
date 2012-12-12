@@ -28,6 +28,8 @@
   <body>
         <script src="/js/jquery-1.8.3.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/jquery.analyticseventtracking.js"></script>
+
 
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
@@ -39,8 +41,8 @@
                 </a>
                 <div class="nav-collapse collapse">
                     <ul class="nav">
-                    <li><a href="http://blog.nimblegecko.com">Blog</a></li>
-                    <li><a href="#contact">Contact me</a></li>
+                    <li><a href="http://blog.nimblegecko.com" data-jaet-report-category="Links" data-jaet-report-action="Blog">Blog</a></li>
+                    <li><a href="#contact" data-jaet-report-category="Links" data-jaet-report-action="Contact Me">Contact me</a></li>
                     <li>&nbsp;</li>
                     </ul>
                 </div>
@@ -52,6 +54,8 @@
             {{ content }}
         </div> <!-- /container -->
         <script>
+
+            // More.. links
             (function($) {
                 $('a.more').each(function(i, link) {
                     $(link).click(function(elem) {
@@ -61,7 +65,13 @@
                         return false
                     })
                 })
-            })(jQuery)
+            })(jQuery);
+
+            // GA event tracking
+            (function($) {
+                $("a").analyticsEventTracking()
+            })(jQuery);
+
         </script>
 
         <footer>
