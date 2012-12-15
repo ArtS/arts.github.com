@@ -1,12 +1,16 @@
 ---
 layout: page
 title: Art Skvira
-tagline: Freelance Web and Mobile Developer
+tagline: Web and Mobile Development Consultant
 ---
 {% include JB/setup %}
 
 <h3>Hello, my name is Art.</h3>
-<p class="lead">I am a freelance Web and Mobile developer from Melbourne, Australia. I love creating great products that help people and businesses.</p>
+<p class="lead">
+    I am a Web and Mobile Development Consultant from Melbourne, Australia.
+    My burning passion is to help businesses and people to achieve their goals.
+</p>
+
 
 <h3>My Work</h3>
 
@@ -148,16 +152,25 @@ or simply call me on <a href="call:0416394620" data-ga-category="Links" data-ga-
 
 <div class="row">
     <div class="span3">
-        <img src="/img/github.png" alt="Github"/><a href="https://github.com/ArtS">ArtS on Github</a>
+        <img src="/img/github.png" alt="Github"/>
+        <a href="https://github.com/ArtS">ArtS on Github</a>
     </div>
 </div>
 <div class="row">
     <div class="span3">
-        <img src="/img/stackoverflow.png" width="32" height="32" alt="Stackoverflow"/><a href="http://stackoverflow.com/users/62194/art">Stackoverflow profile</a>
+        <img src="/img/stackoverflow.png" width="32" height="32" alt="Stackoverflow"/>
+        <a href="http://stackoverflow.com/users/62194/art">Stackoverflow profile</a>
     </div>
 </div>
 <div class="row">
     <div class="span3">
-        <img src="/img/twitter.png" alt="Twitter" width="32" height="32" /><a href="https://twitter.com/#!smartial_arts">Twitter stream</a>
+        <img src="/img/twitter.png" alt="Twitter" width="32" height="32" />
+        <a href="https://twitter.com/#!smartial_arts">Twitter stream</a>
+    </div>
+</div>
+<div class="row">
+    <div class="span3">
+        <img src="/img/twitter.png" alt="Twitter" width="32" height="32" />
+        <a href="http://reader.nimblegecko.com">Minimalistic Twitter Reader</a>
     </div>
 </div>
