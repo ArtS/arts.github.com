@@ -57,20 +57,21 @@
         </div> <!-- /container -->
         <script>
 
+            // GA event tracking
+            (function($) {
+                $('a[data-ga-category]').analyticsEventTracking()
+            })(jQuery);
+
             // More.. links
             (function($) {
                 $('a.more').each(function(i, link) {
-                    $(link).click(function(elem) {
+                    $(link).click(function(e) {
                         var l = $(link)
                         l.hide()
                         l.next('.more-content').show('slow')
+                        e.preventDefault()
                     })
                 })
-            })(jQuery);
-
-            // GA event tracking
-            (function($) {
-                $('a').analyticsEventTracking()
             })(jQuery);
 
         </script>
