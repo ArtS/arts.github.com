@@ -86,7 +86,7 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     Art has the two most important aspects of a great developer. He can work autonomously
     and gets work done in a timely manner and in a practical way, yet still escalate issues
     which need to be escalated.
-    <a class="more" href="#" data-ga-category="Links" data-ga-action="Testimonial" data-ga-label="Paul">more...</a>
+    <a class="more" data-ga-category="Links" data-ga-action="Testimonial" data-ga-label="Paul">more...</a>
     <span class="more-content">And he is very intelligent and solves problems with smart and enduring solutions. Art has a very good
     handle on building software which is usable and useful.</span>
     </p>
@@ -96,7 +96,7 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     <p>
     Art ranks amongst the best web developers I have worked with. He has the rare combination
     of strong technical skills, people skills and a good awareness of the larger business challenges.
-    <a class="more" href="#" data-ga-category="Links" data-ga-action="Testimonial" data-ga-label="David">more...</a>
+    <a class="more" data-ga-category="Links" data-ga-action="Testimonial" data-ga-label="David">more...</a>
     <span class="more-content">He is always proactive with his research and contributions to the rest of the team. I recommend
     Art thoroughly to any prospective employer and would happily work with him on any future engagements.</span>
     </p>
@@ -106,7 +106,7 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     <p>
     Art is an extremely talented developer with a passion to do things better. Art was always willing to tackle the 
     problems others would hate. Never scared to refactor the most complex code.
-    <a class="more" href="#" data-ga-category="Links" data-ga-action="Testimonials" data-ga-label="Alan">more...</a>
+    <a class="more" data-ga-category="Links" data-ga-action="Testimonials" data-ga-label="Alan">more...</a>
     <span class="more-content">The quality of his work and attention to detail was a great asset to SEEK during some really challenging and complex projects.</span>
     </p>
     <small><cite>Alan Mastrantoni, Solutions Lead, <a href="http://www.seek.com.au">seek.com.au</a></cite></small>
@@ -115,7 +115,7 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     <p>
     Art is a highly skilled and highly motivated developer. He has an excellent grasp of software architecture and .net technologies.
     His skills combined with his enthusiasm for software development make him a valuable asset to any team.
-    <a class="more" href="#" data-ga-category="Links" data-ga-action="Testimonials" data-ga-label="Andrew">more...</a>
+    <a class="more" data-ga-category="Links" data-ga-action="Testimonials" data-ga-label="Andrew">more...</a>
     <span class="more-content">He is definitely one of the best developers I have worked with.</span>
     </p>
     <small><cite>Andrew Harvey, Senior Developer, Department of Education, Victoria</cite></small>
