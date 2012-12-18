@@ -69,7 +69,7 @@
                         var l = $(link)
                         l.hide()
                         l.next('.more-content').show('slow')
-                        e.preventDefault()
+                        return false
                     })
                 })
             })(jQuery);
