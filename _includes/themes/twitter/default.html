@@ -11,11 +11,11 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="127H4-aG0A0Xw8p9_aWBuGPMlxoFGpEUJJaMWpJ9K0w" />
 
     <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link rel="stylesheet" href="/css/font-awesome.css">
     <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/lightbox/lightbox.css" rel="stylesheet">
 
     <!-- Le fav and touch icons -->
     <!-- Update these with your own images
@@ -28,10 +28,11 @@
 
   <body>
         <script src="/js/jquery-1.8.3.min.js"></script>
+        <!--script src="/js/lightbox.js"></script-->
         <script src="/js/bootstrap.min.js"></script>
         <script src="/js/jquery.analyticseventtracking.js"></script>
 
-
+        <!--div class="all-height">111</div-->
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container">
@@ -42,8 +43,8 @@
                 </a>
                 <div class="nav-collapse collapse">
                     <ul class="nav">
-                    <li><a href="http://blog.nimblegecko.com" data-jaet-report-category="Links" data-jaet-report-action="Blog">Blog</a></li>
-                    <li><a href="#contact" data-jaet-report-category="Links" data-jaet-report-action="Contact Me">Contact me</a></li>
+                    <li><a href="http://blog.nimblegecko.com" data-ga-category="Links" data-ga-action="Leave" data-ga-label="Blog">Blog</a></li>
+                    <li class="contact"><a href="#contact" data-ga-category="Links" data-ga-action="Contact Me" data-ga-label="Header">Contact me</a></li>
                     <li>&nbsp;</li>
                     </ul>
                 </div>
@@ -70,7 +71,7 @@
 
             // GA event tracking
             (function($) {
-                $("a").analyticsEventTracking()
+                $('a').analyticsEventTracking()
             })(jQuery);
 
         </script>

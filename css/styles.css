@@ -1,5 +1,22 @@
 body {
     color: #444;
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.all-height {
+    height: 100%;
+    width: 100%;
+    background-color: lightgray;
+}
+
+.contact a {
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    color: whiteSmoke !important;
 }
 
 h3 {
