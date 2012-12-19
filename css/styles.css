@@ -13,9 +13,16 @@ html {
     background-color: lightgray;
 }
 
-.contact a {
+li a.contact-me {
     font-weight: 600;
     letter-spacing: 0.1em;
+    color: whiteSmoke !important;
+}
+
+li a.phone-number {
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    font-size: 1.2em;
     color: whiteSmoke !important;
 }
 
