@@ -19,6 +19,13 @@ li a.contact-me {
     color: whiteSmoke !important;
 }
 
+.hidden-desktop a.phone-number {
+    position: absolute;
+    top: 0;
+    padding: 15px;
+}
+
+.hidden-desktop a.phone-number,
 li a.phone-number {
     font-weight: 400;
     letter-spacing: 0.15em;
