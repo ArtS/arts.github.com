@@ -83,12 +83,20 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
 ###What my clients say
 <blockquote>
     <p>
-    Art has the two most important aspects of a great developer. He can work autonomously
-    and gets work done in a timely manner and in a practical way, yet still escalate issues
-    which need to be escalated.
+    Art has been instrumental in the early days of Scheduleflow. His expertise 
+    and hands-on involvement enabled us to iterate rapidly, build and deliver 
+    what our target market needed.
     <a class="more" data-ga-category="Links" data-ga-action="Testimonial" data-ga-label="Paul">more...</a>
-    <span class="more-content">And he is very intelligent and solves problems with smart and enduring solutions. Art has a very good
-    handle on building software which is usable and useful.</span>
+    <span class="more-content">
+    <br/>Art demonstrated his insight into development practices, by implementing 
+    streamlined development processes, allowing us to deliver features rapidly 
+    and to a very high level of quality. This meant we had dramatically reduced 
+    delivery timelines and minimal physical testing.
+    <br/>
+    Art is one of the most intelligent and broadly skilled senior consultants I 
+    have worked with. I recommend him whole heartedly and would work with him 
+    again in a nano second.
+    </span>
     </p>
     <small><cite>Paul Tyrrel, CEO, <a href="http://scheduleflow.com">Scheduleflow.com</a></cite></small>
 </blockquote>
