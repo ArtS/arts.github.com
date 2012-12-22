@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Art Skvira
-tagline: Web and Mobile Development Consultant
+tagline: Helping businesses to achieve their goals
 ---
 {% include JB/setup %}
 
@@ -10,6 +10,41 @@ tagline: Web and Mobile Development Consultant
     I am a Web and Mobile Development Consultant from Melbourne, Australia.
     My burning passion is to help businesses and people to achieve their goals.
 </p>
+
+<h3>Highlights</h3>
+<div class="row-fluid work-summary">
+    <div class="span6">
+    Developed a mobile Internet Banking app for my client, enabling
+    them to service a growing userbase on an emerging mobile platform, increasing
+    the overal appeal of the products and services being offered.
+    </div>
+    <div class="span6">
+    Helped a client to migrate large database of the existing users to a
+    newly developed website, ensuring data integrity and consistency. Successfully 
+    minimised the downtime and ensured smooth delivery.
+    </div>
+</div>
+<div class="row-fluid work-summary">
+    <div class="span6">
+    Delivered a proof-of-concept solution that had confirmed a possibilty of 
+    significant reduction of operations costs for my client's call center.
+    </div>
+    <div class="span6">
+    Enabled a client to attract a large user base by creating an appealing
+    set of online profile management/professional networking tools.
+    </div>
+</div>
+<div class="row-fluid work-summary">
+    <div class="span6">
+    Helped a client to develop a mobile solution for its corporate clients,
+    thus enabling to provide a better service to existing customer as well 
+    as to acquire new customers.
+    </div>
+    <div class="span6">
+    Upgraded legacy invoicing system for a client, ensuring there is no
+    interruption in billing and invoicing during the upgrade and support period.
+    </div>
+</div>
 
 
 <h3>My Work</h3>

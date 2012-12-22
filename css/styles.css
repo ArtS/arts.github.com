@@ -37,34 +37,18 @@ h3 {
     margin: 0.7em 0 0.05em;
 }
 
-div.skills table {
-    width: 60em;
-}
-
-div.skills table td {
-    padding-bottom: 1em;
-}
-
-
-div.skills table td:first-child,
-div.skills table th:first-child {
-    width: 20%;
-}
-
 .page-header {
     margin-top: 4.2em;
     margin-bottom: 10px;
 }
 
-footer {
-    text-align: center;
-    margin: 1.5em 0 1.5em 0;
-    color: #aaa;
-    font-size: 0.9em;
-}
-
 .container .credit {
     margin: 20px 0;
+}
+
+div.work-summary {
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
 
 .projects {
@@ -83,23 +67,6 @@ footer {
     -o-transition: background 0.5s ease-in-out;
     transition: background 0.5s ease-in-out;
 }
-
-/*
-.anz:hover {
-    border: 1px solid lightblue;
-}
-
-.nab:hover {
-    border: 1px solid #de453a;
-}
-
-.anz-ipad:hover {
-    border: 1px solid lightblue;
-}
-
-.scheduleflow:hover {
-    border: 1px solid lightcoral;
-}*/
 
 .project img {
     position: absolute;
@@ -129,3 +96,11 @@ span.more-content {
 .skills dd {
     padding-bottom: 0.5em;
 }
+
+footer {
+    text-align: center;
+    margin: 1.5em 0 1.5em 0;
+    color: #aaa;
+    font-size: 0.9em;
+}
+
