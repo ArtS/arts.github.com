@@ -164,7 +164,15 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     <small><cite>Andrew Harvey, Senior Developer, Department of Education, Victoria</cite></small>
 </blockquote>
 
-<h3>At a glance</h3>
+<h3 id="contact">Contact me</h3>
+
+Have you got anything interesting going on? Drop me a line so we can discuss it.
+
+Send an email to <a href="mailto:art.skvira@gmail.com" data-ga-category="Links" data-ga-action="Contact" data-ga-label="email">art.skvira@gmail.com</a>,
+or simply call me on <a href="call:0416394620" data-ga-category="Links" data-ga-action="Contact" data-ga-label="Mobile AU">0416 394 620</a>
+<small>(outside of Australia dial <a href="call:+61416394620" data-ga-category="Links" data-ga-action="Contact" data-ga-label="Mobile Int">+61 416 394 620</a>)</small>
+
+<h3>My Experience</h3>
 <div class="summary" markdown="1">
 - 10+ years of experience in Web, Mobile and Database development
 - Reverse-engineering and dealing with legacy codebases
@@ -200,14 +208,6 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
         Enterprise Architect, TeamCity, Jenkins, NUnit/JUnit, NUnitAsp<br/>
         TFS, SVN, CVS, Git, Mercurial</dd>
 </dl>
-
-<h3 id="contact">Contact</h3>
-
-Have you got anything interesting going on? Drop me a line so we can discuss it.
-
-Send an email to <a href="mailto:art.skvira@gmail.com" data-ga-category="Links" data-ga-action="Contact" data-ga-label="email">art.skvira@gmail.com</a>,
-or simply call me on <a href="call:0416394620" data-ga-category="Links" data-ga-action="Contact" data-ga-label="Mobile AU">0416 394 620</a>
-<small>(outside of Australia dial <a href="call:+61416394620" data-ga-category="Links" data-ga-action="Contact" data-ga-label="Mobile Int">+61 416 394 620</a>)</small>
 
 ###Social
 
