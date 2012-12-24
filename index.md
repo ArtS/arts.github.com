@@ -70,23 +70,6 @@ tagline: Helping businesses to achieve their goals
     </div>
 </div-->
 
-<!--div id="wufoo-z7x3p9">
-Fill out my <a href="http://nimblegecko.wufoo.com/forms/z7x3p9">online form</a>.
-</div>
-<script type="text/javascript">var z7x3p9;(function(d, t) {
-var s = d.createElement(t), options = {
-'userName':'nimblegecko', 
-'formHash':'z7x3p9', 
-'autoResize':true,
-'height':'497',
-'async':true,
-'header':'show'};
-s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-s.onload = s.onreadystatechange = function() {
-var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-try { z7x3p9 = new WufooForm();z7x3p9.initialize(options);z7x3p9.display(); } catch (e) {}};
-var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-})(document, 'script');</script-->
 
 <ul class="thumbnails">
   <li class="span3">
@@ -161,16 +144,54 @@ var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s
     <a class="more" data-ga-category="Links" data-ga-action="Testimonials" data-ga-label="Andrew">more...</a>
     <span class="more-content">He is definitely one of the best developers I have worked with.</span>
     </p>
-    <small><cite>Andrew Harvey, Senior Developer, Department of Education, Victoria</cite></small>
+    <small id="contact"><cite>Andrew Harvey, Senior Developer, Department of Education, Victoria</cite></small>
 </blockquote>
 
-<h3 id="contact">Contact me</h3>
+<h3>Contact me</h3>
 
-Have you got anything interesting going on? Drop me a line so we can discuss it.
+<div class="row-fluid">
+    <div class="span7">
+        <p>Have you got a new project coming up? Drop me a line and we will discuss it.</p>
 
-Send an email to <a href="mailto:art.skvira@gmail.com" data-ga-category="Links" data-ga-action="Contact" data-ga-label="email">art.skvira@gmail.com</a>,
-or simply call me on <a href="call:0416394620" data-ga-category="Links" data-ga-action="Contact" data-ga-label="Mobile AU">0416 394 620</a>
-<small>(outside of Australia dial <a href="call:+61416394620" data-ga-category="Links" data-ga-action="Contact" data-ga-label="Mobile Int">+61 416 394 620</a>)</small>
+        Send me an email to <a href="mailto:art@nimblegecko.com" data-ga-category="Links" data-ga-action="Contact" data-ga-label="email">art@nimblegecko.com</a>,
+        or simply call me on <a href="call:0416394620" data-ga-category="Links" data-ga-action="Contact" data-ga-label="Mobile AU">0416 394 620</a>
+        <!--small>(outside of Australia dial <a href="call:+61416394620" data-ga-category="Links" data-ga-action="Contact" data-ga-label="Mobile Int">+61 416 394 620</a>)</small-->
+    </div>
+    <div class="span3">
+        <div style="display: none;" id="divContact">
+            <div id="wufoo-z7x3p9">
+                Fill out my <a href="http://nimblegecko.wufoo.com/forms/z7x3p9">online form</a>.
+            </div>
+            <script type="text/javascript">var z7x3p9;(function(d, t) {
+            var s = d.createElement(t), options = {
+            'userName':'nimblegecko', 
+            'formHash':'z7x3p9', 
+            'autoResize':true,
+            'height':'497',
+            'async':true,
+            'header':'show'};
+            s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+            s.onload = s.onreadystatechange = function() {
+            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+            try { z7x3p9 = new WufooForm();z7x3p9.initialize(options);z7x3p9.display(); } catch (e) {}};
+            var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+            })(document, 'script');</script>
+        </div>
+        <a id="btnContact" class="btn btn-primary btn-large" href="#divContact">Contact me</a>
+        <script>
+            (function($) {
+                $('#btnContact').fancybox({
+                    width: '70%',
+                    height: '60%',
+                    minWidth: 600,
+                    openEffect: 'elastic',
+                    closeEffect: 'elastic'
+                })
+            })(jQuery)
+        </script>
+    </div>
+</div>
+
 
 <h3>My Experience</h3>
 <div class="summary" markdown="1">
