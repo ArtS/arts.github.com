@@ -151,7 +151,7 @@ tagline: Helping businesses to achieve their goals
 
 <div class="row-fluid">
     <div class="span7">
-        <p>Have you got a new project coming up? Drop me a line and we will discuss it.</p>
+        <p>Have you a new project coming up? Drop me a line and we will discuss it.</p>
 
         Send me an email to <a href="mailto:art@nimblegecko.com" data-ga-category="Links" data-ga-action="Contact" data-ga-label="email">art@nimblegecko.com</a>,
         or simply call me on <a href="call:0416394620" data-ga-category="Links" data-ga-action="Contact" data-ga-label="Mobile AU">0416 394 620</a>
@@ -177,7 +177,9 @@ tagline: Helping businesses to achieve their goals
             var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
             })(document, 'script');</script>
         </div>
-        <a id="btnContact" class="btn btn-primary btn-large" href="#divContact">Contact me</a>
+        <a id="btnContact" class="btn btn-primary btn-large btn-block" 
+           data-ga-category="Links" data-ga-action="Contact" data-ga-label="Contact Form"
+           href="#divContact">Contact me</a>
         <script>
             (function($) {
                 $('#btnContact').fancybox({
