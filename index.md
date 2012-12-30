@@ -53,20 +53,14 @@ description: Consulting services in Web and Mobile development, helping business
 <!--div class="projects">
     <div class="row">
         <div class="span3 project">
-            <img src="/img/anz/anz-tile.png" alt="ANZ HTML5 App" />
-            <img src="/img/anz/anz-tile-bw.png" alt="ANZ HTML5 App" class="top"/>
+            <img src="/img/anz/anz-iphone-app.png" alt="ANZ iPhone App" />
+            <img src="/img/anz/anz-iphone-app-bw.png" alt="ANZ iPhone App" class="top"/>
         </div>
         <div class="span3 project">
-            <img src="/img/nab/nab-tile.png" alt="NAB WP7 app" />
-            <img src="/img/nab/nab-tile-bw.png" alt="NAB WP7 app" class="top"/>
         </div>
         <div class="span3 project">
-            <img src="/img/anz/ipad/anz-ipad-tile.png" alt="ANZ iPad Cash Management App" />
-            <img src="/img/anz/ipad/anz-ipad-tile-bw.png" alt="ANZ Cash Management App" class="top"/>
         </div>
         <div class="span3 project">
-            <img src="/img/scheduleflow-tile.png" alt="Scheduleflow"/>
-            <img src="/img/scheduleflow-tile-bw.png" alt="Scheduleflow" class="top"/>
         </div>
     </div>
 </div-->
@@ -75,26 +69,26 @@ description: Consulting services in Web and Mobile development, helping business
 <ul class="thumbnails">
   <li class="span3">
     <a href="#" class="thumbnail project">
-      <img src="/img/anz/anz-tile.png" alt="ANZ HTML5 App" />
-      <img src="/img/anz/anz-tile-bw.png" alt="ANZ HTML5 App" class="top"/>
+      <img src="/img/anz/anz-iphone-app.png" alt="ANZ iPhone App" />
+      <img src="/img/anz/anz-iphone-app-bw.png" alt="ANZ iPhone App" class="top"/>
     </a>
   </li>
   <li class="span3">
     <a href="#" class="thumbnail project">
-        <img src="/img/nab/nab-tile.png" alt="NAB WP7 app" />
-        <img src="/img/nab/nab-tile-bw.png" alt="NAB WP7 app" class="top"/>
+        <img src="/img/nab/nab-windows-phone-7-app.png" alt="NAB Windows Phone 7 App" />
+        <img src="/img/nab/nab-windows-phone-7-app-bw.png" alt="NAB Windows Phone 7 App" class="top"/>
     </a>
   </li>
   <li class="span3">
     <a href="#" class="thumbnail project">
-        <img src="/img/anz/ipad/anz-ipad-tile.png" alt="ANZ iPad Cash Management App" />
-        <img src="/img/anz/ipad/anz-ipad-tile-bw.png" alt="ANZ Cash Management App" class="top"/>
+        <img src="/img/anz/ipad/anz-ipad-app.png" alt="ANZ iPad Cash Management App" />
+        <img src="/img/anz/ipad/anz-ipad-app-bw.png" alt="ANZ iPad Cash Management App" class="top"/>
     </a>
   </li>
   <li class="span3">
     <a href="#" class="thumbnail project">
-        <img src="/img/scheduleflow-tile.png" alt="Scheduleflow"/>
-        <img src="/img/scheduleflow-tile-bw.png" alt="Scheduleflow" class="top"/>
+        <img src="/img/scheduleflow-saas-solution.png" alt="Scheduleflow SaaS Solution"/>
+        <img src="/img/scheduleflow-saas-solution-bw.png" alt="Scheduleflow SaaS Solution" class="top"/>
     </a>
   </li>
 </ul>
