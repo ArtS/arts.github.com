@@ -17,7 +17,7 @@ description: Consulting services in Web and Mobile development, helping business
     <div class="span6">
     Developed a mobile Internet Banking app for my client, enabling
     them to service a growing userbase on an emerging mobile platform, increasing
-    the overal appeal of the products and services being offered.
+    the overall appeal of the products and services being offered.
     </div>
     <div class="span6">
     Helped a client to migrate large database of the existing users to a
@@ -28,7 +28,7 @@ description: Consulting services in Web and Mobile development, helping business
 <div class="row-fluid work-summary">
     <div class="span6">
     Delivered a proof-of-concept solution that had confirmed a business case for 
-    significant reduction of operations costs for my client's call center.
+    the significant reduction of operations costs of my client's call center.
     </div>
     <div class="span6">
     Enabled a client to attract a large user base by creating an appealing
