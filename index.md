@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Web and Mobile Development Consultant
+title: Art Skvira
+header: Web and Mobile Development Consultant
 tagline: Helping businesses to achieve their goals
 description: Consulting services in Web and Mobile development, helping businesses to achieve their goals - bring additional revenue, cut costs, expand customer base, solve pressing problems.
 ---
