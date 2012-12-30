@@ -2,12 +2,13 @@
 layout: page
 title: Art Skvira
 tagline: Helping businesses to achieve their goals
+description: Consulting services in Web and Mobile development, helping businesses to achieve their goals - bring additional revenue, cut costs, expand customer base, solve pressing problems.
 ---
 {% include JB/setup %}
 
 <h3>Hello, my name is Art.</h3>
 <p class="lead">
-    I am a Web and Mobile Development Consultant from Melbourne, Australia.
+    I am a Web and Mobile Development Consultant based in Melbourne, Australia.
     My burning passion is to help businesses and people to achieve their goals.
 </p>
 
@@ -26,7 +27,7 @@ tagline: Helping businesses to achieve their goals
 </div>
 <div class="row-fluid work-summary">
     <div class="span6">
-    Delivered a proof-of-concept solution that had confirmed a possibilty of 
+    Delivered a proof-of-concept solution that had confirmed a business case for 
     significant reduction of operations costs for my client's call center.
     </div>
     <div class="span6">
