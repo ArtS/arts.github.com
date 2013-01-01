@@ -16,35 +16,35 @@ description: Consulting services in Web and Mobile development, helping business
 <h3>Highlights</h3>
 <div class="row-fluid work-summary">
     <div class="span6">
-    Developed a mobile Internet Banking app for my client, enabling
-    them to service a growing customer base on an emerging mobile platform, 
+    Developed an <em><strong>Internet Banking App</strong></em> for my client, enabling
+    them to service a <em><strong>growing customer base</strong></em> on an emerging mobile platform, 
     increasing the overall appeal of the products and services being offered.
     </div>
     <div class="span6">
-    Helped a client to migrate large database of the existing users to a
+    Helped a client to <em><strong>migrate large database</strong></em> of the existing users to a
     newly developed website, ensuring data integrity and consistency. Successfully 
-    minimised the downtime and ensured smooth delivery.
+    <em><strong>minimised the downtime</strong></em> and ensured smooth delivery.
     </div>
 </div>
 <div class="row-fluid work-summary">
     <div class="span6">
     Delivered a proof-of-concept solution that had confirmed a business case for 
-    the significant reduction of operations costs of my client's call centre.
+    the <em><strong>significant reduction of operations costs</strong></em> of my client's call centre.
     </div>
     <div class="span6">
-    Enabled a client to attract a large user base by creating an appealing
+    Enabled a client to <em><strong>attract a large customer base</strong></em> by creating an appealing
     set of online profile management/professional networking tools.
     </div>
 </div>
 <div class="row-fluid work-summary">
     <div class="span6">
-    Helped a client to develop a mobile solution for its corporate clients,
+    Helped a client to develop a <em><strong>mobile solution</strong></em> for its corporate clients,
     thus enabling to provide a better service to existing customer as well 
-    as to acquire new customers.
+    as to <em><strong>acquire new customers</strong></em>.
     </div>
     <div class="span6">
-    Upgraded legacy invoicing system for a client, ensuring there is no
-    interruption in billing and invoicing during the upgrade and support period.
+    Upgraded legacy invoicing system for a client, ensuring there is <em><strong>no
+    interruption in invoicing and bulling</strong></em> during the upgrade and support periods.
     </div>
 </div>
 
