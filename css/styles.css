@@ -98,6 +98,7 @@ div.work-summary {
 
 a.more {
     font-size: 75%;
+    cursor: pointer;
 }
 
 span.more-content {

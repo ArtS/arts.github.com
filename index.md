@@ -112,7 +112,7 @@ description: Consulting services in Web and Mobile development, helping business
     again in a nano second.
     </span>
     </p>
-    <small><cite>Paul Tyrrel, CEO, <a href="http://scheduleflow.com">Scheduleflow.com</a></cite></small>
+    <small><cite>Paul Tyrrel, CEO, <a target="_blank" href="http://scheduleflow.com">scheduleflow.com</a></cite></small>
 </blockquote>
 <blockquote>
     <p>
@@ -122,7 +122,7 @@ description: Consulting services in Web and Mobile development, helping business
     <span class="more-content">He is always proactive with his research and contributions to the rest of the team. I recommend
     Art thoroughly to any prospective employer and would happily work with him on any future engagements.</span>
     </p>
-    <small><cite>David Hodgman, Business Analyst, <a href="http://linkme.com.au">LinkMe.com.au</a></cite></small>
+    <small><cite>David Hodgman, Business Analyst, <a target="_blank" href="http://linkme.com.au">linkme.com.au</a></cite></small>
 </blockquote>
 <blockquote>
     <p>
@@ -131,7 +131,7 @@ description: Consulting services in Web and Mobile development, helping business
     <a class="more" data-ga-category="Links" data-ga-action="Testimonials" data-ga-label="Alan">more...</a>
     <span class="more-content">The quality of his work and attention to detail was a great asset to SEEK during some really challenging and complex projects.</span>
     </p>
-    <small><cite>Alan Mastrantoni, Solutions Lead, <a href="http://www.seek.com.au">seek.com.au</a></cite></small>
+    <small><cite>Alan Mastrantoni, Solutions Lead, <a target="_blank" href="http://www.seek.com.au">seek.com.au</a></cite></small>
 </blockquote>
 <blockquote>
     <p>
@@ -233,24 +233,24 @@ description: Consulting services in Web and Mobile development, helping business
 <div class="row">
     <div class="span3">
         <img src="/img/github.png" alt="Github"/>
-        <a href="https://github.com/ArtS">ArtS on Github</a>
+        <a target="_blank" href="https://github.com/ArtS">ArtS on Github</a>
     </div>
 </div>
 <div class="row">
     <div class="span3">
         <img src="/img/stackoverflow.png" width="32" height="32" alt="Stackoverflow"/>
-        <a href="http://stackoverflow.com/users/62194/art">Stackoverflow profile</a>
+        <a target="_blank" href="http://stackoverflow.com/users/62194/art">Stackoverflow profile</a>
     </div>
 </div>
 <div class="row">
     <div class="span3">
         <img src="/img/twitter.png" alt="Twitter" width="32" height="32" />
-        <a href="https://twitter.com/#!smartial_arts">Twitter stream</a>
+        <a target="_blank" href="https://twitter.com/#!smartial_arts">Twitter stream</a>
     </div>
 </div>
 <div class="row">
     <div class="span3">
         <img src="/img/twitter.png" alt="Twitter" width="32" height="32" />
-        <a href="http://reader.nimblegecko.com">Minimalistic Twitter Reader</a>
+        <a target="_blank" href="http://reader.nimblegecko.com">Minimalistic Twitter Reader</a>
     </div>
 </div>
