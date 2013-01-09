@@ -21,7 +21,7 @@ description: Consulting services in Web and Mobile development, helping business
     increasing the overall appeal of the products and services being offered.
     </div>
     <div class="span6">
-    Helped a client to <em><strong>migrate large database</strong></em> of the existing users to a
+    Helped a client to <em><strong>migrate a large database</strong></em> of their existing users to a
     newly developed website, ensuring data integrity and consistency. Successfully 
     <em><strong>minimised the downtime</strong></em> and ensured smooth delivery.
     </div>
@@ -39,7 +39,7 @@ description: Consulting services in Web and Mobile development, helping business
 <div class="row-fluid work-summary">
     <div class="span6">
     Helped a client to develop a <em><strong>mobile solution</strong></em> for its corporate clients,
-    thus enabling to provide a better service to existing customer as well 
+    thus enable them to provide a better service to existing customers as well 
     as to <em><strong>acquire new customers</strong></em>.
     </div>
     <div class="span6">
