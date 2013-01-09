@@ -69,31 +69,284 @@ description: Consulting services in Web and Mobile development, helping business
 
 <ul class="thumbnails">
   <li class="span3">
-    <a href="#" class="thumbnail project">
+    <a href="#p1" data-id="1" class="thumbnail project" data-toggle="modal">
       <img src="/img/anz/anz-iphone-app.png" alt="ANZ iPhone App" />
       <img src="/img/anz/anz-iphone-app-bw.png" alt="ANZ iPhone App" class="top"/>
     </a>
   </li>
   <li class="span3">
-    <a href="#" class="thumbnail project">
+    <a href="#p2" data-id="2" class="thumbnail project" data-toggle="modal">
         <img src="/img/nab/nab-windows-phone-7-app.png" alt="NAB Windows Phone 7 App" />
         <img src="/img/nab/nab-windows-phone-7-app-bw.png" alt="NAB Windows Phone 7 App" class="top"/>
     </a>
   </li>
   <li class="span3">
-    <a href="#" class="thumbnail project">
+    <a href="#p3" data-id="3" class="thumbnail project" data-toggle="modal">
         <img src="/img/anz/ipad/anz-ipad-app.png" alt="ANZ iPad Cash Management App" />
         <img src="/img/anz/ipad/anz-ipad-app-bw.png" alt="ANZ iPad Cash Management App" class="top"/>
     </a>
   </li>
   <li class="span3">
-    <a href="#" class="thumbnail project">
+    <a href="#p4" data-id="4" class="thumbnail project" data-toggle="modal">
         <img src="/img/scheduleflow-saas-solution.png" alt="Scheduleflow SaaS Solution"/>
         <img src="/img/scheduleflow-saas-solution-bw.png" alt="Scheduleflow SaaS Solution" class="top"/>
     </a>
   </li>
 </ul>
 
+
+<script>
+
+    var projectID           = 0; 
+
+    $(document).on("click", ".project", function () {
+        projectID = $(this).data('id');      
+        $('#p' + projectID + '').modal('show');
+    });
+
+    jQuery(document).ready(function($) {
+        $('#slider1').nivoSlider({
+            effect: 'sliceDown', 
+            slices: 1, 
+            boxCols: 1, 
+            boxRows: 1, 
+            animSpeed: 100, 
+            pauseTime: 300000,
+            startSlide: 0, 
+            directionNav: true, 
+            controlNav: false, 
+            controlNavThumbs: false, 
+            pauseOnHover: true, 
+            manualAdvance: false,             
+            randomStart: false        
+        });
+
+        $('#slider2').nivoSlider({
+                    effect: 'sliceDown', 
+                    slices: 1, 
+                    boxCols: 1, 
+                    boxRows: 1, 
+                    animSpeed: 100, 
+                    pauseTime: 300000,
+                    startSlide: 0, 
+                    directionNav: true, 
+                    controlNav: false, 
+                    controlNavThumbs: false, 
+                    pauseOnHover: true, 
+                    manualAdvance: false,             
+                    randomStart: false        
+                });
+
+        $('#slider3').nivoSlider({
+                    effect: 'sliceDown', 
+                    slices: 1, 
+                    boxCols: 1, 
+                    boxRows: 1, 
+                    animSpeed: 100, 
+                    pauseTime: 300000,
+                    startSlide: 0, 
+                    directionNav: true, 
+                    controlNav: false, 
+                    controlNavThumbs: false, 
+                    pauseOnHover: true, 
+                    manualAdvance: false,             
+                    randomStart: false        
+                });
+
+        $('#slider4').nivoSlider({
+                    effect: 'sliceDown', 
+                    slices: 1, 
+                    boxCols: 1, 
+                    boxRows: 1, 
+                    animSpeed: 100, 
+                    pauseTime: 300000,
+                    startSlide: 0, 
+                    directionNav: true, 
+                    controlNav: false, 
+                    controlNavThumbs: false, 
+                    pauseOnHover: true, 
+                    manualAdvance: false,             
+                    randomStart: false        
+                });
+            jQuery('.prev').click(function(){
+                Previous(projectID);
+              });
+
+              jQuery('.next').click(function(){
+                Next(projectID);
+              });
+     });
+     function Next(currentProjectID)
+    {
+        var next_project_id = currentProjectID + 1;
+        var num = parseInt(next_project_id);
+        if (num!=5){
+            projectID = next_project_id;
+            $('#p' + currentProjectID + '').removeClass('fade').modal('hide');
+            $('#p' + next_project_id + '').removeClass('fade').modal('show');
+        }
+    }
+    function Previous(currentProjectID)
+    {
+        var prev_project_id = currentProjectID - 1;
+        var num = parseInt(prev_project_id);
+        if (num!=0){
+            projectID = prev_project_id;
+            $('#p' + currentProjectID + '').removeClass('fade').modal('hide');
+            $('#p' + prev_project_id + '').removeClass('fade').modal('show');
+        }
+    }
+</script>
+
+
+<!-- Projects modal -->
+<div id="p1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="width:760px; margin-left: -380px">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <div style="width:100%; overflow:hidden">
+            <h3 id="projectName" style="float:left; width:48%">ANZ iPhone project</h3>
+            <div class="btn-group" style="float:left; margin-left: 20px; width:48%">
+                <button class="btn btn-small btn-info prev">Prev</button>                    
+                <button class="btn btn-small btn-primary next">Next</button>
+            </div>
+        </div>
+            
+    </div>
+    <div class="modal-body">
+        <div style="width:50%; overflow: hidden; float: left;">
+            <p>Developed an Internet Banking App for my client, enabling them to service
+            a growing customer base on an emerging mobile platform, increasing the
+            overall appeal of the products and services being offered.</p>
+
+            <p>Helped a client to migrate large database of the existing users to a newly
+            developed website, ensuring data integrity and consistency. Successfully
+            minimised the downtime and ensured smooth delivery.</p>
+        </div>
+        <div style="width:50%; overflow: hidden; float: left; text-align:center;">
+            <div class="slider-wrapper theme-default">
+                <div id="slider1" class="nivoSlider" style="text-align: center;">
+                    <img src="img/anz/Account List.jpg"/>
+                    <img src="img/anz/Account details.png"/>                    
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>        
+    </div>
+</div>
+
+<!-- Projects modal -->
+<div id="p2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="width:760px; margin-left: -380px">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <div style="width:100%; overflow:hidden">
+            <h3 id="projectName" style="float:left; width:48%">NAB Windwos Phone 7 App</h3>
+            <div class="btn-group" style="float:left; margin-left: 20px; width:48%">
+                <button class="btn btn-small btn-info prev">Prev</button>                    
+                <button class="btn btn-small btn-primary next">Next</button>
+            </div>
+        </div>
+            
+    </div>
+    <div class="modal-body">
+        <div style="width:50%; overflow: hidden; float: left;">
+            <p>Developed an Internet Banking App for my client, enabling them to service
+            a growing customer base on an emerging mobile platform, increasing the
+            overall appeal of the products and services being offered.</p>
+
+            <p>Helped a client to migrate large database of the existing users to a newly
+            developed website, ensuring data integrity and consistency. Successfully
+            minimised the downtime and ensured smooth delivery.</p>
+        </div>
+        <div style="width:50%; overflow: hidden; float: left; text-align:center;">
+            <div class="slider-wrapper theme-default">
+                <div id="slider2" class="nivoSlider" style="text-align: center;">
+                    <img src="img/nab/nab-exchange.png"/>
+                    <img src="img/nab/nab-contact.png"/> 
+                    <img src="img/nab/nab-passcode.png"/> 
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>        
+    </div>
+</div>
+
+<!-- Projects modal -->
+<div id="p3" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="width:760px; margin-left: -380px">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <div style="width:100%; overflow:hidden">
+            <h3 id="projectName" style="float:left; width:48%">ANZ iPad project</h3>
+            <div class="btn-group" style="float:left; margin-left: 20px; width:48%">
+                <button class="btn btn-small btn-info prev">Prev</button>                    
+                <button class="btn btn-small btn-primary next">Next</button>
+            </div>
+        </div>
+            
+    </div>
+    <div class="modal-body">
+        <div style="width:50%; overflow: hidden; float: left;">
+            <p>Developed an Internet Banking App for my client, enabling them to service
+            a growing customer base on an emerging mobile platform, increasing the
+            overall appeal of the products and services being offered.</p>
+
+            <p>Helped a client to migrate large database of the existing users to a newly
+            developed website, ensuring data integrity and consistency. Successfully
+            minimised the downtime and ensured smooth delivery.</p>
+        </div>
+        <div style="width:50%; overflow: hidden; float: left; text-align:center;">
+            <div class="slider-wrapper theme-default">
+                <div id="slider3" class="nivoSlider" style="text-align: center;">
+                    <img src="img/anz/ipad/anz-ipad-app.png"/>
+                    <img src="img/anz/ipad/anz-ipad-app-bw.png"/>                    
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>        
+    </div>
+</div>
+
+<!-- Projects modal -->
+<div id="p4" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="width:760px; margin-left: -380px">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <div style="width:100%; overflow:hidden">
+            <h3 id="projectName" style="float:left; width:48%">Scheduleflow SaaS</h3>
+            <div class="btn-group" style="float:left; margin-left: 20px; width:48%">
+                <button class="btn btn-small btn-info prev">Prev</button>                    
+                <button class="btn btn-small btn-primary next">Next</button>
+            </div>
+        </div>
+            
+    </div>
+    <div class="modal-body">
+        <div style="width:50%; overflow: hidden; float: left;">
+            <p>Developed an Internet Banking App for my client, enabling them to service
+            a growing customer base on an emerging mobile platform, increasing the
+            overall appeal of the products and services being offered.</p>
+
+            <p>Helped a client to migrate large database of the existing users to a newly
+            developed website, ensuring data integrity and consistency. Successfully
+            minimised the downtime and ensured smooth delivery.</p>
+        </div>
+        <div style="width:50%; overflow: hidden; float: left; text-align:center;">
+            <div class="slider-wrapper theme-default">
+                <div id="slider4" class="nivoSlider" style="text-align: center;">
+                    <img src="img/anz/Account List.jpg"/>
+                    <img src="img/anz/Account details.png"/>                    
+                </div>
+            </div>            
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>        
+    </div>
+</div>
 ###What my clients say
 <blockquote>
     <p>
