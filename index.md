@@ -150,8 +150,8 @@ description: Consulting services in Web and Mobile development, helping business
         <p>Have you a new project coming up? Drop me a line and we will discuss it.</p>
 
         Send an email to <a href="mailto:art@nimblegecko.com" data-ga-category="Links" data-ga-action="Contact" data-ga-label="email">art@nimblegecko.com</a>,
-        or simply call me on <a href="call:0416394620" data-ga-category="Links" data-ga-action="Contact" data-ga-label="Mobile AU">0416 394 620</a>
-        <!--small>(outside of Australia dial <a href="call:+61416394620" data-ga-category="Links" data-ga-action="Contact" data-ga-label="Mobile Int">+61 416 394 620</a>)</small-->
+        or simply call me on <a href="tel:0416394620" data-ga-category="Links" data-ga-action="Contact" data-ga-label="Mobile AU">0416 394 620</a>
+        <!--small>(outside of Australia dial <a href="tel:+61416394620" data-ga-category="Links" data-ga-action="Contact" data-ga-label="Mobile Int">+61 416 394 620</a>)</small-->
     </div>
     <div class="span3">
         <div style="display: none;" id="divContact">
