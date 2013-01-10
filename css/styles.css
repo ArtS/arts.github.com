@@ -39,6 +39,11 @@ li a.contact-me {
     color: whiteSmoke !important;
 }
 
+#divContact {
+    padding: 0.7em 0.3em;
+    overflow: scroll;
+}
+
 .hidden-desktop a.phone-number {
     position: absolute;
     top: 0;
@@ -54,7 +59,8 @@ li a.phone-number {
 }
 
 h3 {
-    margin: 0.7em 0 0.05em;
+    margin: 1em 0 0.05em;
+    font-weight: 500;
 }
 
 .container .credit {
@@ -62,7 +68,7 @@ h3 {
 }
 
 div.work-summary {
-    margin-top: 1em;
+    margin-top: 0;
     margin-bottom: 2em;
 }
 
@@ -107,6 +113,10 @@ span.more-content {
 
 .summary ul {
     margin-left: 0;
+}
+
+dl.skills {
+    margin-top: 0;
 }
 
 .skills dd {
