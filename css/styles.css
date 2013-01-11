@@ -83,19 +83,19 @@ div.work-summary {
 }
 
 .project:hover {
-    -webkit-transition: border 0.5s ease-in-out;
-    -moz-transition: background 0.5s ease-in-out;
-    -o-transition: background 0.5s ease-in-out;
-    transition: background 0.5s ease-in-out;
+    -webkit-transition: border 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out;
+    transition: background 0.3s ease-in-out;
 }
 
 .project img {
     position: absolute;
     width: 210px;
-    -webkit-transition: opacity 0.5s ease-in-out;
-    -moz-transition: opacity 0.5s ease-in-out;
-    -o-transition: opacity 0.5s ease-in-out;
-    transition: opacity 0.5s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .project img.top:hover {

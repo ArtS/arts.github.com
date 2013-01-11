@@ -82,8 +82,8 @@ description: Consulting services in Web and Mobile development, helping business
   </li>
   <li class="span3">
     <a href="#p3" data-id="3" class="thumbnail project" data-toggle="modal">
-        <img src="/img/anz/ipad/anz-ipad-app.png" alt="ANZ iPad Cash Management App" />
-        <img src="/img/anz/ipad/anz-ipad-app-bw.png" alt="ANZ iPad Cash Management App" class="top"/>
+        <img src="/img/seek-tile.png" alt="SEEK" />
+        <img src="/img/seek-tile-bw.png" alt="SEEK" class="top"/>
     </a>
   </li>
   <li class="span3">
@@ -204,7 +204,7 @@ description: Consulting services in Web and Mobile development, helping business
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <div style="width:100%; overflow:hidden">
-            <h3 id="projectName" style="float:left; width:48%">ANZ iPhone project</h3>
+            <h3 id="projectName" style="float:left; width:48%">ANZ Cash Management App</h3>
             <div class="btn-group" style="float:left; margin-left: 20px; width:48%">
                 <button class="btn btn-small btn-info prev">Prev</button>                    
                 <button class="btn btn-small btn-primary next">Next</button>
@@ -214,13 +214,17 @@ description: Consulting services in Web and Mobile development, helping business
     </div>
     <div class="modal-body">
         <div style="width:50%; overflow: hidden; float: left;">
-            <p>Developed an Internet Banking App for my client, enabling them to service
-            a growing customer base on an emerging mobile platform, increasing the
-            overall appeal of the products and services being offered.</p>
 
-            <p>Helped a client to migrate large database of the existing users to a newly
-            developed website, ensuring data integrity and consistency. Successfully
-            minimised the downtime and ensured smooth delivery.</p>
+            <p>ANZ Cash management is an internet banking platform for bank's corporate clients, that 
+            simplifies wide range of operations, such as wire transfers, currency trading and payroll management.</p>
+            
+            <p>I developed a cross-platform app that enabled ANZ to deliver banking functionality to different mobile platforms.
+            This helped to increase speed to market by avoiding platform-specific implementations. 
+            It also reduced maintenance and deployment costs significantly.</p>
+
+            <p>The app was build using HTML5/CSS3 and Javascript, with aid of Sencha Touch framework.
+            Server side was implemented in Java, using Spring, Hibernate, Apache, MySql/Oracle.</p>
+        
         </div>
         <div style="width:50%; overflow: hidden; float: left; text-align:center;">
             <div class="slider-wrapper theme-default">
@@ -241,7 +245,7 @@ description: Consulting services in Web and Mobile development, helping business
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <div style="width:100%; overflow:hidden">
-            <h3 id="projectName" style="float:left; width:48%">NAB Windwos Phone 7 App</h3>
+            <h3 id="projectName" style="float:left; width:48%">Internet Banking App for NAB</h3>
             <div class="btn-group" style="float:left; margin-left: 20px; width:48%">
                 <button class="btn btn-small btn-info prev">Prev</button>                    
                 <button class="btn btn-small btn-primary next">Next</button>
@@ -251,20 +255,21 @@ description: Consulting services in Web and Mobile development, helping business
     </div>
     <div class="modal-body">
         <div style="width:50%; overflow: hidden; float: left;">
-            <p>Developed an Internet Banking App for my client, enabling them to service
-            a growing customer base on an emerging mobile platform, increasing the
-            overall appeal of the products and services being offered.</p>
+            
+            <p>NAB was getting quite a large number of requests from its clients for a Windows Phone app to be developed.
+            I assisted them in development of this app, ensuring that it matches usability and robustness of the existing iOS/Android apps.</p>
 
-            <p>Helped a client to migrate large database of the existing users to a newly
-            developed website, ensuring data integrity and consistency. Successfully
-            minimised the downtime and ensured smooth delivery.</p>
+            <p>Strong emphasis was put on integration with existing API to enable secure, quick and seamless Internet Banking experience for its users.</p>
+
+            <p>The app was built using C#, Silverlight, Windows Phone 7, Ajax/Json.</p>
+
         </div>
         <div style="width:50%; overflow: hidden; float: left; text-align:center;">
             <div class="slider-wrapper theme-default">
                 <div id="slider2" class="nivoSlider" style="text-align: center;">
+                    <img src="img/nab/nab-passcode.png"/> 
                     <img src="img/nab/nab-exchange.png"/>
                     <img src="img/nab/nab-contact.png"/> 
-                    <img src="img/nab/nab-passcode.png"/> 
                 </div>
             </div>            
         </div>
@@ -279,7 +284,7 @@ description: Consulting services in Web and Mobile development, helping business
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <div style="width:100%; overflow:hidden">
-            <h3 id="projectName" style="float:left; width:48%">ANZ iPad project</h3>
+            <h3 id="projectName" style="float:left; width:48%">SEEK</h3>
             <div class="btn-group" style="float:left; margin-left: 20px; width:48%">
                 <button class="btn btn-small btn-info prev">Prev</button>                    
                 <button class="btn btn-small btn-primary next">Next</button>
@@ -289,19 +294,14 @@ description: Consulting services in Web and Mobile development, helping business
     </div>
     <div class="modal-body">
         <div style="width:50%; overflow: hidden; float: left;">
-            <p>Developed an Internet Banking App for my client, enabling them to service
-            a growing customer base on an emerging mobile platform, increasing the
-            overall appeal of the products and services being offered.</p>
-
-            <p>Helped a client to migrate large database of the existing users to a newly
-            developed website, ensuring data integrity and consistency. Successfully
-            minimised the downtime and ensured smooth delivery.</p>
+            <p>Seek is a leading job board in Australia with hundreds of thousands users visiting the site every day. I participated in a number of key projects for the business, ranging from massive data transformation initiatives to front-end user experience improvements.</p>
+            <p>My involvement helped business to achieve target delivery dates, minimise the website's downtime during deployment periods as well as to ensure no interruption in invoicing/billing cycles.</p>
+            <p>Technologies used: C#, .NET, ASP.NET, MVC.NET, SQL Server, HTML/CSS, Javascript</p>
         </div>
         <div style="width:50%; overflow: hidden; float: left; text-align:center;">
             <div class="slider-wrapper theme-default">
                 <div id="slider3" class="nivoSlider" style="text-align: center;">
-                    <img src="img/anz/ipad/anz-ipad-app.png"/>
-                    <img src="img/anz/ipad/anz-ipad-app-bw.png"/>                    
+                    <img src="img/seek.png"/>
                 </div>
             </div>            
         </div>
@@ -316,7 +316,7 @@ description: Consulting services in Web and Mobile development, helping business
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <div style="width:100%; overflow:hidden">
-            <h3 id="projectName" style="float:left; width:48%">Scheduleflow SaaS</h3>
+            <h3 id="projectName" style="float:left; width:48%">Scheduleflow</h3>
             <div class="btn-group" style="float:left; margin-left: 20px; width:48%">
                 <button class="btn btn-small btn-info prev">Prev</button>                    
                 <button class="btn btn-small btn-primary next">Next</button>
@@ -326,21 +326,17 @@ description: Consulting services in Web and Mobile development, helping business
     </div>
     <div class="modal-body">
         <div style="width:50%; overflow: hidden; float: left;">
-            <p>Developed an Internet Banking App for my client, enabling them to service
-            a growing customer base on an emerging mobile platform, increasing the
-            overall appeal of the products and services being offered.</p>
-
-            <p>Helped a client to migrate large database of the existing users to a newly
-            developed website, ensuring data integrity and consistency. Successfully
-            minimised the downtime and ensured smooth delivery.</p>
+           <p>Scheduleflow is a Software as a Service product, that helps small and medium business to organise their day, manage relationship with clients and achieve higher utilisation of their time.</p>
+           <p>I was involved as a technical consultant from the very early days, helping the business to select right technologies and tools to ensure rapid delivery and iteration, as well as carrying out major software design and development work.</p>
+           <p>I implemented a number of development and deployment processes to ensure high quality of the product, as well as quick pace of iteration. This enabled the business to arrive at the working revenue model, minimising the expenditures.</p>
+           <p>The solution was built using Python, Django, JavaScript, HTML/CSS, Postgresql</p>
         </div>
         <div style="width:50%; overflow: hidden; float: left; text-align:center;">
             <div class="slider-wrapper theme-default">
                 <div id="slider4" class="nivoSlider" style="text-align: center;">
-                    <img src="img/anz/Account List.jpg"/>
-                    <img src="img/anz/Account details.png"/>                    
+                    <img src="img/scheduleflow.png"/>
                 </div>
-            </div>            
+            </div>
         </div>
     </div>
     <div class="modal-footer">
