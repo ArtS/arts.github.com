@@ -206,8 +206,8 @@ description: Consulting services in Web and Mobile development, helping business
         <div style="width:100%; overflow:hidden">
             <h3 id="projectName" style="float:left; width:48%">ANZ Cash Management App</h3>
             <div class="btn-group" style="float:left; margin-left: 20px; width:48%">
-                <button class="btn btn-small btn-info prev">Prev</button>                    
-                <button class="btn btn-small btn-primary next">Next</button>
+                <button class="btn btn-small btn-info prev"><i class="icon-arrow-left icon-white">&nbsp;</i></button>                    
+                <button class="btn btn-small btn-primary next"><i class="icon-arrow-right icon-white">&nbsp;</i></button>
             </div>
         </div>
             
@@ -247,8 +247,8 @@ description: Consulting services in Web and Mobile development, helping business
         <div style="width:100%; overflow:hidden">
             <h3 id="projectName" style="float:left; width:48%">Internet Banking App for NAB</h3>
             <div class="btn-group" style="float:left; margin-left: 20px; width:48%">
-                <button class="btn btn-small btn-info prev">Prev</button>                    
-                <button class="btn btn-small btn-primary next">Next</button>
+                <button class="btn btn-small btn-info prev"><i class="icon-arrow-left icon-white">&nbsp;</i></button>                    
+                <button class="btn btn-small btn-primary next"><i class="icon-arrow-right icon-white">&nbsp;</i></button>
             </div>
         </div>
             
@@ -287,8 +287,8 @@ description: Consulting services in Web and Mobile development, helping business
         <div style="width:100%; overflow:hidden">
             <h3 id="projectName" style="float:left; width:48%">SEEK</h3>
             <div class="btn-group" style="float:left; margin-left: 20px; width:48%">
-                <button class="btn btn-small btn-info prev">Prev</button>                    
-                <button class="btn btn-small btn-primary next">Next</button>
+                <button class="btn btn-small btn-info prev"><i class="icon-arrow-left icon-white">&nbsp;</i></button>                    
+                <button class="btn btn-small btn-primary next"><i class="icon-arrow-right icon-white">&nbsp;</i></button>
             </div>
         </div>
             
@@ -319,8 +319,8 @@ description: Consulting services in Web and Mobile development, helping business
         <div style="width:100%; overflow:hidden">
             <h3 id="projectName" style="float:left; width:48%">Scheduleflow</h3>
             <div class="btn-group" style="float:left; margin-left: 20px; width:48%">
-                <button class="btn btn-small btn-info prev">Prev</button>                    
-                <button class="btn btn-small btn-primary next">Next</button>
+                <button class="btn btn-small btn-info prev"><i class="icon-arrow-left icon-white">&nbsp;</i></button>                    
+                <button class="btn btn-small btn-primary next"><i class="icon-arrow-right icon-white">&nbsp;</i></button>
             </div>
         </div>
             
