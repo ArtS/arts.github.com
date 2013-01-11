@@ -269,8 +269,12 @@ description: Consulting services in Web and Mobile development, helping business
                 <div id="slider2" class="nivoSlider" style="text-align: center;">
                     <img src="img/nab/nab-passcode.png"/> 
                     <img src="img/nab/nab-exchange.png"/>
-                    <img src="img/nab/nab-contact.png"/> 
+                    <img src="img/nab/nab-rates.png"/>
+                    <img src="img/nab/nab-map.png"/> 
                     <img src="img/nab/nab-latest.png"/> 
+                    <img src="img/nab/nab-locator.png"/> 
+                    <img src="img/nab/nab-branch.png"/>
+                    <img src="img/nab/nab-contact.png"/> 
                 </div>
             </div>            
         </div>
