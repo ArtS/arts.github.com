@@ -270,6 +270,7 @@ description: Consulting services in Web and Mobile development, helping business
                     <img src="img/nab/nab-passcode.png"/> 
                     <img src="img/nab/nab-exchange.png"/>
                     <img src="img/nab/nab-contact.png"/> 
+                    <img src="img/nab/nab-latest.png"/> 
                 </div>
             </div>            
         </div>
