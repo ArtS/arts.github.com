@@ -44,7 +44,7 @@ description: Consulting services in Web and Mobile development, helping business
     </div>
     <div class="span6">
     Upgraded legacy invoicing system for a client, ensuring there is <em><strong>no
-    interruption in invoicing and bulling</strong></em> during the upgrade and support periods.
+    interruption in invoicing and billing</strong></em> during the upgrade and support periods.
     </div>
 </div>
 
