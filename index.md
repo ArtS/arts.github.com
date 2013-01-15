@@ -397,7 +397,7 @@ description: Consulting services in Web and Mobile development, helping business
     <small id="contact"><cite>Andrew Harvey, Senior Developer, Department of Education, Victoria</cite></small>
 </blockquote>
 
-<h3>Contact me</h3>
+<h3>Let's Talk</h3>
 
 <div class="row-fluid">
     <div class="span7">
