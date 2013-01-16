@@ -486,6 +486,12 @@ description: Consulting services in Web and Mobile development, helping business
 
 <div class="row">
     <div class="span3">
+        <img src="/img/linkedin.jpg" alt="linkedin" height="32" width="32" />
+        <a target="_blank" href="http://au.linkedin.com/in/skvira/">LinkedIn Profile</a>
+    </div>
+</div>
+<div class="row">
+    <div class="span3">
         <img src="/img/github.png" alt="Github"/>
         <a target="_blank" href="https://github.com/ArtS">ArtS on Github</a>
     </div>
