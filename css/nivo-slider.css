@@ -16,18 +16,14 @@
 }
 .nivoSlider img {
 	position:absolute;
-	/*top:0px;
-	left:auto;*/        
-	/*max-width: none;*/
-        width: auto !important;
-        height: 400px !important;
+    width: auto !important;
+    height: 400px !important;
 }
 .nivo-main-image {        
 	display: block !important;
-	position: relative !important; 
-	/*width: 100% !important;*/
-        width: auto !important;
-        height: 400px !important;
+	position: relative !important;
+    width: auto !important;
+    height: 400px !important;
 }
 
 /* If an image is wrapped in a link */

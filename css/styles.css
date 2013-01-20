@@ -130,3 +130,31 @@ footer {
     font-size: 0.9em;
 }
 
+.galleryItem {
+    width:760px !important; display: none;
+}
+
+.galleryItemHeader {
+    width:100% !important; overflow:hidden !important;
+}
+
+.galleryItemHeader h3 {
+    float:left !important; width:48% !important;
+}
+
+.galleryItemHeader .nav {
+    float:left !important; margin-left: 20px !important; width:48% !important;
+}
+
+.modal-body .left {
+    width:50% !important; overflow: hidden !important; float: left !important;
+}
+
+.modal-body .right {
+    width:50% !important; overflow: hidden !important; float: left !important; text-align:center !important;
+}
+
+.nivoSlider .center {
+    text-align: center;
+}
+
