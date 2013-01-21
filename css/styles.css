@@ -158,3 +158,11 @@ footer {
     text-align: center;
 }
 
+.galleryItem .modal-body {
+    max-height: none !important;
+}
+
+.overflow_hidden {
+    overflow: hidden !important;
+}
+

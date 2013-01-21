@@ -1,16 +1,13 @@
-var projectID = 0;
-
-$(document).on("click", ".project", function () {
-    projectID = $(this).data('id');
-});
-
 jQuery(document).ready(function($) {
 
     $('.project').fancybox({
         width: 760,
-        height: 700,
-        'transitionIn'		: 'none',
-        'transitionOut'		: 'none'
+
+        transitionIn  : 'none',
+        transitionOut : 'none',
+        nextEffect    : 'none',
+        prevEffect    : 'none',
+        arrows		  : false
     });
 
     $('.nivoSlider').nivoSlider({
@@ -29,41 +26,13 @@ jQuery(document).ready(function($) {
         randomStart: false
     });
 
-
     jQuery('.prev').click(function(){
-        Previous(projectID);
+        $.fancybox.prev();
     });
 
     jQuery('.next').click(function(){
-        Next(projectID);
+        $.fancybox.next();
     });
 });
-function Next(currentProjectID)
-{
-    var next_project_id = currentProjectID + 1;
-    var num = parseInt(next_project_id);
 
-    if (num!=5){
-        projectID = next_project_id;
-        $.fancybox.close();
-        $("#link"+next_project_id).click();
-    }else{
-        projectID = 1;
-        $.fancybox.close();
-        $("#link"+projectID).click();
-    }
-}
-function Previous(currentProjectID)
-{
-    var prev_project_id = currentProjectID - 1;
-    var num = parseInt(prev_project_id);
-    if (num!=0){
-        projectID = prev_project_id;
-        $.fancybox.close();
-        $("#link"+prev_project_id).click();
-    }else{
-        projectID = 4;
-        $.fancybox.close();
-        $("#link"+projectID).click();
-    }
-}
+

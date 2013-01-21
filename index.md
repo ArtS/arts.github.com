@@ -68,25 +68,25 @@ description: Consulting services in Web and Mobile development, helping business
 
 <ul class="thumbnails">
   <li class="span3">
-    <a href="#p1" data-id="1" class="thumbnail project" id="link1">
+    <a href="#p1" data-id="1" rel="proj" class="thumbnail project" id="link1">
       <img src="/img/anz/anz-iphone-app.png" alt="ANZ iPhone App" />
       <img src="/img/anz/anz-iphone-app-bw.png" alt="ANZ iPhone App" class="top"/>
     </a>
   </li>
   <li class="span3">
-    <a href="#p2" data-id="2" class="thumbnail project" id="link2">
+    <a href="#p2" data-id="2" rel="proj" class="thumbnail project" id="link2">
         <img src="/img/nab/nab-windows-phone-7-app.png" alt="NAB Windows Phone 7 App" />
         <img src="/img/nab/nab-windows-phone-7-app-bw.png" alt="NAB Windows Phone 7 App" class="top"/>
     </a>
   </li>
   <li class="span3">
-    <a href="#p3" data-id="3" class="thumbnail project" id="link3">
+    <a href="#p3" data-id="3" rel="proj" class="thumbnail project" id="link3">
         <img src="/img/seek-tile.png" alt="SEEK" />
         <img src="/img/seek-tile-bw.png" alt="SEEK" class="top"/>
     </a>
   </li>
   <li class="span3">
-    <a href="#p4" data-id="4" class="thumbnail project" id="link4">
+    <a href="#p4" data-id="4" rel="proj" class="thumbnail project" id="link4">
         <img src="/img/scheduleflow-saas-solution.png" alt="Scheduleflow SaaS Solution"/>
         <img src="/img/scheduleflow-saas-solution-bw.png" alt="Scheduleflow SaaS Solution" class="top"/>
     </a>
