@@ -1,10 +1,9 @@
 jQuery(document).ready(function($) {
 
     $('.project').fancybox({
-        width: 760,
-
-        transitionIn  : 'none',
-        transitionOut : 'none',
+        width: 780,
+        transitionIn  : 'fade',
+        transitionOut : 'fade',
         nextEffect    : 'none',
         prevEffect    : 'none',
         arrows		  : false

@@ -131,27 +131,36 @@ footer {
 }
 
 .galleryItem {
-    width:760px !important; display: none;
+    width:760px; display: none;
 }
 
 .galleryItemHeader {
-    width:100% !important; overflow:hidden !important;
+    width:100%; overflow:hidden;
 }
 
 .galleryItemHeader h3 {
-    float:left !important; width:48% !important;
+    float:left;
+    width:48%;
 }
 
 .galleryItemHeader .nav {
-    float:left !important; margin-left: 20px !important; width:48% !important;
+    float:left;
+    margin-left: 20px;
+    width:48%;
 }
 
 .modal-body .left {
-    width:50% !important; overflow: hidden !important; float: left !important;
+    width: 45%;
+    overflow: scroll;
+    float: left;
+    margin-right: 1em;
 }
 
 .modal-body .right {
-    width:50% !important; overflow: hidden !important; float: left !important; text-align:center !important;
+    width:50%;
+    overflow: hidden;
+    float: left;
+    text-align:center;
 }
 
 .nivoSlider .center {
@@ -159,10 +168,10 @@ footer {
 }
 
 .galleryItem .modal-body {
-    max-height: none !important;
+    max-height: none;
 }
 
 .overflow_hidden {
-    overflow: hidden !important;
+    overflow: hidden;
 }
 

@@ -105,7 +105,7 @@ description: Consulting services in Web and Mobile development, helping business
         </div>
     </div>
     <div class="modal-body">
-        <div class="left">
+        <div class="left project-desc">
 
             <p>ANZ Cash management is an internet banking platform for bank's corporate clients, that 
             simplifies wide range of operations, such as wire transfers, currency trading and payroll management.</p>
@@ -141,7 +141,7 @@ description: Consulting services in Web and Mobile development, helping business
         </div>
     </div>
     <div class="modal-body">
-        <div class="left">
+        <div class="left project-desc">
 
             <p>NAB was getting quite a large number of requests from its clients for a Windows Phone app to be developed.
             I assisted them in development of this app, ensuring that it matches usability and robustness of the existing iOS/Android apps.</p>
@@ -181,7 +181,7 @@ description: Consulting services in Web and Mobile development, helping business
 
     </div>
     <div class="modal-body">
-        <div class="left">
+        <div class="left project-desc">
             <p>Seek is a leading job board in Australia with hundreds of thousands users visiting the site every day. I participated in a number of key projects for the business, ranging from massive data transformation initiatives to front-end user experience improvements.</p>
             <p>My involvement helped business to achieve target delivery dates, minimise the website's downtime during deployment periods as well as to ensure no interruption in invoicing/billing cycles.</p>
             <p>Technologies used: C#, .NET, ASP.NET, MVC.NET, SQL Server, HTML/CSS, Javascript</p>
@@ -209,7 +209,7 @@ description: Consulting services in Web and Mobile development, helping business
 
     </div>
     <div class="modal-body">
-        <div class="left">
+        <div class="left project-desc">
            <p>Scheduleflow is a Software as a Service product, that helps small and medium business to organise their day, manage relationship with clients and achieve higher utilisation of their time.</p>
            <p>I was involved as a technical consultant from the very early days, helping the business to select right technologies and tools to ensure rapid delivery and iteration, as well as carrying out major software design and development work.</p>
            <p>I implemented a number of development and deployment processes to ensure high quality of the product, as well as quick pace of iteration. This enabled the business to arrive at the working revenue model, minimising the expenditures.</p>
