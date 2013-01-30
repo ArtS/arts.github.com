@@ -7,7 +7,7 @@ description: Consulting services in Web and Mobile development, helping business
 ---
 {% include JB/setup %}
 
-<h3>Hello, my name is Art Skvira</h3>
+<h3 class="hello-header">Hello, my name is Art Skvira</h3>
 <p class="lead">
     I am a Web and Mobile developer based in Melbourne, Australia.
     My burning passion is to help businesses and people to achieve their goals.
