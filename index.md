@@ -51,21 +51,6 @@ description: Consulting services in Web and Mobile development, helping business
 
 <h3>My Work</h3>
 
-<!--div class="projects">
-    <div class="row">
-        <div class="span3 project">
-            <img src="/img/anz/anz-iphone-app.png" alt="ANZ iPhone App" />
-            <img src="/img/anz/anz-iphone-app-bw.png" alt="ANZ iPhone App" class="top"/>
-        </div>
-        <div class="span3 project">
-        </div>
-        <div class="span3 project">
-        </div>
-        <div class="span3 project">
-        </div>
-    </div>
-</div-->
-
 <ul class="thumbnails">
   <li class="span3">
     <a href="#p1" data-id="1" rel="proj" class="thumbnail project" id="link1">
@@ -224,6 +209,54 @@ description: Consulting services in Web and Mobile development, helping business
         </div>
     </div>
 </div>
+
+<h3>Let's Talk</h3>
+
+<div class="row-fluid">
+    <div class="span7">
+        <p>Have you got a new project coming up? Drop me a line and we will discuss it.</p>
+
+        Send an email to <a href="mailto:art@nimblegecko.com" data-ga-category="Links" data-ga-action="Contact" data-ga-label="email">art@nimblegecko.com</a>,
+        or simply call me on <a href="tel:0416394620" data-ga-category="Links" data-ga-action="Contact" data-ga-label="Mobile AU">0416 394 620</a>
+        <!--small>(outside of Australia dial <a href="tel:+61416394620" data-ga-category="Links" data-ga-action="Contact" data-ga-label="Mobile Int">+61 416 394 620</a>)</small-->
+    </div>
+    <div class="span3">
+        <div style="display: none;" id="divContact">
+            <div id="wufoo-z7x3p9">
+                Fill out my <a href="http://nimblegecko.wufoo.com/forms/z7x3p9">online form</a>.
+            </div>
+            <script type="text/javascript">var z7x3p9;(function(d, t) {
+            var s = d.createElement(t), options = {
+            'userName':'nimblegecko', 
+            'formHash':'z7x3p9', 
+            'autoResize':true,
+            'height':'497',
+            'async':true,
+            'header':'show'};
+            s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
+            s.onload = s.onreadystatechange = function() {
+            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+            try { z7x3p9 = new WufooForm();z7x3p9.initialize(options);z7x3p9.display(); } catch (e) {}};
+            var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+            })(document, 'script');</script>
+        </div>
+        <a id="btnContact" class="btn btn-primary btn-large btn-block" 
+           data-ga-category="Links" data-ga-action="Contact" data-ga-label="Contact Form"
+           href="#divContact">Contact me</a>
+        <script>
+            (function($) {
+                $('#btnContact').fancybox({
+                    width: '70%',
+                    height: '60%',
+                    minWidth: 600,
+                    openEffect: 'elastic',
+                    closeEffect: 'elastic'
+                })
+            })(jQuery)
+        </script>
+    </div>
+</div>
+
 ###What my clients say
 <blockquote>
     <p>
@@ -272,53 +305,6 @@ description: Consulting services in Web and Mobile development, helping business
     </p>
     <small id="contact"><cite>Andrew Harvey, Senior Developer, Department of Education, Victoria</cite></small>
 </blockquote>
-
-<h3>Let's Talk</h3>
-
-<div class="row-fluid">
-    <div class="span7">
-        <p>Have you got a new project coming up? Drop me a line and we will discuss it.</p>
-
-        Send an email to <a href="mailto:art@nimblegecko.com" data-ga-category="Links" data-ga-action="Contact" data-ga-label="email">art@nimblegecko.com</a>,
-        or simply call me on <a href="tel:0416394620" data-ga-category="Links" data-ga-action="Contact" data-ga-label="Mobile AU">0416 394 620</a>
-        <!--small>(outside of Australia dial <a href="tel:+61416394620" data-ga-category="Links" data-ga-action="Contact" data-ga-label="Mobile Int">+61 416 394 620</a>)</small-->
-    </div>
-    <div class="span3">
-        <div style="display: none;" id="divContact">
-            <div id="wufoo-z7x3p9">
-                Fill out my <a href="http://nimblegecko.wufoo.com/forms/z7x3p9">online form</a>.
-            </div>
-            <script type="text/javascript">var z7x3p9;(function(d, t) {
-            var s = d.createElement(t), options = {
-            'userName':'nimblegecko', 
-            'formHash':'z7x3p9', 
-            'autoResize':true,
-            'height':'497',
-            'async':true,
-            'header':'show'};
-            s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-            s.onload = s.onreadystatechange = function() {
-            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-            try { z7x3p9 = new WufooForm();z7x3p9.initialize(options);z7x3p9.display(); } catch (e) {}};
-            var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-            })(document, 'script');</script>
-        </div>
-        <a id="btnContact" class="btn btn-primary btn-large btn-block" 
-           data-ga-category="Links" data-ga-action="Contact" data-ga-label="Contact Form"
-           href="#divContact">Contact me</a>
-        <script>
-            (function($) {
-                $('#btnContact').fancybox({
-                    width: '70%',
-                    height: '60%',
-                    minWidth: 600,
-                    openEffect: 'elastic',
-                    closeEffect: 'elastic'
-                })
-            })(jQuery)
-        </script>
-    </div>
-</div>
 
 
 <h3>My Experience</h3>
