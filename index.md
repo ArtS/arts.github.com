@@ -3,7 +3,7 @@ layout: page
 title: Art Skvira
 header: Helping businesses to achieve their goals
 tagline: Web and Mobile Development Consultant
-description: Consulting services in Web and Mobile development, helping businesses to achieve their goals - bring additional revenue, cut costs, expand customer base, solve pressing problems.
+description: Art Skvira is a Web and Mobile development Consultant/Freelancer, laser-focused on delivering lasting business solutions that add value, help to bring revenue, cut costs, expand customer base and solve pressing problems.
 ---
 {% include JB/setup %}
 
