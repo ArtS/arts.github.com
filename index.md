@@ -364,15 +364,3 @@ description: Art Skvira is a Web and Mobile development Consultant/Freelancer, l
         <a target="_blank" href="http://stackoverflow.com/users/62194/art">Stackoverflow profile</a>
     </div>
 </div>
-<div class="row">
-    <div class="span3">
-        <img src="/img/twitter.png" alt="Twitter" width="32" height="32" />
-        <a target="_blank" href="https://twitter.com/#!smartial_arts">Twitter stream</a>
-    </div>
-</div>
-<div class="row">
-    <div class="span3">
-        <img src="/img/twitter.png" alt="Twitter" width="32" height="32" />
-        <a target="_blank" href="http://reader.nimblegecko.com">Minimalistic Twitter Reader</a>
-    </div>
-</div>
