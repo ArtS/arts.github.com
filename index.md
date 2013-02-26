@@ -51,7 +51,7 @@ description: Art Skvira is a Web and Mobile development Consultant/Freelancer, l
 
 <h3>My Work</h3>
 
-<ul class="thumbnails">
+<ul id="contact" class="thumbnails">
   <li class="span3">
     <a href="#p1" data-id="1" rel="proj" class="thumbnail project" id="link1">
       <img src="/img/anz/anz-iphone-app.png" alt="ANZ iPhone App" />
@@ -216,9 +216,7 @@ description: Art Skvira is a Web and Mobile development Consultant/Freelancer, l
     <div class="span7">
         <p>Have you got a new project coming up? Drop me a line and we will discuss it.</p>
 
-        Send an email to <a href="mailto:art@nimblegecko.com" data-ga-category="Links" data-ga-action="Contact" data-ga-label="email">art@nimblegecko.com</a>,
-        or simply call me on <a href="tel:0416394620" data-ga-category="Links" data-ga-action="Contact" data-ga-label="Mobile AU">0416 394 620</a>
-        <!--small>(outside of Australia dial <a href="tel:+61416394620" data-ga-category="Links" data-ga-action="Contact" data-ga-label="Mobile Int">+61 416 394 620</a>)</small-->
+        Email me at <a href="mailto:art@nimblegecko.com" data-ga-category="Links" data-ga-action="Contact" data-ga-label="email">art@nimblegecko.com</a> or simply click "Contact me" button.
     </div>
     <div class="span3">
         <div style="display: none;" id="divContact">
