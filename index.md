@@ -1,9 +1,9 @@
----
+Developer
 layout: page
 title: Art Skvira
 header: Helping businesses to achieve their goals
-tagline: Web and Mobile Development Consultant
-description: Art Skvira is a Web and Mobile development Consultant/Freelancer, laser-focused on delivering lasting business solutions that add value, help to bring revenue, cut costs, expand customer base and solve pressing problems.
+tagline: Web and Mobile Development Developer
+description: Art Skvira is a Web and Mobile development Developer/Freelancer, laser-focused on delivering lasting business solutions that add value, help to bring revenue, cut costs, expand customer base and solve pressing problems.
 ---
 {% include JB/setup %}
 
@@ -196,7 +196,7 @@ description: Art Skvira is a Web and Mobile development Consultant/Freelancer, l
     <div class="modal-body">
         <div class="left project-desc">
            <p>Scheduleflow is a Software as a Service product, that helps small and medium business to organise their day, manage relationship with clients and achieve higher utilisation of their time.</p>
-           <p>I was involved as a technical consultant from the very early days, helping the business to select right technologies and tools to ensure rapid delivery and iteration, as well as carrying out major software design and development work.</p>
+           <p>I was involved as a technical developer from the very early days, helping the business to select right technologies and tools to ensure rapid delivery and iteration, as well as carrying out major software design and development work.</p>
            <p>I implemented a number of development and deployment processes to ensure high quality of the product, as well as quick pace of iteration. This enabled the business to arrive at the working revenue model, minimising the expenditures.</p>
            <p>The solution was built using Python, Django, JavaScript, HTML/CSS, Postgresql</p>
         </div>
@@ -268,7 +268,7 @@ description: Art Skvira is a Web and Mobile development Consultant/Freelancer, l
     and to a very high level of quality. This meant we had dramatically reduced 
     delivery timelines and minimal physical testing.
     <br/>
-    Art is one of the most intelligent and broadly skilled senior consultants I 
+    Art is one of the most intelligent and broadly skilled senior developer I 
     have worked with. I recommend him whole heartedly and would work with him 
     again in a nano second.
     </span>
