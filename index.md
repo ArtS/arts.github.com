@@ -1,4 +1,4 @@
-Developer
+---
 layout: page
 title: Art Skvira
 header: Helping businesses to achieve their goals
