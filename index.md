@@ -3,7 +3,7 @@ layout: page
 title: Art Skvira
 header: Helping businesses to achieve their goals
 tagline: Web and Mobile Developer
-description: Art Skvira is a Web and Mobile development Developer/Freelancer, laser-focused on delivering lasting business solutions that add value, help to bring revenue, cut costs, expand customer base and solve pressing problems.
+description: Art Skvira is a Web and Mobile Developer, laser-focused on delivering lasting business solutions that add value, help to bring revenue, cut costs, expand customer base and solve pressing problems.
 ---
 {% include JB/setup %}
 
