@@ -1,0 +1,68 @@
+---
+layout: post
+title: Google Analytics event tracking made simple
+categories:
+- Tech
+tags:
+- javascript
+- technology
+status: publish
+type: post
+published: true
+---
+<p>Google Analytics lets you to specify up to four arguments when tracking an event: Event Category* (text), Action* (text), Label (text), Value (number), Interaction flag (true/false). * denotes a mandatory argument.</p>
+<p>To track an event you're expected to call <a href="https://developers.google.com/analytics/devguides/collection/gajs/eventTrackerGuide"><em>_trackEvent</em></a> function:</p>
+<p>
+{% highlight js linenos %}
+// Let's track that user has pressed "Show me more" button somewhere in UI
+$('a.show-more').click(function(e) {
+    _trackEvent('Buttons', 'Show Me More button click', 'top button', 1);
+    // keep calm and carry on
+});
+{% endhighlight %}
+<p>This approach is ok if you've got just a couple of buttons, but it gets quite messy if you need to track more. So when faced with this problem, I <a href="http://www.doxdesk.com/img/updates/20091116-so-large.gif">naturally</a> looked into the available jQuery plugins, but they were either too bloated with features that I didn't need, or required <a href="https://github.com/jorkas/jquery-analyticseventtracking-plugin">quite elaborate</a> parameter passing.</p>
+<p>Wouldn't be great if for every link or a button that you need to track you could do just this:</p>
+
+{% highlight html linenos %}
+<!-- Pipe character "|" is used as a separator
+     Event specification syntax is: -->
+<a href="#the_how"
+   data-ga="Event Category|Action|Label|Value|Interaction flag">Show Me!</a>
+
+<!-- Examples: -->
+
+<a href="#just_category_and_name"
+   data-ga="Buttons|Logout">Show Me More!</a>
+
+<a href="#category_name_and_label"
+   data-ga="Links|FAQ|Botton-left corner">FAQ</a>
+
+<a href="#the_whole_shebang"
+   data-ga="Buttons|Show Me More button click|top button|1">Show Me!</a>
+{% endhighlight %}
+
+<p>It's actually easy to do, and you don't need no bandwidth-sucking, cache-polluting plugins for that. Below is a simple piece of script that will wire all elements containing <em>data-ga</em> attribute to truly yours <em>_trackEvent</em> function:</p>
+{% highlight js linenos %}
+;(function($) {
+    function initGoogleAnalyticsEventTracking() {
+        // Let's get all elements with 'data-ga' attribute</p>
+        $('[data-ga]').click(function(e) {
+            var data = $(e.target).data('ga')
+              , eventParams;
+            if (typeof data === 'undefined' || typeof _gaq === 'undefined')
+                return;
+            // Split the text string into an array
+            eventParams = data.split('|');
+            // 'call' _trackEvent with the obtained parameters
+            _gaq.push(['_trackEvent'].concat(eventParams));
+        })
+    }
+    $(document).ready(function() {
+        initGoogleAnalyticsEventTracking();
+    }
+})(jQuery);
+{% endhighlight %}
+<p>
+I used pipe character <strong>"|"</strong> as a separator, but you can change that to your liking. </p>
+<p>
+Hope it helps!

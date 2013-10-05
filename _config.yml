@@ -1,16 +1,17 @@
 # This is the default format.
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
-permalink: /:categories/:year/:month/:day/:title
+permalink: /:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-auto: true
 pygments: true
+
+url: http://nimblegecko.com
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Web and Mobile Development Developer in Melbourne
-tagline:
+title : Nimble Gecko
+tagline: Making punctuated equilibrium an everyday reality
 author :
   name : Art Skvira
   email : art.skvira@gmail.com

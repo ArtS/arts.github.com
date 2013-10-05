@@ -1,0 +1,13 @@
+img.right {
+    margin: 0.5em 0 0.3em 1em;
+    float: right;
+}
+
+img.left {
+    margin: 0.4em 0.9em 0.3em 0;
+    float: left;
+}
+
+blockquote p {
+    font-size: 14px;
+}

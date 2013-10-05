@@ -1,0 +1,57 @@
+---
+layout: post
+title: How To Stop Wordpress Comments Spam
+categories:
+- Tech
+tags:
+- technology
+status: publish
+type: post
+published: true
+---
+Below is a simple solution to stupid, yet annoying spam problem. I never actually realised how bad it can get until I started this blog. Not that I get a lot of visitors and genuine commentators, but for some reason I used to get approximately 10 spammy comments per day - that's across all blog posts.</p>
+<p><strong>TL;DR</strong></p>
+<p>The idea for this spam blok is very simple: apparently spam bots rely on presence of certain fields in your HTML comment form. If you change names of those fields on the server, that will confuse hell out of those poor spambots that try to help some shady SEO dudes to make their living. It doesn't have to be a big change - just adding an extra "1" or "a" in front of every value for "name" attribute on <input> tags.</p>
+<p>We do need to make sure that genuine posters are still able to use the comments form though. So we need to make those changes transparent to them. One thing that distinguishes genuine users from spambots is the presence of, well, browser. So we can use a simple piece of Javascript to revert the changes made on server.</p>
+<p><strong>Drawbacks/Disclaimer</strong></p>
+<p>This method requires editing of your <strong>comments.php</strong> file. Since this file is a part of the Wordpress installation, it can be overwritten whenever you happen to upgrade your Wordpress or theme next time, thus removing your superior, tailor-made spam protection. So please consider this drawback and whether that's a showstopper for you at all.</p>
+<p><strong>Step by Step Guide</strong></p>
+<ol>
+	<li>Open <strong>comments.php</strong> file. Most likely you'll be using some sort of a theme, so this file is usually located under <strong>wp-content/themes/[theme-name]/comments.php</strong></li>
+	<li>Find line that contains call to <strong>comments_form() </strong>function. It looks something like this:
+{% highlight php linenos %}
+comment_form(array(
+    'fields' => array(
+        'author' => sprintf('<input name="author" type="text" placeholder="%s" value="' . esc_attr( $commenter['comment_author'] ) . '" />', __(Name', 'origami')),
+        'email' => sprintf('<input name="email" type="text" placeholder="%s" value="' . esc_attr( $commenter['comment_author_email'] ) . '" />', __('Email', 'origami')),
+        'url' => sprintf('<input name="url" type="text" placeholder="%s" value="' . esc_attr( $commenter['comment_author_url'] ) . '" />', __('Website', 'origami')),
+{% endhighlight %}
+</li>
+	<li>For every combination of name="..." add an arbitrary character, say "z" in front of the value, so it looks like this:</p>
+{% highlight php linenos %}
+comment_form(array(
+    'fields' => array(
+        'author' => sprintf('<input name="zauthor" type="text" placeholder="%s" value="' . esc_attr( $commenter['comment_author'] ) . '" />', __(Name', 'origami')),
+        'email' => sprintf('<input name="zemail" type="text" placeholder="%s" value="' . esc_attr( $commenter['comment_author_email'] ) . '" />', __('Email', 'origami')),
+        'url' => sprintf('<input name="zurl" type="text" placeholder="%s" value="' . esc_attr( $commenter['comment_author_url'] ) . '" />', __('Website', 'origami')),
+    ),
+{% endhighlight %}
+</li>
+    <li>Now you need to add a piece of Javascript that reverts your changes when page is loaded. After the PHP closing tag (it looks like <strong>"?>"</strong>) add the following:</p>
+{% highlight js linenos %}
+(function($) {
+    $(document).ready(function() {
+        $('#commentform').children('[name^="z"]').each(
+            function(i, e) {
+                $(e).attr('name', $(e).attr('name').substring(1))
+            })
+    })
+})(jQuery)
+{% endhighlight %}
+<p>Notice how we specifically select only elements with name that starts with the arbitrary character (in this case "z") in our <strong>$('#commentform').children('[name^="z"]')</strong> statement? So if you were to use some other character instead, make sure you modify the script accordingly</p>
+</li>
+</ol></p>
+<strong>Results</p>
+</strong>Since adding this simple change rate of spam comments on my blog dropped to virtually zero. You can ramp up the protection by renaming the comments form's target <strong>wp-comments-post.php </strong>handler file and using similar Javascript to "fix" the form target on the client. This way your Wordpress installation will be better protected from those "drive-by" spambots. It won't help you to defeat a spammer who is dedicated enough to actually reverse-engineer your code. But boy that's a good problem to have - a possible indication that you are some sort of internet celebrity.</p>
+<p>
+Hope you find this helpful. Let me know of any comments, concerns or questions.

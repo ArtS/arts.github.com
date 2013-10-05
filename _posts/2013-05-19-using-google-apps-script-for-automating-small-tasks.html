@@ -1,0 +1,85 @@
+---
+layout: post
+title: Using Google Apps Script for automation of small tasks
+categories:
+- Tech
+tags:
+- javascript
+- technology
+status: publish
+type: post
+published: true
+---
+I've been manually tracking the number of .NET/C# jobs in Melbourne for some time now. I could've automated it, probably, but it was easier to do it just by hand - it took only a couple of minutes every day anyway. So I thought it <a title="when you should start automating" href="http://xkcd.com/1205/">wasn't worth it.</a> Although I love automating things like that (sometimes even overly so), I still hesitated.</p>
+<p>
+But in the recent <a href="http://www.hackernewsletter.com/">Hacker Newsletter</a> I read about <a href="https://www.google.com/script/start/">Google Apps Script</a> service, and after a quick look at the docs I decided to implement a small tool for job number statistics gathering using Google Apps Script.</p>
+<p>
+My goal was simple - get a search results page from <a title="Seek" href="http://seek.com.au">seek.com.au</a>, load it as a DOM, run a CSS select to find the element that I need and write the value of that element into a spreadsheet that I use for tracking/analysis.</p>
+<p>
+Apart from small changes to the original plan (I had to use semicolons, apparently Apps Script hates you for not doing so, throwing random errors at you when debugging; I also decided not to load the whole page as XML, and only load a tiny bit), everything worked amazingly well.</p>
+<p>
+I must say Apps Script's API is quite comprehensive; API docs are great too - it was quite easy to find the stuff I needed.</p>
+<p>
+Below is a simple code sample, demonstrating parsing of some HTML:</p>
+
+{% highlight js linenos %}
+function getJobsCount() {
+    //
+    // Download the actual page
+    //
+    resp = UrlFetchApp.fetch("http://www.seek.com.au/...");
+    if (resp.getResponseCode() !== 200) {
+    return null;
+    }
+
+    //
+    // Get contents of an element in HTML
+    //
+    var xml = Xml.parse(xmlText, true);
+    if (xml === null) {
+    return null;
+    }
+
+    var root = xml.getElement();
+    if (root === null) {
+    return null;
+    }
+
+    // return inner text of HTML element, containing number of jobs
+    return root.body.h1.strong.getText();
+}
+
+//
+// Add a row to the spreadsheet
+//
+var doc = SpreadsheetApp.openByUrl('https://docs.google.com/spreadsheet/...');
+if (doc === null) {
+    return;
+}
+doc.setActiveSheet(doc.getSheetByName('Seek Scraper Test'));
+
+var now = new Date();
+var dateStr = [now.getDate(),
+               now.getMonth()+1,
+               now.getFullYear()].join('.')
+            + ' '
+            + [now.getHours(),
+               now.getMinutes(),
+               now.getSeconds()].join(':');
+
+var jobsCount = getJobsCount();
+
+if (jobsCount !== null)
+    doc.appendRow([dateStr, jobsCount]);
+
+{% endhighlight %}
+
+<p>You can schedule a recurring execution of your scripts - for example to set certain function to run automatically every hour, on Google's side, without you having to maintain any infrastructure.</p>
+
+<p>Here's a neat example of some data this simple script has collected over a period of time:</p>
+
+<p><img src="/assets/img/Screen-Shot-2013-06-13-at-10.05.54-PM.png" width="771" height="467" /></a></p>
+
+<p>Overall, I am quite pleased with the result. Although some people seem to be <a title="Google Apps Script discussion on Hacker News" href="https://news.ycombinator.com/item?id=5712410">raising concerns</a> about the stability of the platform and API, I think it's great for little tools like this one.</p>
+
+<p>Maybe you'll have to invest a bit more time into error reporting and logging, but overall the platform looks promising.
