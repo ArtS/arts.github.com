@@ -11,3 +11,7 @@ img.left {
 blockquote p {
     font-size: 14px;
 }
+
+p {
+    margin: 0 0 1em;
+}

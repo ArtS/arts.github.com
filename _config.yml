@@ -4,6 +4,7 @@ permalink: /:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
+markdown: kramdown
 
 url: http://nimblegecko.com
 
