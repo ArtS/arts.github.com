@@ -14,7 +14,7 @@ Quite expectedly there are companies making stuff, including wallets, out of thi
 
 No. Coins. Pocket. I kid you not - no place where to keep my lovely latte coins. 
 
-So I kept searching and found a couple more wallets: [The Slim Wallet](http://www.theslimwallet.com/) and another one, [Mius](https://www.etsy.com/au/listing/175193107/ecological-poche-tyvek-cynober-wallet). Both had a coin pocket but first one was way too small (just one pocket for cards and one for notes/receipts). So I got the Mius, which turned out to be a rather disappointing experience - credit card pockets were too small (initially I had to force cards into them); the only compartment for notes/receipts was also too small.
+So I kept searching and found a couple more wallets: [The Slim Wallet](http://www.theslimwallet.com/) and another one, another one, another one, [Mius](https://www.etsy.com/au/listing/175193107/ecological-poche-tyvek-cynober-wallet). Both had a coin pocket but first one was way too small (just one pocket for cards and one for notes/receipts). So I got the Mius, which turned out to be a rather disappointing experience - credit card pockets were too small (initially I had to force cards into them); the only compartment for notes/receipts was also too small.
 
 Back to the square one. I ordered a mighty wallet and modified it, [adding a side coins pocket](http://lostswissmiss.com/2014/01/10/mighty-wallet/). It worked initially but then coins started falling out the other end and just got caught up in the internal folds of the wallet. Another disappointment.
 
@@ -26,11 +26,11 @@ I unfolded the back of the wallet and cut a small incision from approximately 1c
 
 ![First cut][1]
 
-That's how wide it is relative to coins size, not too long but not short either.
+That's how wide it is relative to coins size, not too long but not too short either.
 
 ![Coins][2]
 
-Then I cut a narrow velcro strap so it's a bit longer than the actual incision.
+Using velcro strap I cut a piece that's approximately 5mm wide and 10cm long - just a bit longer than the actual incision.
 
 ![Velcro][3]
 
@@ -38,7 +38,7 @@ And glue-slapped the velcro strip inside the wallet, while it was still unfolded
 
 ![Final result][4]
 
-And voila, a [bad-ass wallet][5] with a toight like a toiger coins pocket!
+Voilà, a [bad-ass wallet][5] with a toight like a toiger coins pocket!
 
 [1]:/img/tyvek/1-cut.png
 [2]:/img/tyvek/2-cut-coins.jpg
