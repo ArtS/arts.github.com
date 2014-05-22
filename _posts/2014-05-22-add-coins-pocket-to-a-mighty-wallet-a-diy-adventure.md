@@ -12,7 +12,7 @@ When my old leather wallet started falling apart I decided I could do without an
 
 Quite expectedly there are companies making stuff, including wallets, out of this material. And I almost liked this one - [Wealth of Knowledge Mighty Wallet][5]. I really wanted to like it, but I couldn't. It was a spiraling downfall after such a promising, spectacular rise. 
 
-No. Coins. Pocket. I kid you not - no place to put my lovely latte coins. 
+No. Coins. Pocket. I kid you not - no place where to keep my lovely latte coins. 
 
 So I kept searching and found a couple more wallets: [The Slim Wallet](http://www.theslimwallet.com/) and [Mius](https://www.etsy.com/au/listing/175193107/ecological-poche-tyvek-cynober-wallet). Both had a coin pocket but first one was way too small (just one pocket for cards and one for notes/receipts). So I got the Mius, which turned out to be rather a rather disappointing experience - credit card pockets were too small, initially I had to force cards into them; the only bills/receipts compartment was small too.
 
