@@ -10,7 +10,7 @@ published: true
 ---
 When my old leather wallet started falling apart I decided I could do without another piece of an animal's skin. Turns out in this day and age you don't need to kill a cow to make a wallet - just use something synthetic, like [tyvek](http://en.wikipedia.org/wiki/Tyvek). 
 
-Quite expectedly there are companies making stuff, including wallets, out of this material. And I almost liked this one - [Wealth of Knowledge Mighty Wallet](http://amzn.to/1qX3LX2). I really wanted to like it, but I couldn't. It was a spiraling downfall after such a promising, spectacular rise. 
+Quite expectedly there are companies making stuff, including wallets, out of this material. And I almost liked this one - [Wealth of Knowledge Mighty Wallet][5]. I really wanted to like it, but I couldn't. It was a spiraling downfall after such a promising, spectacular rise. 
 
 No. Coins. Pocket. I kid you not - no place to put my lovely latte coins. 
 
@@ -38,9 +38,10 @@ And glue-slapped the velcro strip inside the wallet, while it was still unfolded
 
 ![Final result][4]
 
-And voila, a bad-ass wallet with a toight like a toiger coins pocket!
+And voila, a [bad-ass wallet][5] with a toight like a toiger coins pocket!
 
 [1]:/img/tyvek/1-cut.png
 [2]:/img/tyvek/2-cut-coins.jpg
 [3]:/img/tyvek/3-velcro.jpg
 [4]:/img/tyvek/4-tyvek-final.jpg
+[5]:http://amzn.to/1qX3LX2
