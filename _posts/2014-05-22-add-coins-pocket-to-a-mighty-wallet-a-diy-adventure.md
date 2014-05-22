@@ -38,7 +38,7 @@ And glue-slapped the velcro strip inside the wallet, while it was still unfolded
 
 ![Final result][4]
 
-Voilà, a [bad-ass wallet][5] with a toight like a toiger coins pocket!
+Voilà, a [bad-ass wallet][5] with a [toight like a toiger](https://www.youtube.com/watch?v=gu31VyXlTzo) coins pocket!
 
 [1]:/img/tyvek/1-cut.png
 [2]:/img/tyvek/2-cut-coins.jpg
