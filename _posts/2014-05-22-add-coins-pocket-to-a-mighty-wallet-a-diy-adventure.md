@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add coins pocket to a Mighty Wallet&#58; a DIY adventure
+title: Adding a coins pocket to Mighty Wallet&#58; a DIY adventure
 categories:
 tags:
 - DIY
