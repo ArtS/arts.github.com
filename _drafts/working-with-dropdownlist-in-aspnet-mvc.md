@@ -1,9 +1,11 @@
 ---
 layout: post
 title: Working with DropDownList in ASP.NET MVC
-categories: programming
+categories:
+- programming
 tags:
-- DIY
+- asp.net mvc
+- c#
 status: publish
 type: post
 published: true
@@ -30,23 +32,54 @@ We need to clear this up once and for all. In this example I will take you throu
 simplistic "Sign Up" form that consists of two fields: Name and State. Both of these fields are
 required - this way we can test rendering of selected dropdown list value on the postback.
 
-![Sign Up form][2]
+<p class="center" markdown="1">
+    ![Sign Up form][2]
+</p>
 
-Here's a basic structure to start with: a controller to handle user request and a view that renders
-a "registration" form.
+Here are the bits and pieces we need for this task: a model to hold the user-entered data, a controller to handle user requests and a view that renders
+the "Sign Up" form. Let's take these pieces apart.
 
-[Controller code] [Explanations]
+####Model
+{% highlight csharp %}
+    public class SignUpModel
+    {
+        [Required]
+        [Display(Name="Name")]
+        public string Name { get; set; }
 
-[View code] [Explanations]
+        // This property will hold a state, selected by user
+        [Required]
+        [Display(Name="State")]
+        public string State { get; set; }
+
+        // This property will hold all available states for selection
+        public IEnumerable<SelectListItem> States { get; set; }
+    }
+{% endhighlight %}
+
+The model here 
+
+#### Controller
+{% highlight csharp %}
+{% endhighlight %}
+
+[Explanations]
+
+{% highlight html %}
+    // View code
+{% endhighlight %}
+
+[Explanations]
 
 What's missing?
 
 
-I deliberately didn't add any data access or data validation code so it's easier to focus on the
-problem at hand. Validation is a complex topic and deserves to be covered separately, which I will
-do in the upcoming articles. You can sign up for the updates below so you can learn how to tackle
-        the inherent complexity in .NET with ease, all while balancing a stack of chocolates on top
-        of
+I deliberately didn't add any data access or data validation code so it's
+easier to focus on the problem at hand. Validation is a complex topic and
+deserves to be covered separately, which I will do in the upcoming articles.
+You can sign up for the updates below so you can learn how to tackle the
+inherent complexity in .NET with ease, all while balancing a stack of
+chocolates on top of
 
 
 In this series of articles I want to look into the most common problems that happen when working
@@ -57,5 +90,3 @@ simple as possible.
 
 [1]:http://msdn.microsoft.com/en-us/library/system.web.mvc.html.selectextensions.dropdownlistfor(v=vs.118).aspx
 [2]:/img/mvc/dropdowns-1/sign-up.png
-![First cut][1]
-[5]:http://amzn.to/1qX3LX2

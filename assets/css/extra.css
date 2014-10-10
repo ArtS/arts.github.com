@@ -17,6 +17,10 @@ img.left {
     float: left;
 }
 
+p.center {
+  text-align: center;
+}
+
 blockquote p {
     font-size: 14px;
 }
