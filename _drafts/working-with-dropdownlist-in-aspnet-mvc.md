@@ -14,8 +14,8 @@ It's surprising how many subtle, but frustrating traps one can fall into when bu
 ASP.NET MVC. Creating forms for the web is one of them. It's common for people to spend hours
 on a trivial thing, something like displaying a selected value in a DropDownList, or getting that
 selected value back in a controller. Quite often it happens when you just start learning ASP.NET
-MVC or upgrade from an older tech. And boy, is this frustrating as hell - instead of building the 
-actual web app you spend hours wrestling with the framework. 
+MVC or upgrade from an older tech. And boy, is this frustrating as hell - instead of building the
+actual web app you spend hours wrestling with the framework.
 
 I want to show you how to build a simple form with a drop down list that's got "Please select" text
 as the first option and is based on the list of strings supplied by the controller. I'll show you
@@ -36,8 +36,9 @@ required - this way we can test rendering of selected dropdown list value on the
     ![Sign Up form][2]
 </p>
 
-Here are the bits and pieces we need for this task: a model to hold the user-entered data, a controller to handle user requests and a view that renders
-the "Sign Up" form. Let's take these pieces apart.
+Here are the bits and pieces we need for this task: a model to hold the user-entered data, a
+controller to handle user requests and a view that renders the "Sign Up" form. Let's take these
+pieces apart.
 
 ####Model
 {% highlight csharp %}
@@ -56,11 +57,112 @@ the "Sign Up" form. Let's take these pieces apart.
         public IEnumerable<SelectListItem> States { get; set; }
     }
 {% endhighlight %}
-
-The model here 
+As you can see model is pretty simple and reflects the form's fields except for one property -
+`States`. It works together with `State` property - while the the `State` receives user's selection,
+`States` hold a list of all possible selections.
 
 #### Controller
+Controller's a bit more complex - it consists of 3 action methods and a couple of utility functions.
 {% highlight csharp %}
+    public class SignUpController : Controller
+    {
+        //
+        // 1. Action method for displaying a 'Sign Up' page
+        //
+        public ActionResult SignUp()
+        {
+            // Let's get all states that we need for a DropDownList
+            var states = GetAllStates();
+
+            var m = new SignUpModel
+            {
+                // Create a list of SelectListItems so these can be rendered on the page
+                States = GetSelectListItems(states)
+            };
+
+            return View(m);
+        }
+
+        //
+        // 2. Action method for handling user-entered data when 'Sign Up' button is pressed.
+        //
+        [HttpPost]
+        public ActionResult SignUp(SignUpModel model)
+        {
+            // Get all states again
+            var states = GetAllStates();
+
+            // Set these states on the model. We need to do this because
+            // only selected in the DropDownList value is posted back, not the whole
+            // list of states
+            model.States = GetSelectListItems(states);
+
+            // In case everything is fine - i.e. both "Name" and "State" are entered/selected,
+            // redirect user to the "Done" page, and pass the user object along via Session
+            if (ModelState.IsValid)
+            {
+                Session["SignUpModel"] = model;
+                return RedirectToAction("Done");
+            }
+
+            // Something is not right - so render the registration page again,
+            // keeping the data user has entered by supplying the model.
+            return View("SignUp", model);
+        }
+
+        //
+        // 3. Action method for displaying 'Done' page
+        //
+        public ActionResult Done()
+        {
+            // Get Sign Up information from the session
+            var model = Session["SignUpModel"] as SignUpModel;
+
+            // Display Done.html page that shows Name and selected state.
+            return View(model);
+        }
+
+        // Just return a list of states - in a real-world application this would call
+        // into data access layer to retrieve states from a database.
+        private IEnumerable<string> GetAllStates()
+        {
+            return new List<string>
+            {
+                "ACT",
+                "New South Wales",
+                "Northern Territories",
+                "Queensland",
+                "South Australia",
+                "Victoria",
+                "Western Australia",
+            };
+        }
+
+        // This is one of the most important parts in the whole example.
+        // This function takes a list of strings and returns a list of SelectListItem objects.
+        // These objects are going to be used later in the SignUp.html template to render the
+        // DropDownList.
+        private IEnumerable<SelectListItem> GetSelectListItems(IEnumerable<string> elements)
+        {
+            // Create an empty list to hold result of the operation
+            var selectList = new List<SelectListItem>();
+
+            // For each string in the 'elements' variable, create a new SelectListItem object
+            // that has both it's Value and Text properties set to a particular state.
+            // This will result in MVC rendering each item as:
+            //     <option value="State Name">State Name</option>
+            foreach (var element in elements)
+            {
+                selectList.Add(new SelectListItem
+                {
+                    Value = element,
+                    Text = element
+                });
+            }
+
+            return selectList;
+        }
+    }
 {% endhighlight %}
 
 [Explanations]
