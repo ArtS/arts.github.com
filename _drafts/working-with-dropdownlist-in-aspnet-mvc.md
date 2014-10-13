@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Working with DropDownList in ASP.NET MVC
+title: Simple DropDownList in ASP.NET MVC
 categories:
 - programming
 tags:
@@ -24,9 +24,10 @@ selected something and render the list back to the user with the value selected.
 
 Sounds deceptively simple, right? Hold that thought for now and have a look at the [Microsoft's own
 documentation][1]  for the `@Html.DropDownListFor` function. It has 6 different overloads - which
-one of those do you really need? And what are those mysterious `<TModel, TProperty>`? Now throw into
-the mix various ways you can pass the data into the view: ViewBag, ViewData or TempData? Or maybe
-Model?. So you are naturally in the perfect spot to start making mistakes.
+one of those do you really need? And what are those mysterious `<TModel, TProperty>` or
+`optionLabel`? Now throw into the mix various ways you can pass the data into the view: ViewBag,
+ViewData or TempData? Or maybe Model?. So you are naturally in the perfect spot to start making
+mistakes.
 
 We need to clear this up once and for all. In this example I will take you through building a
 simplistic "Sign Up" form that consists of two fields: Name and State. Both of these fields are
@@ -36,9 +37,13 @@ required - this way we can test rendering of selected dropdown list value on the
     ![Sign Up form][2]
 </p>
 
-Here are the bits and pieces we need for this task: a model to hold the user-entered data, a
-controller to handle user requests and a view that renders the "Sign Up" form. Let's take these
-pieces apart.
+The following bits and pieces are needed for this task:  
+
+* a model to hold the user-entered data
+* a controller to handle user requests and
+* a view that renders the "Sign Up" form.
+
+Now let's dive right into details.
 
 ####Model
 {% highlight csharp %}
@@ -58,7 +63,7 @@ pieces apart.
     }
 {% endhighlight %}
 As you can see model is pretty simple and reflects the form's fields except for one property -
-`States`. It works together with `State` property - while the the `State` receives user's selection,
+`States`. It works together with the `State` property - while the the `State` receives user's selection,
 `States` hold a list of all possible selections.
 
 #### Controller
@@ -74,13 +79,12 @@ Controller's a bit more complex - it consists of 3 action methods and a couple o
             // Let's get all states that we need for a DropDownList
             var states = GetAllStates();
 
-            var m = new SignUpModel
-            {
-                // Create a list of SelectListItems so these can be rendered on the page
-                States = GetSelectListItems(states)
-            };
+            var model = new SignUpModel();
 
-            return View(m);
+            // Create a list of SelectListItems so these can be rendered on the page
+            model.States = GetSelectListItems(states);
+
+            return View(model);
         }
 
         //
@@ -165,30 +169,90 @@ Controller's a bit more complex - it consists of 3 action methods and a couple o
     }
 {% endhighlight %}
 
-[Explanations]
-
-{% highlight html %}
-    // View code
+The most important piece in the controller is the following code (repeated in both of the `SignUp`
+methods):
+{% highlight csharp %}
+    model.States = GetSelectListItems(states);
 {% endhighlight %}
+As said above, this code runs twice - first when user loads the 'Sign Up' page in the browser and 
+the form is displayed, and second time when user submits the form.
 
-[Explanations]
+Why does it need to happen twice? The nature of browser forms is such that **only selected values are
+posted back**, and if you want to display the form after a postback (in case there's a validation error in
+one of the form's controls, for example), you need to populate all the suplementary data again, otherwise
+controls such as DropDownLists will be just rendered empty.
 
-What's missing?
+####View
+And View is the final destination where it all comes together with the help of
+`Html.DropDownListFor()` function.
+{% highlight html %}
+@model Dropdowns.Models.SignUpModel
 
+@{ ViewBag.Title = "Sign up"; }
 
-I deliberately didn't add any data access or data validation code so it's
-easier to focus on the problem at hand. Validation is a complex topic and
-deserves to be covered separately, which I will do in the upcoming articles.
-You can sign up for the updates below so you can learn how to tackle the
-inherent complexity in .NET with ease, all while balancing a stack of
-chocolates on top of
+<div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
 
+        <h1>Sign up</h1>
 
-In this series of articles I want to look into the most common problems that happen when working
-with forms and controls in the ASP.NET MVC. I will start at the very basic level and will gradually
-increase the complexity of problems. However I will do everything I can to make the solutions as
-simple as possible.
+        <div class="panel panel-default">
+            <div class="panel-body">
+                @using (Html.BeginForm("SignUp", "SignUp", FormMethod.Post, new { role = "form" })) {
 
+                    @* Name textbox *@
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.Name)
+                        @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+                    </div>
+
+                    @* State selection dropdown *@
+                    <div class="form-group">
+                        @Html.LabelFor(m => m.State)
+                        @Html.DropDownListFor(
+                            m => m.State, // Store selected value in Model.State
+                            Model.States, // Take list of values from Model.States
+                            "- Please select a state -", // Text for the first 'default' option
+                            new { @class = "form-control" } // A class name to assign to <select> tag
+                        )
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Sign up</button>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+{% endhighlight %}
+Again, the most importan point to note here is the call of `DropDownListFor()` function. It does all
+the heavy lifting when rendering a `<select>` tag with a bunch of `<option>` tags so you get something
+like this sent to user's browser:
+{% highlight html %}
+<select class="form-control" id="State" name="State">
+    <option value="">- Please select a state -</option>
+    <option value="ACT">ACT</option>
+    <option value="New South Wales">New South Wales</option>
+    <option value="Northern Territories">Northern Territories</option>
+    <option value="Queensland">Queensland</option>
+    <option value="South Australia">South Australia</option>
+    <option value="Victoria">Victoria</option>
+    <option value="Western Australia">Western Australia</option>
+</select>
+{% endhighlight %}
+Remember cryptic `optionLabel` argument of `DropDownListFor`? It's actually used to render the
+'prompt' option of the drop down list. I'd never be able to tell that from the name alone!
+
+###What's missing?
+
+I deliberately didn't put any data access or data validation code so it's easier to focus on the
+problem at hand. Validation is a complex topic and deserves to be covered separately, which I will
+do in the upcoming articles. I also completely skipped topics like Model Binding as they are too 
+big for this article - but I plan to cover them too.
+
+You can sign up to my **'ASP.NET Tips & Tricks'** mailing list and learn how to tackle the inherent complexity 
+in ASP.NET MVC with ease, avoid common traps, save yourself hours of wasted time and frustration 
+and become a better person overall. I never spam, period.
+
+{% include subscription.html %}
 
 [1]:http://msdn.microsoft.com/en-us/library/system.web.mvc.html.selectextensions.dropdownlistfor(v=vs.118).aspx
 [2]:/img/mvc/dropdowns-1/sign-up.png
