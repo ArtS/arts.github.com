@@ -11,7 +11,7 @@ tagline: Web and Mobile Developer
 description: Art Skvira is a Web and Mobile Developer, laser-focused on delivering lasting business solutions that add value, help to bring revenue, cut costs, expand customer base and solve pressing problems.
 ---
 
-Hi, I'm Art Skvira and I am a Web and Mobile developer, living in Melbourne, Australia.
+Hi, my name is Art Skvira and I am a Web and Mobile developer from Melbourne, Australia.
 I tell machines what to do so you can focus on your business.
 
 ###Highlights
