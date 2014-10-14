@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Simple DropDownList in ASP.NET MVC
+title: Using simple Drop Down Lists in ASP.NET MVC
 categories:
 - programming
 tags:
@@ -43,7 +43,7 @@ The following bits and pieces are needed for this task:
 * a controller to handle user requests and
 * a view that renders the "Sign Up" form.
 
-Now let's dive right into details.
+Now let's dive right into details. 
 
 ####Model
 {% highlight csharp %}
@@ -238,8 +238,11 @@ like this sent to user's browser:
     <option value="Western Australia">Western Australia</option>
 </select>
 {% endhighlight %}
-Remember cryptic `optionLabel` argument of `DropDownListFor`? It's actually used to render the
-'prompt' option of the drop down list. I'd never be able to tell that from the name alone!
+Remember cryptic `optionLabel` argument of `DropDownListFor` function? It's actually used to render
+the 'prompt' option of the drop down list. I'd never be able to tell that from the name alone!
+
+Here's a download link to the [complete code][3] of the solution used in this article. You can
+[browse the code][4] online or clone the git repository.
 
 ###What's missing?
 
@@ -248,7 +251,7 @@ problem at hand. Validation is a complex topic and deserves to be covered separa
 do in the upcoming articles. I also completely skipped topics like Model Binding as they are too 
 big for this article - but I plan to cover them too.
 
-You can sign up to my **'ASP.NET Tips & Tricks'** mailing list and learn how to tackle the inherent complexity 
+You can sign up to my **'Untangling ASP.NET MVC'** mailing list and learn how to tackle the inherent complexity 
 in ASP.NET MVC with ease, avoid common traps, save yourself hours of wasted time and frustration 
 and become a better person overall. I never spam, period.
 
@@ -256,3 +259,5 @@ and become a better person overall. I never spam, period.
 
 [1]:http://msdn.microsoft.com/en-us/library/system.web.mvc.html.selectextensions.dropdownlistfor(v=vs.118).aspx
 [2]:/img/mvc/dropdowns-1/sign-up.png
+[3]:https://github.com/ArtS/aspnet-dropdowns/archive/master.zip
+[4]:https://github.com/ArtS/aspnet-dropdowns
