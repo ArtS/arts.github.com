@@ -11,22 +11,22 @@ type: post
 published: true
 ---
 It's surprising how many subtle, but frustrating traps one can fall into when building sites with
-ASP.NET MVC. Creating forms for the web is one of them. It's common for people to spend hours
-on a trivial thing, something like displaying a selected value in a DropDownList, or getting that
-selected value back in a controller. Quite often it happens when you just start learning ASP.NET
-MVC or upgrade from an older tech. And boy, is this frustrating as hell - instead of building the
-actual web app you spend hours wrestling with the framework.
+ASP.NET MVC. Creating forms for the web is one of them. It's common to spend hours on something
+trivial, such as displaying a selected value in a DropDownList on postback, or getting that selected
+value in a controller. Quite often it happens when you just start learning ASP.NET MVC or upgrade
+from an older tech. And boy, is this frustrating as hell - instead of building an actual web app,
+you spend hours wrestling with the framework.
 
 I want to show you how to build a simple form with a drop down list that's got "Please select" text
 as the first option and is based on the list of strings supplied by the controller. I'll show you
-how to display that list on a form, how to get user's selection in the controller, check user has
-selected something and render the list back to the user with the value selected.
+how to display that list on a form, how to get user's selection in the controller, check that user
+has selected something and render the list back to the user with the value selected.
 
 Sounds deceptively simple, right? Hold that thought for now and have a look at the [Microsoft's own
 documentation][1]  for the `@Html.DropDownListFor` function. It has 6 different overloads - which
 one of those do you really need? And what are those mysterious `<TModel, TProperty>` or
 `optionLabel`? Now throw into the mix various ways you can pass the data into the view: ViewBag,
-ViewData or TempData? Or maybe Model?. So you are naturally in the perfect spot to start making
+ViewData or TempData? Or maybe Model? So you are naturally in the perfect spot to start making
 mistakes.
 
 We need to clear this up once and for all. In this example I will take you through building a
@@ -37,13 +37,13 @@ required - this way we can test rendering of selected dropdown list value on the
     ![Sign Up form][2]
 </p>
 
-The following bits and pieces are needed for this task:  
+The following bits and pieces are needed:
 
-* a model to hold the user-entered data
-* a controller to handle user requests and
-* a view that renders the "Sign Up" form.
+* a model to hold user-entered data
+* a controller to handle user requests
+* a view that renders the "Sign Up" form
 
-Now let's dive right into details. 
+Now let's dive right into the details.
 
 ####Model
 {% highlight csharp %}
@@ -72,7 +72,7 @@ Controller's a bit more complex - it consists of 3 action methods and a couple o
     public class SignUpController : Controller
     {
         //
-        // 1. Action method for displaying a 'Sign Up' page
+        // 1. Action method for displaying 'Sign Up' page
         //
         public ActionResult SignUp()
         {
@@ -97,8 +97,8 @@ Controller's a bit more complex - it consists of 3 action methods and a couple o
             var states = GetAllStates();
 
             // Set these states on the model. We need to do this because
-            // only selected in the DropDownList value is posted back, not the whole
-            // list of states
+            // only the selected value from the DropDownList is posted back, not the whole
+            // list of states.
             model.States = GetSelectListItems(states);
 
             // In case everything is fine - i.e. both "Name" and "State" are entered/selected,
@@ -152,7 +152,7 @@ Controller's a bit more complex - it consists of 3 action methods and a couple o
             var selectList = new List<SelectListItem>();
 
             // For each string in the 'elements' variable, create a new SelectListItem object
-            // that has both it's Value and Text properties set to a particular state.
+            // that has both its Value and Text properties set to a particular value.
             // This will result in MVC rendering each item as:
             //     <option value="State Name">State Name</option>
             foreach (var element in elements)
@@ -169,7 +169,7 @@ Controller's a bit more complex - it consists of 3 action methods and a couple o
     }
 {% endhighlight %}
 
-The most important piece in the controller is the following code (repeated in both of the `SignUp`
+The most important piece in the controller is the following code (and it's repeated in both `SignUp`
 methods):
 {% highlight csharp %}
     model.States = GetSelectListItems(states);
@@ -177,10 +177,10 @@ methods):
 As said above, this code runs twice - first when user loads the 'Sign Up' page in the browser and 
 the form is displayed, and second time when user submits the form.
 
-Why does it need to happen twice? The nature of browser forms is such that **only selected values are
-posted back**, and if you want to display the form after a postback (in case there's a validation error in
-one of the form's controls, for example), you need to populate all the suplementary data again, otherwise
-controls such as DropDownLists will be just rendered empty.
+Why does it need to happen twice? The nature of browser forms is such that **only selected values
+are posted back**, and if you want to display the form after a postback (in case there's a
+validation error in one of the form's controls, for example), you need to populate all the
+supplementary data again, otherwise controls such as DropDownLists will be just rendered empty.
 
 ####View
 And View is the final destination where it all comes together with the help of
@@ -223,9 +223,9 @@ And View is the final destination where it all comes together with the help of
     </div>
 </div>
 {% endhighlight %}
-Again, the most importan point to note here is the call of `DropDownListFor()` function. It does all
-the heavy lifting when rendering a `<select>` tag with a bunch of `<option>` tags so you get something
-like this sent to user's browser:
+Again, the most important point to note here is the call of `DropDownListFor()` function. It does
+all the heavy lifting when rendering a `<select>` tag with a bunch of `<option>` tags so you get
+something like this sent to user's browser:
 {% highlight html %}
 <select class="form-control" id="State" name="State">
     <option value="">- Please select a state -</option>
@@ -241,18 +241,18 @@ like this sent to user's browser:
 Remember cryptic `optionLabel` argument of `DropDownListFor` function? It's actually used to render
 the 'prompt' option of the drop down list. I'd never be able to tell that from the name alone!
 
-Here's a download link to the [complete code][3] of the solution used in this article. You can
+Here's a download link to the [complete code][3] of the solution used in this article. You can 
 [browse the code][4] online or clone the git repository.
 
 ###What's missing?
 
 I deliberately didn't put any data access or data validation code so it's easier to focus on the
 problem at hand. Validation is a complex topic and deserves to be covered separately, which I will
-do in the upcoming articles. I also completely skipped topics like Model Binding as they are too 
-big for this article - but I plan to cover them too.
+do in the upcoming articles. I also completely skipped the process Model Binding as it's too big 
+for this article - but I will cover that in the later articles too.
 
 You can sign up to my **'Untangling ASP.NET MVC'** mailing list and learn how to tackle the inherent complexity 
-in ASP.NET MVC with ease, avoid common traps, save yourself hours of wasted time and frustration 
+of ASP.NET MVC with ease, avoid common traps, save yourself hours of wasted time and frustration 
 and become a better person overall. I never spam, period.
 
 {% include subscription.html %}
