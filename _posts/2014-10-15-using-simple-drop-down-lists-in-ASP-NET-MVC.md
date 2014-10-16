@@ -208,12 +208,18 @@ And View is the final destination where it all comes together with the help of
                     @* State selection dropdown *@
                     <div class="form-group">
                         @Html.LabelFor(m => m.State)
-                        @Html.DropDownListFor(
-                            m => m.State, // Store selected value in Model.State
-                            Model.States, // Take list of values from Model.States
-                            "- Please select a state -", // Text for the first 'default' option
-                            new { @class = "form-control" } // A class name to assign to <select> tag
-                        )
+                        @Html.DropDownListFor(m => m.State, // 1. Store selected value in Model.State;
+                                                            // when page is rendered after postback,
+                                                            // take selected value from Model.State.
+
+                                              // 2. Take list of values from Model.States
+                                              Model.States, 
+
+                                              // 3. Text for the first 'default' option
+                                              "- Please select a state -", 
+
+                                              //4. A class name to assign to <select> tag
+                                              new { @class = "form-control" })
                     </div>
 
                     <button type="submit" class="btn btn-primary">Sign up</button>
@@ -224,8 +230,10 @@ And View is the final destination where it all comes together with the help of
 </div>
 {% endhighlight %}
 Again, the most important point to note here is the call of `DropDownListFor()` function. It does
-all the heavy lifting when rendering a `<select>` tag with a bunch of `<option>` tags so you get
-something like this sent to user's browser:
+all the heavy lifting when rendering a `<select>` tag with a bunch of `<option>` tags.
+As you can tell from the comments, its first argument `m => m.State` is used to store and retrieve 
+selected value, and its second argument `Model.States` is used to supply all possible selections for
+the dropdown. In the end you get something like this sent to user's browser:
 {% highlight html %}
 <select class="form-control" id="State" name="State">
     <option value="">- Please select a state -</option>
@@ -238,7 +246,7 @@ something like this sent to user's browser:
     <option value="Western Australia">Western Australia</option>
 </select>
 {% endhighlight %}
-Remember cryptic `optionLabel` argument of `DropDownListFor` function? It's actually used to render
+Oh, and remember that cryptic `optionLabel` argument of `DropDownListFor` function? It's actually used to render
 the 'prompt' option of the drop down list. I'd never be able to tell that from the name alone!
 
 Here's a download link to the [complete code][3] of the solution used in this article. You can 
