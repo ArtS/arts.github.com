@@ -43,7 +43,8 @@ The following bits and pieces are needed:
 * a controller to handle user requests
 * a view that renders the "Sign Up" form
 
-Now let's dive right into the details.
+Here's the [complete code][3] of the solution used in this article. You can also [browse the
+code][4] online or clone the git repository. Now let's dive right into the details.
 
 ####Model
 {% highlight csharp %}
