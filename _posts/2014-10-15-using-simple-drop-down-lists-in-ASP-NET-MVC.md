@@ -64,8 +64,8 @@ code][4] online or clone the git repository. Now let's dive right into the detai
     }
 {% endhighlight %}
 As you can see model is pretty simple and reflects the form's fields except for one property -
-`States`. It works together with the `State` property - while the the `State` receives user's selection,
-`States` hold a list of all possible selections.
+`States`. It works together with the `State` property - while the the `State` receives user's
+selection, `States` hold a list of all possible selections.
 
 #### Controller
 Controller's a bit more complex - it consists of 3 action methods and a couple of utility functions.
