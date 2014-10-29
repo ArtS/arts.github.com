@@ -6,7 +6,7 @@ categories:
 tags:
 - cognition
 - productivity
-status: draft
+status: publish
 type: post
 published: true
 ---
