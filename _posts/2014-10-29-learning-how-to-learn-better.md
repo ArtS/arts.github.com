@@ -48,6 +48,13 @@ A [study][3], published in The Journal of Experimental Psychology, found that fo
 tasks, the participants lost time when they had to switch from one task to another and back again.
 It also took significantly longer to switch between the more complicated tasks.
 
+Worst of all, it appears that multitasking is linked to lower density of neural connections in the
+anterior cingulate cortex (ACC), the region responsible for cognitive and emotional control functions. 
+[These findings](http://www.eurekalert.org/pub_releases/2014-09/uos-bsr092314.php) 
+support earlier studies that highlighed a link between high multitasking activity when using various
+media (phones, computer etc) and poor attention in the face of distractions, as well as emotional 
+problems such as depression and anxiety.
+
 Practically this means you better avoid multitasking and eliminate distractions, such as instant
 messaging/notifications of various sorts, new email alerts and SMSes and focus on one solid piece of
 work.
@@ -121,6 +128,7 @@ details on that. I really wish I started meditating earlier in my life, such a g
 - ['Infomania' worse than marijuana](http://news.bbc.co.uk/2/hi/uk/4471607.stm)
 - [Exercise reorganizes the brain to be more resilient to stress](http://www.princeton.edu/main/news/archive/S37/28/70Q72/index.xml?section=topstories)
 - [Human relational memory requires time and sleep](http://www.pnas.org/content/104/18/7723.abstract)
+- [Brain scans reveal 'gray matter' differences in media multitaskers](http://www.eurekalert.org/pub_releases/2014-09/uos-bsr092314.php)
 
 [1]:http://news.bbc.co.uk/2/hi/uk/4471607.stm
 [2]:http://www.nytimes.com/2008/10/25/business/yourmoney/25shortcuts.html?pagewanted=2
