@@ -24,11 +24,11 @@ further on was much easier than getting over that initial hump. A day of focused
 much better both physically and mentally, compared to other days that were occupied by mindless and
 jumpy internets browsing.
 
-Recently I started doing an online course on coursera.org, "Learning How To Learn", and to my utmost
-surprise some of the mental tricks that I discovered the hard way are discussed in the course and
-apparently have some solid scientific backing. I'd like to list my favourite ones here - I do hope
-they'll help you to be more effective and less frustrated (read - more happy) or maybe even
-encourage you to take the course.
+Recently I started doing an online course on coursera.org, "[Learning How To
+Learn](https://www.coursera.org/course/learning)", and to my utmost surprise some of the mental
+tricks that I discovered the hard way are discussed in the course and apparently have some solid
+scientific backing. I'd like to list my favourite ones here - I do hope they'll help you to be more
+effective and less frustrated (read - more happy) or maybe even encourage you to take the course.
 
 ###Distractions kill attention
 
