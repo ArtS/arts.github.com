@@ -6,9 +6,9 @@ categories:
 - Health
 - Productivity
 tags:
-- cognitive hacks
+- cognition
 - productivity
-- technology
+- tools
 status: publish
 type: post
 published: true
