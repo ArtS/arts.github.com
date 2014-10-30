@@ -19,7 +19,7 @@ the stress of looming deadlines.
 
 I however managed to notice a few things that affected my personal productivity and that fuzzy
 'wellbeing' feeling in both good and bad ways. For example, focusing on a task for some period of
-time, even if it wan't terribly exciting at first, helped to get into 'the flow' and continuing
+time, even if it wasn't terribly exciting at first, helped to get into 'the flow' and continuing
 further on was much easier than getting over that initial hump. A day of focused work made me feel
 much better both physically and mentally, compared to other days that were occupied by mindless and
 jumpy internets browsing.
@@ -49,10 +49,10 @@ tasks, the participants lost time when they had to switch from one task to anoth
 It also took significantly longer to switch between the more complicated tasks.
 
 Worst of all, it appears that multitasking is linked to lower density of neural connections in the
-anterior cingulate cortex (ACC), the region responsible for cognitive and emotional control functions. 
-[These findings](http://www.eurekalert.org/pub_releases/2014-09/uos-bsr092314.php) 
+anterior cingulate cortex (ACC), the region responsible for cognitive and emotional control functions.
+[These findings](http://www.eurekalert.org/pub_releases/2014-09/uos-bsr092314.php)
 support earlier studies that highlighed a link between high multitasking activity when using various
-media (phones, computer etc) and poor attention in the face of distractions, as well as emotional 
+media (phones, computer etc) and poor attention in the face of distractions, as well as emotional
 problems such as depression and anxiety.
 
 Practically this means you better avoid multitasking and eliminate distractions, such as instant
@@ -84,7 +84,7 @@ Diffuse mode is activated when you are not working on that problem and doing som
 resting (see [this](http://www-bcf.usc.edu/~immordin/papers/Immordino-YangetalRESTISNOTIDLENESSPPS2012.pdf)
 and [this](http://www.ncbi.nlm.nih.gov/pubmed/22235031) articles), exercising or even sleeping. Physical activity seems
 to be particularly beneficial for enhancement of cognitive abilities - it helps to
-[cope with stress better](http://www.princeton.edu/main/news/archive/S37/28/70Q72/index.xml?section=topstories), 
+[cope with stress better](http://www.princeton.edu/main/news/archive/S37/28/70Q72/index.xml?section=topstories),
 increase [growth of new neurone and their integration into existing networks](http://onlinelibrary.wiley.com/doi/10.1046/j.1460-9568.2003.02647.x/abstract;jsessionid=E4134A5195F3AD3E841B52CBD741F937.f01t03?deniedAccessCustomisedMessage=&userIsAuthenticated=false).
 
 ###Understanding is the key
