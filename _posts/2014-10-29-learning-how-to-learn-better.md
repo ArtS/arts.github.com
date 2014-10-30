@@ -21,8 +21,8 @@ I however managed to notice a few things that affected my personal productivity 
 'wellbeing' feeling in both good and bad ways. For example, focusing on a task for some period of
 time, even if it wasn't terribly exciting at first, helped to get into 'the flow' and continuing
 further on was much easier than getting over that initial hump. A day of focused work made me feel
-much better both physically and mentally, compared to other days that were occupied by mindless and
-jumpy internets browsing.
+much better both physically and mentally, compared to the other days that were occupied by mixture
+of work and impulsive internet browsing.
 
 Recently I started doing an online course on coursera.org, "[Learning How To
 Learn](https://www.coursera.org/course/learning)", and to my utmost surprise some of the mental
