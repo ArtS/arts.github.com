@@ -25,7 +25,7 @@ in a few simple steps, how to do the following:
 - make sure text in the drop down list is easy to read, such as _Construction, Architecture & Interior Design_, not _ConstructionArchitectureAndInteriorDesign_
 - have a default value in the drop down list that prompts user to select something, "Please select your industry"
 
-????Check out my previous article [simple dropdown url] for the nitty-gritty
+????Check out my previous article [Using simple Drop Down Lists in ASP.NET MVC][1] for the nitty-gritty
 details on how to use a simple drop down list on a form - that gives a good
 overview of how different pieces fit together.???
 
@@ -97,3 +97,4 @@ Closing comments/links to previous article
 
 Call to action
 
+[1]:{% post_url 2014-10-15-using-simple-drop-down-lists-in-ASP-NET-MVC %}
