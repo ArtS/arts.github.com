@@ -12,11 +12,11 @@ published: true
 ---
 ASP.NET MVC is a very powerful, yet quite complex, if not complicated, web development framework.
 It's got heaps of various namespaces, classes, functions and it's hard to tell from just online
-manuals, such as MSDN, which particular class or a function overload you need to use for your very
-specific task.
+manuals, such as MSDN, which particular class or function overload you need to use for your specific
+task.
 
 Seemingly simple things, such as creating a humble drop down list that contains members of a given
-enum can be quite perplexing, and a lot of people get stuck there, not even knowing where to start.
+enum can be quite perplexing, and lots of people get stuck there, not even knowing how to start.
 In this article I will show in just a few simple steps how to do the following:
 
 - put a drop down list on a form
@@ -156,13 +156,54 @@ public ActionResult ViewProfile()
 ####But wait, there's more!
 That's all good and everything, I hear you saying, but what if I have more than just one enum? Say I
 also want to use fields like '_Gender_', '_State_' and '_Time Zone_' on my profile page.  Wouldn't
-it be nicer if instead of having to decalre a new, slightly different function for each of those
-enums you could create just a **_generic_** function, that deals with any enum as long as that enum
+it be nicer if instead of having to declare a new, slightly different function for each of those
+enums you could create just a **_generic_** function, that deals with any enum, as long as it
 adheres to the convention above?
 
+That's exactly the job for C# **_generics_**, which is a powerful language construct not only for
+saving you some typing, but also for making you think harder about commonalities and differences in your
+code.
 
-Call to action
+That's how we can make the retrieval of `Display[Name="..."]` value to work on any enum:
+{% highlight csharp %}
+private string GetEnumDisplayName<T>(T value) where T: struct
+{
+    // Get the MemberInfo object for supplied enum value
+    var memberInfo = value.GetType().GetMember(value.ToString());
+    if (memberInfo.Length != 1)
+    return null;
+
+    // Get DisplayAttibute on the supplied enum value
+    var displayAttribute = memberInfo[0].GetCustomAttributes(typeof(DisplayAttribute), false)
+                           as DisplayAttribute[];
+    if (displayAttribute == null || displayAttribute.Length != 1)
+    return null;
+
+    return displayAttribute[0].Name;
+}
+{% endhighlight %}
+As you can see from above, there's almost no difference between earlier `GetIndustryName` and this
+new `GetEnumDisplayName`, except for the piece where we restrict the usage of this function via this
+generic specification: `<T>(T value) where T: struct`.
+
+####Source code
+Here are the download links to the [MVC4][4] and [MVC5.1+][5] versions of code above. You can
+browse the code ([MVC4][6], [MVC5.1+][7] online or clone the git repository.
+
+####What's next
+Hopefully this short article helps you to navigate through some of the muddy waters of ASP.NET MVC
+and perhaps saves you a few minutes of your too-precious-to-spend-on-reading-cryptic-docs life.
+
+Sign up for my mailing list for future article announcements on how to tame the MVC beast - there's
+some more practical advice coming up on the most problematic and headache-generating areas of the ASP.NET
+MVC. I never spam, period.
+
+{% include subscription.html %}
 
 [1]:{% post_url 2014-10-15-using-simple-drop-down-lists-in-ASP-NET-MVC %}
 [2]:http://msdn.microsoft.com/en-us/library/system.web.mvc.html.selectextensions.enumdropdownlistfor(v=vs.118).aspx
 [3]:/img/mvc/dropdowns-2/profile.png
+[4]:https://github.com/ArtS/aspnetmvc-dropdown-enums/archive/mvc4.zip
+[5]:https://github.com/ArtS/aspnetmvc-dropdown-enums/archive/master.zip
+[6]:https://github.com/ArtS/aspnetmvc-dropdown-enums/tree/mvc4
+[7]:https://github.com/ArtS/aspnetmvc-dropdown-enums
