@@ -188,7 +188,7 @@ generic specification: `<T>(T value) where T: struct`.
 
 ####Source code
 Here are the download links to the [MVC4][4] and [MVC5.1+][5] versions of code above. You can
-browse the code ([MVC4][6], [MVC5.1+][7] online or clone the git repository.
+browse the code ([MVC4][6], [MVC5.1+][7]) online or clone the git repository.
 
 ####What's next
 Hopefully this short article helps you to navigate through some of the muddy waters of ASP.NET MVC
