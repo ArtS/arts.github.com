@@ -160,9 +160,9 @@ it be nicer if instead of having to declare a new, slightly different function f
 enums you could create just a **_generic_** function, that deals with any enum, as long as it
 adheres to the convention above?
 
-That's exactly the job for C# **_generics_**, which is a powerful language construct not only for
-saving you some typing, but also for making you think harder about commonalities and differences in your
-code.
+That's exactly the job for C# **_generics_**, which is a powerful language construct that saves you
+some typing. What's more important, it makes you think harder about commonalities and differences in
+your code.
 
 That's how we can make the retrieval of `Display[Name="..."]` value to work on any enum:
 {% highlight csharp %}
@@ -183,16 +183,18 @@ private string GetEnumDisplayName<T>(T value) where T: struct
 }
 {% endhighlight %}
 As you can see from above, there's almost no difference between earlier `GetIndustryName` and this
-new `GetEnumDisplayName`, except for the piece where we restrict the usage of this function via this
-generic specification: `<T>(T value) where T: struct`.
+new `GetEnumDisplayName`, except for the piece where we broaden the usage of this function to any
+enum via the generic specification: `<T>(T value) where T: struct`. All it really does is to say:
+_"accept an argument of type T as long this type is a struct"_ (and enums are structs in CLR).
 
 ####Source code
-Here are the download links to the [MVC4][4] and [MVC5.1+][5] versions of code above. You can
-browse the code ([MVC4][6], [MVC5.1+][7]) online or clone the git repository.
+Here are the download links to the [MVC4][4] and [MVC5.1+][5] versions of Visual Studio solutions
+that include the above code. You can browse the code ([MVC4][6], [MVC5.1+][7]) online or clone the
+git repository.
 
 ####What's next
-Hopefully this short article helps you to navigate through some of the muddy waters of ASP.NET MVC
-and perhaps saves you a few minutes of your too-precious-to-spend-on-reading-cryptic-docs life.
+Hopefully this short article helps you navigate some muddy waters of ASP.NET MVC and saves you a few
+minutes of your life that's better spent writing good web apps and not decipheryng cryptic docs.
 
 Sign up for my mailing list for future article announcements on how to tame the MVC beast - there'll
 be tons more advice on the most problematic and headache-generating areas of the ASP.NET MVC. I
