@@ -10,14 +10,14 @@ status: publish
 type: post
 published: true
 ---
-ASP.NET MVC is a very powerful, yet quite complex, if not complicated, web development framework.
+ASP.NET MVC is a very powerful, yet quite complex (if not complicated) web development framework.
 It's got heaps of various namespaces, classes, functions and it's hard to tell from just online
 manuals, such as MSDN, which particular class or function overload you need to use for your specific
 task.
 
-Seemingly simple things, such as creating a humble drop down list that contains members of a given
-enum can be quite perplexing, and lots of people get stuck there, not even knowing how to start.
-In this article I will show in just a few simple steps how to do the following:
+Seemingly simple things, such as creating a humble drop down list with elements from a given enum
+can be quite perplexing, and lots of people get stuck there, not even knowing how to start.  In this
+article I will show in just a few simple steps how to do the following:
 
 - put a drop down list on a form
 - populate the drop down list with values from an enum, containing a list of industries
@@ -30,7 +30,7 @@ controller, send selected value back and render the drop down with the value sel
 
 ####Solution walkthrough
 Let's put together a fictitious user profile page which has text boxes for First and Last names and
-Industry selection drop down list. That's how it's going to look like.
+Industry selection drop down list. It's going to look like this:
 
 <p class="center" markdown="1">
     ![User Profile][3]
@@ -57,7 +57,7 @@ public enum Industry
 {% endhighlight %}
 
 #####ASP.NET MVC 5.1 - a shortcut
-If you are amongst more lucky ones and happen to use 5.1 or a later version of the ASP.NET MVC,
+If you are amongst the more lucky ones and happen to use 5.1 or a later version of the ASP.NET MVC,
 there's a really neat shortcut - check out this [`EnumDropDownListFor`][2] helper function. (By the
 way, isn't that wonderful how cryptic Microsoft's doco is? Fear not though.)
 
@@ -65,20 +65,20 @@ Here's all you really need to do to put a drop down list on a form:
 
 {% highlight html %}
 <div class="form-group">
-@Html.LabelFor(m => m.Industry)
-@Html.EnumDropDownListFor(model => model.Industry, // Model field that will be used to store user selection
-                            "- Please select your industry -", // Text for the first 'default' option
-                            new { @class = "form-control" })  @* A class name to assign to "select" tag *@
+    @Html.LabelFor(m => m.Industry)
+    @Html.EnumDropDownListFor(model => model.Industry, // Model field that will be used to store user selection
+                              "- Please select your industry -", // Text for the first 'default' option
+                              new { @class = "form-control" })  @* A class name to assign to "select" tag *@
 </div>
 {% endhighlight %}
 
-Similarly to [simple drop down list][1], you'll get the user's selection in the `model.Industry`
-field on POST. The helper function will also do all the heavy lifting to create proper `<option>`
-elements under the `<select>` tag, which will have their text set to the corresponding value from
+Similarly to the [simple drop down list][1], you get user's selection in the `model.Industry` field
+on POST. The helper function will also do all the heavy lifting to create proper `<option>` elements
+under the `<select>` tag, which will have their text set to the corresponding value from
 `[Display(Name="...")]` attribute.
 
 #####ASP.NET MVC 5 & 4 - the hard way
-In case of earlier versions of the MVC you need to do some work to get those pesky enum values and
+In case of an earlier version of the MVC you need to do some work to get those pesky enum values and
 their descriptions out. You can use [`@Html.DropDownListFor`][1] helper function, although it needs 
 a list of `SelectListItem` objects, so we need to convert the members of the enum into instances of the
 that class. Here's a way of doing this:
@@ -194,9 +194,9 @@ browse the code ([MVC4][6], [MVC5.1+][7] online or clone the git repository.
 Hopefully this short article helps you to navigate through some of the muddy waters of ASP.NET MVC
 and perhaps saves you a few minutes of your too-precious-to-spend-on-reading-cryptic-docs life.
 
-Sign up for my mailing list for future article announcements on how to tame the MVC beast - there's
-some more practical advice coming up on the most problematic and headache-generating areas of the ASP.NET
-MVC. I never spam, period.
+Sign up for my mailing list for future article announcements on how to tame the MVC beast - there'll
+be tons more advice on the most problematic and headache-generating areas of the ASP.NET MVC. I
+never spam, period.
 
 {% include subscription.html %}
 
