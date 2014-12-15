@@ -56,9 +56,9 @@ public enum Industry
 }
 {% endhighlight %}
 
-#####ASP.NET MVC 5.1 - a shortcut
+#####ASP.NET MVC 5.1 -- a shortcut
 If you are amongst the more lucky ones and happen to use 5.1 or a later version of the ASP.NET MVC,
-there's a really neat shortcut - check out this [`EnumDropDownListFor`][2] helper function. (By the
+there's a really neat shortcut -- check out this [`EnumDropDownListFor`][2] helper function. (By the
 way, isn't that wonderful how cryptic Microsoft's doco is? Fear not though.)
 
 Here's all you really need to do to put a drop down list on a form:
@@ -77,7 +77,7 @@ on POST. The helper function will also do all the heavy lifting to create proper
 under the `<select>` tag, which will have their text set to the corresponding value from
 `[Display(Name="...")]` attribute.
 
-#####ASP.NET MVC 5 & 4 - the hard way
+#####ASP.NET MVC 5 & 4 -- the hard way
 In case of an earlier version of the MVC you need to do some work to get those pesky enum values and
 their descriptions out. You can use [`@Html.DropDownListFor`][1] helper function, although it needs 
 a list of `SelectListItem` objects, so we need to convert the members of the enum into instances of the
@@ -192,13 +192,14 @@ Here are the download links to the [MVC4][4] and [MVC5.1+][5] versions of Visual
 that include the above code. You can browse the code ([MVC4][6], [MVC5.1+][7]) online or clone the
 git repository.
 
-####What's next
-Hopefully this short article helps you navigate some muddy waters of ASP.NET MVC and saves you a few
-minutes of your life that's better spent writing good web apps and not decipheryng cryptic docs.
+###But wait, there's more
+Hopefully this article helps you navigate the muddy waters of ASP.NET MVC and saves you a few
+minutes of your life which is better spent on what you actually want - things like writing good web
+apps and not decipheryng cryptic docs.
 
-Sign up for my mailing list for future article announcements on how to tame the MVC beast - there'll
-be tons more advice on the most problematic and headache-generating areas of the ASP.NET MVC. I
-never spam, period.
+Sign up to my **Untangling ASP.NET MVC** mailing list to get articles on how to tame the ASP.NET
+MVC beast -- there'll be tons more actionable advice on how to write apps faster and easier and how
+to avoid spending hours when you get stuck with ASP.NET MVC.
 
 {% include subscription.html %}
 

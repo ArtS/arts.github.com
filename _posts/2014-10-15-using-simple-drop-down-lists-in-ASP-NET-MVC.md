@@ -14,7 +14,7 @@ It's surprising how many subtle, but frustrating traps one can fall into when bu
 ASP.NET MVC. Creating forms for the web is one of them. It's common to spend hours on something
 trivial, such as displaying a selected value in a DropDownList on postback, or getting that selected
 value in a controller. Quite often it happens when you just start learning ASP.NET MVC or upgrade
-from an older tech. And boy, is this frustrating as hell - instead of building an actual web app,
+from an older tech. And boy, is this frustrating as hell -- instead of building an actual web app,
 you spend hours wrestling with the framework.
 
 I want to show you how to build a simple form with a drop down list that's got "Please select" text
@@ -23,7 +23,7 @@ how to display that list on a form, how to get user's selection in the controlle
 has selected something and render the list back to the user with the value selected.
 
 Sounds deceptively simple, right? Hold that thought for now and have a look at the [Microsoft's own
-documentation][1]  for the `@Html.DropDownListFor` function. It has 6 different overloads - which
+documentation][1]  for the `@Html.DropDownListFor` function. It has 6 different overloads -- which
 one of those do you really need? And what are those mysterious `<TModel, TProperty>` or
 `optionLabel`? Now throw into the mix various ways you can pass the data into the view: ViewBag,
 ViewData or TempData? Or maybe Model? So you are naturally in the perfect spot to start making
@@ -31,7 +31,7 @@ mistakes.
 
 We need to clear this up once and for all. In this example I will take you through building a
 simplistic "Sign Up" form that consists of two fields: Name and State. Both of these fields are
-required - this way we can test rendering of selected dropdown list value on the postback.
+required -- this way we can test rendering of selected dropdown list value on the postback.
 
 <p class="center" markdown="1">
     ![Sign Up form][2]
@@ -63,8 +63,8 @@ code][4] online or clone the git repository. Now let's dive right into the detai
         public IEnumerable<SelectListItem> States { get; set; }
     }
 {% endhighlight %}
-As you can see model is pretty simple and reflects the form's fields except for one property -
-`States`. It works together with the `State` property - while the the `State` receives user's
+As you can see model is pretty simple and reflects the form's fields except for one property --
+`States`. It works together with the `State` property -- while the the `State` receives user's
 selection, `States` hold a list of all possible selections.
 
 #### Controller
@@ -175,7 +175,7 @@ methods):
 {% highlight csharp %}
     model.States = GetSelectListItems(states);
 {% endhighlight %}
-As said above, this code runs twice - first when user loads the 'Sign Up' page in the browser and 
+As said above, this code runs twice -- first when user loads the 'Sign Up' page in the browser and 
 the form is displayed, and second time when user submits the form.
 
 Why does it need to happen twice? The nature of browser forms is such that **only selected values
@@ -253,16 +253,19 @@ the 'prompt' option of the drop down list. I'd never be able to tell that from t
 Here's a download link to the [complete code][3] of the solution used in this article. You can 
 [browse the code][4] online or clone the git repository.
 
-###What's missing?
-
 I deliberately didn't put any data access or data validation code so it's easier to focus on the
 problem at hand. Validation is a complex topic and deserves to be covered separately, which I will
 do in the upcoming articles. I also completely skipped the process Model Binding as it's too big 
-for this article - but I will cover that in the later articles too.
+for this article -- but I will cover that in the later articles too.
 
-You can sign up to my **'Untangling ASP.NET MVC'** mailing list and learn how to tackle the inherent complexity 
-of ASP.NET MVC with ease, avoid common traps, save yourself hours of wasted time and frustration 
-and become a better person overall. I never spam, period.
+###But wait, there's more
+Check out my [next article on how to use `DropDownListFor` with enums][5] - there I show how to
+properly show enums in readable form in a drop down list, how to specify a default "Please Select"
+text and how to get selected enum value in the controller.
+
+Next, sign up to my **Untangling ASP.NET MVC** mailing list and learn how to tackle the complexity 
+of ASP.NET MVC with ease, save yourself hours of wasted time and frustration and become a better 
+person overall. I never spam, period.
 
 {% include subscription.html %}
 
@@ -270,3 +273,4 @@ and become a better person overall. I never spam, period.
 [2]:/img/mvc/dropdowns-1/sign-up.png
 [3]:https://github.com/ArtS/aspnet-dropdowns/archive/master.zip
 [4]:https://github.com/ArtS/aspnet-dropdowns
+[5]:/aspnetmvc-dropdowns-with-enums/
