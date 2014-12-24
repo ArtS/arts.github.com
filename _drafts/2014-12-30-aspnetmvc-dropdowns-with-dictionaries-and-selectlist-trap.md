@@ -10,8 +10,7 @@ status: publish
 type: post
 published: true
 ---
-
-####Intro 
+####Intro
 
 I would like to show you how to use ASP.NET MVC helper function `DropDownListFor` and `SelectList`
 class with generic Dictionaries, such as `Dictionary<string, string>` or `Dictionary<int, string>`.
@@ -30,11 +29,14 @@ balance it nicely). Users need to be able to see a full names of states, such as
 a state is selected, we want to get its abbreviation, such as '_AL_', in the controller.
 
 <p class="center" markdown="1">
-    ![User Profile][3]
+    <img src="/img/mvc/dropdowns-3/profile.png" data-gif="/img/mvc/dropdowns-3/profile-animated.gif" class="gifs" />
 </p>
-<p class="center" markdown="1">
-    ![User Profile][4]
-</p>
+<script src="/js/jquery.gifplayer.js"></script>
+<script>
+  (function($) {
+    $('.gifs').gifplayer({label: 'PLAY'});
+  })(jQuery);
+</script>
 
 As said earlier, DropDownListFor needs a collection of SelectListItem so it can render the correct
 options. There's a very handy (yet treacherous, but I'll get back to that later) helper class
@@ -64,7 +66,7 @@ it looks like there's at least two ways to select the value in the Drop Down Lis
 on the page - two slightly different, somewhat confusing ways. I also want to show you how to use
 @Html.DropDownListFor with Dictionaries or arbitrary classes - things such as your own Models.
 
-Secondly, let's have look at that trap with some people fall into. We have already looked into
+Secondly, let's have look at that trap some people fall into. We have already looked into
 'classic' way you're supposed to be using @Html.DropDownListFor together with SelectList that many
 examples on the net sport:
 
@@ -107,8 +109,6 @@ to avoid spending hours when you get stuck with ASP.NET MVC.
 
 [1]:{% post_url 2014-10-15-using-simple-drop-down-lists-in-ASP-NET-MVC %}
 [2]:{% post_url 2014-11-17-aspnetmvc-dropdowns-with-enums %}
-[3]:/img/mvc/dropdowns-3/profile.png
-[4]:/img/mvc/dropdowns-3/profile-animated.gif
 [5]:
 [6]:
 [7]:
