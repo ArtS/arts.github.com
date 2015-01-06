@@ -39,9 +39,9 @@ and when a state is selected, we want to get its abbreviation, such as '_AL_', i
 </script>
 
 In the example above I used `Html.DropDownListFor` helper function, which needs a collection of
-SelectListItem so it can render the correct options. There's a very handy (yet treacherous, but I'll
-get back to that later) helper class SelectList which can convert a Dictionary (or any collection,
-for that matter) into a list of SelectListItem instances. Let's see how it's done.
+`SelectListItem` so it can render the correct options. There's a very handy (yet treacherous, but I'll
+get back to that later) helper class `SelectList` which can convert a Dictionary (or any collection,
+for that matter) into a list of `SelectListItem` instances. Let's see how it's done.
 
 Firstly, let's get us some data in the controller -- there I pretend that I get an instance of 
 `Dictionary<string, string>` from a DB layer/helper. Nothing exciting here, let's move along to the
@@ -104,9 +104,9 @@ stored in `Model.States`, into an instance of `IEnumerable<SelectListItem>` that
 You can see the [full source code of the view][3] on github.
 
 That magical line `new SelectList(Model.States, "Key", "Value")` is what does the job -- it
-basically says -- '_take this collection, and for each dictionary item create a SelectListItem with
-its `Value` property set to the `Key` property and its `Text` property set to `Value` property of a
-given dictionary item_'.
+basically says -- '_take this collection, and for each dictionary item create a `SelectListItem`
+with its `Value` property set to the `Key` property and its `Text` property set to `Value` property
+of a given dictionary item_'.
 
 So in the end you get some nice and clean HTML that looks like this:
 {% highlight html %}
