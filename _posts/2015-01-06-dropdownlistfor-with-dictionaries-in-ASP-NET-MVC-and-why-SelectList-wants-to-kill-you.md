@@ -146,7 +146,7 @@ trees and the air is clean), that's how it would look like:
                       // that's the key for "Maine" in the supplied dictionary
                       new SelectList(Model.States, "Key", "Value", "ME"),
 
-                      // Text for the first 'default' option
+                      // Text for the first, non-selected option
                       "- Please select your state -",
 
                       // A class name to put on the "<select>"
