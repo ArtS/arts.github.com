@@ -35,6 +35,7 @@ and when a state is selected, we want to get its abbreviation, such as '_AL_', i
 <script>
   (function($) {
     $('.gifs').gifplayer({label: 'PLAY'});
+    $('ins.play-gif').click(function() { ga('send', 'event', 'button', 'click', 'PLAY', {href: window.location.pathname}); })
   })(jQuery);
 </script>
 
