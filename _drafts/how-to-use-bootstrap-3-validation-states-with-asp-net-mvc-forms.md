@@ -54,10 +54,11 @@ control and the error text, so you can get something like this:
     ![Like a boss][3]
 </p>
 
-So following [Bootstrap's own documentation][4] we need to make sure that a control with error needs
-to have a parent with class `has-error` and validation error message needs to have class
-`text-danger`. And luckily with the help of jQuery this can be easily done in a matter of literally
-2 lines of JavaScript.
+So following [Bootstrap's own documentation][4] we need to make sure that control with error has a
+parent with the class of `has-error` and the validation error message element needs to have the
+class of `text-danger`. And luckily we can do this with literally 2 lines of JavaScript.
+
+
 
 [1]:http://nimblegecko.com/dropdownlistfor-with-dictionaries-in-ASP-NET-MVC-and-why-SelectList-wants-to-kill-you/
 [2]:/img/mvc/bootstrap3/no-style.png
