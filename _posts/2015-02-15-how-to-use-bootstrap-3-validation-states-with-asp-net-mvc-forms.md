@@ -7,7 +7,7 @@ tags:
 - asp.net mvc
 - c#
 status: publish
-type: draft
+type: post
 published: true
 ---
 ##Introduction
@@ -141,7 +141,7 @@ of dangerous things, such as knowledge of parameter lists for internal functions
 [FluentValidation][7] is another popular library for ASP.NET MVC, and given it integrates with
 standard validation, you can use solutions listed above to make it work.
 
-###Did it help? Get some more!
+##Did it help? Get some more!
 You can get the source code for the examples used in this article here as a [Zip archive][8] or [browse
 the code][9] on github.
 
