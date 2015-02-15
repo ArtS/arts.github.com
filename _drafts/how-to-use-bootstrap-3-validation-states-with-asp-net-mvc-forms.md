@@ -10,6 +10,7 @@ status: publish
 type: draft
 published: true
 ---
+##Introduction
 Recently, when writing code for my blog post on drop downs, "[DropDownListFor with Dictionaries in
 ASP.NET MVC and why SelectList wants to kill you][1]", I stumbled over an interesting problem - when
 using ASP.NET MVC HTML helpers, such as `@Html.TextBoxFor()` and `@Html.DropDownListFor()` to render
@@ -19,6 +20,7 @@ ASP.NET NVC uses its own CSS classes, so no errors are getting highlighted when 
 There's nothing wrong with MVC as such in here, as it is meant to be CSS framework agnostic, meaning
 you should be able to use it with any CSS framework.
 
+##Problem
 To get better understanding of the problem, have a look at this excerpt of ASP.NET MVC form that
 contains an error message for a required text field.
 
@@ -33,7 +35,6 @@ contains an error message for a required text field.
 
     <span class="field-validation-error" data-valmsg-for="FirstName"
           data-valmsg-replace="true">The First name field is required.</span>
-
 </div>
 {% endhighlight %}
 
@@ -41,14 +42,14 @@ As you can see, ASP.NET uses its own CSS classes, such as `input-validation-erro
 highlight control with an invalid value) and `field-validation-error` (contains explanatory text for
 the error) to indicate there's validation error.
 
-Without proper styling this control looks something like this:
+Without proper styling the above HTML looks like this:
 
 <p class="center" markdown="1">
     ![No styling on the control][2]
 </p>
 
 But Bootstrap 3 has this awesome indication for invalid form controls, that hightlights the entire
-control and the error text, so you can get something like this:
+control and the error text:
 
 <p class="center" markdown="1">
     ![Like a boss][3]
@@ -56,7 +57,86 @@ control and the error text, so you can get something like this:
 
 So following [Bootstrap's own documentation][4] we need to make sure that control with error has a
 parent with the class of `has-error` and the validation error message element needs to have the
-class of `text-danger`. And luckily we can do this with literally 2 lines of JavaScript.
+class of `text-danger`. That's how HTML needs to look like to get proper error highlighting:
+
+{% highlight html %}
+<div class="has-error form-group">
+
+    <label for="FirstName">First name</label>
+
+    <input class="input-validation-error form-control" data-val="true"
+           data-val-required="The First name field is required."
+           id="FirstName" name="FirstName" type="text" value="">
+
+    <span class="text-danger field-validation-error" data-valmsg-for="FirstName"
+          data-valmsg-replace="true">The First name field is required.</span>
+</div>
+{% endhighlight %}
+
+<script>
+  // Hacky hack to highlight changes in HTML
+  (function($) {
+    $('span.s:contains("has-error form-group")').html('"<strong>has-error</strong> form-group"');
+    $('span.s:contains("text-danger field-validation-error")').html('"<strong>text-danger</strong> field-validation-error"');
+  })(jQuery);
+</script>
+
+##Solution
+We need to and just two puny CSS classes, but how exactly this is done depends on which client-side
+validation library you're using (if any).
+
+###No client-side validation
+If your form is submitted to the server with no prior on-the-client JavaScript validation (old
+school! but it works), then you've got yourself the easiest of all fixed. You can just add these CSS
+classes whenever the page loads in the following fashion:
+
+{% highlight javascript %}
+$(document).ready(function() {
+    $('.input-validation-error').parents('.form-group').addClass('has-error');
+    $('.field-validation-error').addClass('text-danger');
+});
+{% endhighlight %}
+
+###ASP.NET MVC Unobtrusive validation
+Most likely though you're using in-built ASP.NET MVC's own [unobtrusive jQuery validation][5], in
+which case we need to hook into `success` and `errorPlacement` events of the [jQuery Validation
+Plugin][6]:
+
+{% highlight javascript %}
+$(document).ready(function () {
+    var form = $('#userForm')
+        , formData = $.data(form[0])
+        , settings = formData.validator.settings
+        // Store existing event handlers in local variables
+        , oldErrorPlacement = settings.errorPlacement
+        , oldSuccess = settings.success;
+
+    settings.errorPlacement = function(label, element) {
+
+        // Call old handler so it can update the HTML
+        oldErrorPlacement(label, element);
+
+        // Add Bootstrap classes to newly added elements
+        label.parents('.form-group').addClass('has-error');
+        label.addClass('text-danger');
+    };
+
+    settings.success = function(label) {
+        // Remove error class from <div class="form-group">, but don't worry about
+        // validation error messages as the plugin is going to remove it anyway
+        label.parents('.form-group').removeClass('has-error');
+
+        // Call old handler to do rest of the work
+        oldSuccess(label);
+    };
+});
+{% endhighlight %}
+
+Now admittedly this is a tad hacky, I personally don't like how our validation code assumes a number
+of dangerous things, such as knowledge of parameter lists for internal functions, but it works.
+
+###Fluent Validation
+I
 
 
 
@@ -64,3 +144,5 @@ class of `text-danger`. And luckily we can do this with literally 2 lines of Jav
 [2]:/img/mvc/bootstrap3/no-style.png
 [3]:/img/mvc/bootstrap3/like-a-boss.png
 [4]:http://getbootstrap.com/css/#forms-control-validation
+[5]:https://www.nuget.org/packages/jQuery.Validation.Unobtrusive/
+[6]:http://jqueryvalidation.org/documentation
