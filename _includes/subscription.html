@@ -33,6 +33,11 @@
                     </div>
                 </div>
 
+                <script>
+                  (function($) {
+                    $('#mc-embedded-subscribe').click(function() { ga('send', 'event', 'button', 'Subscribe', {href: window.location.pathname}); })
+                  })(jQuery);
+                </script>
             </form>
         </div>
     </div>

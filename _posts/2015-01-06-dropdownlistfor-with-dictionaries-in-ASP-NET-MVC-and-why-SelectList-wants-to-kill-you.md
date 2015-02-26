@@ -35,7 +35,7 @@ and when a state is selected, we want to get its abbreviation, such as '_AL_', i
 <script>
   (function($) {
     $('.gifs').gifplayer({label: 'PLAY'});
-    $('ins.play-gif').click(function() { ga('send', 'event', 'button', 'click', 'PLAY', {href: window.location.pathname}); })
+    $('ins.play-gif').click(function() { ga('send', 'event', 'button', 'PLAY', {href: window.location.pathname}); })
   })(jQuery);
 </script>
 
@@ -44,7 +44,7 @@ In the example above I used `Html.DropDownListFor` helper function, which needs 
 get back to that later) helper class `SelectList` which can convert a Dictionary (or any collection,
 for that matter) into a list of `SelectListItem` instances. Let's see how it's done.
 
-Firstly, let's get us some data in the controller -- there I pretend that I get an instance of 
+Firstly, let's get us some data in the controller -- there I pretend that I get an instance of
 `Dictionary<string, string>` from a DB layer/helper. Nothing exciting here, let's move along to the
 view.
 
@@ -94,10 +94,10 @@ stored in `Model.States`, into an instance of `IEnumerable<SelectListItem>` that
 
                       // Text for the first 'default' option
                       "- Please select your state -",
-                      
+
                       // A class name to put on the "<select>"
                       new { @class = "form-control" }
-                      ) 
+                      )
 
 <!-- ...some lines skipped... -->
 {% endhighlight %}
@@ -143,7 +143,7 @@ trees and the air is clean), that's how it would look like:
 {% highlight csharp %}
 @Html.DropDownListFor(m => m.State, // Store selected value in Model.State
 
-                      // Notice "ME" as the last parameter here - 
+                      // Notice "ME" as the last parameter here -
                       // that's the key for "Maine" in the supplied dictionary
                       new SelectList(Model.States, "Key", "Value", "ME"),
 
@@ -152,7 +152,7 @@ trees and the air is clean), that's how it would look like:
 
                       // A class name to put on the "<select>"
                       new { @class = "form-control" }
-                      ) 
+                      )
 {% endhighlight %}
 
 ####Source code
