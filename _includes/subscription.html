@@ -27,6 +27,7 @@
 
                 <div style="position: absolute; left: -5000px;"><input type="text" name="b_e6274e9cfdaa85439612dbeaf_1d1f2b0946" tabindex="-1" value=""></div>
 
+                <input type="hidden" value="" name="page" class="form-control" id="mce-page" />
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                         <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-primary">
@@ -36,6 +37,7 @@
                 <script>
                   (function($) {
                     $('#mc-embedded-subscribe').click(function() { ga('send', 'event', 'Subscribe', window.location.pathname); })
+                    $('#mce-page').val(window.location.pathname);
                   })(jQuery);
                 </script>
             </form>
