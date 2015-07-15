@@ -35,40 +35,6 @@ interruption in invoicing and billing**_ during the upgrade and support periods.
 ###Let's Talk
 
 Got a new project coming up? Drop me a line and we will discuss it - my email is <a href="mailto:art@nimblegecko.com" data-ga-category="Links" data-ga-action="Contact" data-ga-label="email">art@nimblegecko.com</a>
-<!--or simply click "Contact me" button.
-<div style="display: none;" id="divContact">
-    <div id="wufoo-z7x3p9">
-        Fill out my <a href="http://nimblegecko.wufoo.com/forms/z7x3p9">online form</a>.
-    </div>
-    <script type="text/javascript">var z7x3p9;(function(d, t) {
-    var s = d.createElement(t), options = {
-    'userName':'nimblegecko', 
-    'formHash':'z7x3p9', 
-    'autoResize':true,
-    'height':'497',
-    'async':true,
-    'header':'show'};
-    s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'wufoo.com/scripts/embed/form.js';
-    s.onload = s.onreadystatechange = function() {
-    var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-    try { z7x3p9 = new WufooForm();z7x3p9.initialize(options);z7x3p9.display(); } catch (e) {}};
-    var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-    })(document, 'script');</script>
-</div>
-<a id="btnContact" class="btn btn-primary btn-large btn-block" 
-    data-ga-category="Links" data-ga-action="Contact" data-ga-label="Contact Form"
-    href="#divContact">Contact me</a>
-<script>
-    (function($) {
-        $('#btnContact').fancybox({
-            width: '70%',
-            height: '60%',
-            minWidth: 600,
-            openEffect: 'elastic',
-            closeEffect: 'elastic'
-        })
-    })(jQuery)
-</script-->
 
 ###What my clients say
 <blockquote>
