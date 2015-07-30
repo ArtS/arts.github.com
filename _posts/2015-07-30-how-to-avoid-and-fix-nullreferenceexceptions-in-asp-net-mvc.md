@@ -11,23 +11,24 @@ type: post
 published: true
 ---
 ###Introduction
-Quite often people stumble into same type of problems again and again, and
-getting a NullReferenceException is one of the most frequently occuring. This
-happens most often when writing brand-new ASP.NET MVC code, such as controllers 
-or views, but it also happens when modifying existing code that used to work
-just fine, but somehow suddenly got broken. In this article you will learn the 
-most common problems and how to fix those pesky elusive time-wasters.
+Quite often people stumble into same problems again and again, and getting a NullReferenceException
+is the one that occurs most frequently, and frankly can be quite annoying. This problem happens when
+writing brand-new ASP.NET MVC code, such as controllers or views, but also when modifying existing
+code that used to work just fine, but somehow suddenly got broken. Here I want to show you why these
+exceptions happen and how to fix them, so you can stop wasting your time and do more of the
+programming that you actually enjoy.
 
-### What is NullReferenceException and where it can occur?
+### What is NullReferenceException and where can it happen?
 NullReferenceException is exactly what it says - it is thrown by .NET Runtime
 when your code tries to access properties or call methods using empty, or null,
-reference. It sounds obvious and trite, but finding the place in your code where 
+reference. It sounds obvious and trite, but finding a place in your code where
 things went haywire may take some time.
 
 ####NullReferenceException in .cshtml Razor views
 
 Let's say you have a UserProfile.cshtml page that displays "Industry" selection
-drop down list for a logged in user:
+drop down list for a logged in user (to put a dropdown on a form see my [other
+article][1]):
 
 {% highlight html %}
 @model UserProfileModel
@@ -81,8 +82,8 @@ and when you hit this page you see the following exception:
 Line 27:                     &lt;div class="form-group"&gt;
 Line 28:                         @Html.LabelFor(m =&gt; m.Industry)
 <font color="red">Line 29:                         @Html.EnumDropDownListFor(m =&gt; m.Industry,
-</font>Line 30:                                               Model.Industries,
-Line 31:                                               "- Please select your industry -",
+</font>Line 30:                                                   Model.Industries,
+Line 31:                                                   "- Please select your industry -",
 </pre></code>
 </td>
 </tr>
@@ -96,7 +97,7 @@ Line 31:                                               "- Please select your ind
         <td>
         <code><pre>
 [NullReferenceException: Object reference not set to an instance of an object.]
-ASP._Page_Views_Profile_UserProfile_cshtml.Execute() in c:\Users\User User\dev\aspnetmvc-dropdown-enums\Dropdown-enums\Views\Profile\UserProfile.cshtml:29
+ASP._Page_Views_Profile_UserProfile_cshtml.Execute() in c:\...\Views\Profile\UserProfile.cshtml:29
 System.Web.WebPages.WebPageBase.ExecutePageHierarchy() +271
 [... some lines deleted ...]
 System.Web.Mvc.MvcHandler.System.Web.IHttpAsyncHandler.EndProcessRequest(IAsyncResult result) +38
@@ -110,9 +111,8 @@ System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; complet
 </font>
 </div>
 
-Believe me or not, this sort of problem trips people over most often. The
-reason here is that no model is being passed to the view from the controller's
-action:
+Believe me or not, this problem trips people over most often. The reason for this exception 
+is that no model is being passed to the view from the controller's action:
 
 {% highlight csharp %}
 public ActionResult UserProfile() {
@@ -120,14 +120,14 @@ public ActionResult UserProfile() {
     //
     // … some more super-serious business logic in here ...
     //
-    return View(); // <-- here's the problem!  
+    return View(); // <-- HERE'S THE PROBLEM!
 }
 {% endhighlight %}
 
 That's why when the view is being rendered, `Model` variable inside of .cshtml
-points to null, and trying to access `null.FirstName` obviously throws a brand
-spanking new `NullReferenceException`. To fix this, you'll need to pass an
-instance of the model to your View() call:
+points to `null`, and trying to access `null.FirstName` obviously throws a brand
+spanking new `NullReferenceException`. To fix this need to pass an instance of
+the model to the View() call:
 
 {% highlight csharp %}
 public ActionResult UserProfile() {
@@ -135,15 +135,15 @@ public ActionResult UserProfile() {
     //
     // … some more super-serious business logic in here ...
     //
-    return View(userModel); // <-- just pass the model here
+    return View(userModel); // <-- JUST PASS THE MODEL HERE, TOO EASY!
 }
 {% endhighlight %}
 
 ####NullReferenceException when working with database entities
 
 This is a second most-common problem - when loading entities from a database,
-you cannot always be sure whether an object you're trying to load or one
-of its linked entities exists. Say there's an optional `Address` object that
+you cannot always be sure whether an object you're trying to load or one of its
+linked entities exists. Say there's an optional `Address` object that
 `UserProfile` object can be linked to. If you do the following in your code,
 you'll get a NullReferenceException when `Address` is missing:
 
@@ -154,7 +154,7 @@ public int GetUserPostCode(int userId) {
 }
 {% endhighlight %}
 
-In which case you'll get the following exception blowing your call stack right up:
+In which case the following exception will blow your call stack right up:
 
 <div class="exception">
 <span><h1>Server Error in '/' Application.<hr width="100%" size="1" color="silver"></h1>
@@ -190,7 +190,7 @@ Line 58:         }
         <td>
         <code><pre>
 [NullReferenceException: Object reference not set to an instance of an object.]
-Dropdowns.Controllers.ProfileController.ViewProfile() in c:\...\Controllers\ProfileController.cs:57
+App.Controllers.ProfileController.ViewProfile() in c:\...\Controllers\ProfileController.cs:57
 lambda_method(Closure , ControllerBase , Object[] ) +101
 System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters) +59
 ... some lines skipped...
@@ -206,8 +206,8 @@ System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; complet
 </font>
 </div>
 
-In this case you can modify the code to safely retrieve the data, and to avoid
-making an assumption that related object will always be there:
+To fix this exception you need to retrieve data in a safe manner - by checking all the reference
+types first and avoiding dengerous assumptions that related objects are always going to be present:
 
 {% highlight csharp %}
 public int? GetUserPostCode(int userId) { // Notice that function returns nullable int now
@@ -223,25 +223,110 @@ public int? GetUserPostCode(int userId) { // Notice that function returns nullab
 
 Similarly, calling any functions on a null reference will result in
 NullReferenceException. Say you are building an auction site, where users can
-add photos to their listings - so there's a Listing class that has a collection
-of Photos. When creating a new listing with some photos like this:
+add photos to their listings. There's class called 'Listing' that has a
+collection of 'Photos', and you want users to be able to submit new listings
+along with the photos in the following manner:
 
 {% highlight csharp %}
+[HttpPost]
 public ActionResult NewListing(ListingModel model) {
     var newListing = new ListingDBObject {
-        Price = model.Price, 
-        Title = model.Title, 
+        Price = model.Price,
+        Title = model.Title,
         ContactNumber = model.ContactNumber
     }
 
-    foreach (var photo in model.Photos) { 
-        newUser.Photos.Add(new PhotoDBObject { // <- THIS WILL BLOW UP!  
-            BinaryData = photo.Data; 
-        }); 
-    } 
+    foreach (var photo in model.Photos) {
+        newUser.Photos.Add(new PhotoDBObject { // <- THIS WILL BLOW UP!
+            BinaryData = photo.Data;
+        });
+    }
+
+    //...here goes code that saves new listing to the database
 }
 {% endhighlight %}
 
 Again, you'll get a brand new NullReferenceException with the following stack
 trace:
 
+<div class="exception">
+<span><h1>Server Error in '/' Application.<hr width="100%" size="1" color="silver"></h1>
+
+<h2> <i>Object reference not set to an instance of an object.</i> </h2></span>
+
+<font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+<b> Description: </b>An unhandled exception occurred during the execution of the current web request. Please review the stack trace for more information about the error and where it originated in the code.
+
+<br><br>
+
+<b> Exception Details: </b>System.NullReferenceException: Object reference not set to an instance of an object.<br><br>
+
+<b>Source Error:</b> <br><br>
+
+<table width="100%" bgcolor="#ffffcc">
+<tbody><tr>        <td>        <code><pre>
+Line 25:
+Line 26:    foreach (var photo in model.Photos) {
+<font color="red">Line 27:        newUser.Photos.Add(new PhotoDBObject {</font>
+Line 58:            BinaryData = photo.Data;
+</pre></code></td></tr></tbody></table>
+<br>
+
+<b> Source File: </b> c:\...\Controllers\ProfileController.cs<b> &nbsp;&nbsp; Line: </b> 27
+<br><br>
+
+<b>Stack Trace:</b> <br><br>
+
+<table width="100%" bgcolor="#ffffcc">
+<tbody><tr>
+        <td>
+        <code><pre>
+[NullReferenceException: Object reference not set to an instance of an object.]
+App.Controllers.ProfileController.NewListing() in c:\...\Controllers\ProfileController.cs:27
+lambda_method(Closure , ControllerBase , Object[] ) +101
+System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters) +59
+... some lines skipped...
+System.Web.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute() +932
+System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; completedSynchronously) +188
+</pre></code>
+        </td>
+</tr>
+</tbody></table>
+<br>
+<hr width="100%" size="1" color="silver">
+<b>Version Information:</b>&nbsp;Microsoft .NET Framework Version:4.0.30319; ASP.NET Version:4.0.30319.34212
+</font>
+</div>
+
+To fix this you need to initialise the collection first:
+{% highlight csharp %}
+[HttpPost]
+public ActionResult NewListing(ListingModel model) {
+    var newListing = new ListingDBObject {
+        Price = model.Price,
+        Title = model.Title,
+        ContactNumber = model.ContactNumber
+    }
+
+    newUser.Photos = new List<PhotoDBObject>(); // Initialise the collection first so it's not null
+    foreach (var photo in model.Photos) {
+        newUser.Photos.Add(new PhotoDBObject { // Add objects to the collection
+            BinaryData = photo.Data;
+        });
+    }
+
+    //...here goes code that saves new listing to the database
+}
+{% endhighlight %}
+
+###Get yourself some good stuff!
+I hope this article helped you to solve your problem and saved you a bit of time and frustration!
+
+If you want to receive notifications when I publish new articles that are based on real-world
+problems, offering real-world solutions, nifty tips and timesavers -- then subscribe to my mailing
+list below.
+
+{% include subscription.html %}
+
+[1]:/dropdownlistfor-with-dictionaries-in-ASP-NET-MVC-and-why-SelectList-wants-to-kill-you/
