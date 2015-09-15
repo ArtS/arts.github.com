@@ -193,13 +193,11 @@ that include the above code. You can browse the code ([MVC4][6], [MVC5.1+][7]) o
 git repository.
 
 ###But wait, there's more
-Hopefully this article helps you navigate the muddy waters of ASP.NET MVC and saves you a few
-minutes of your life which is better spent on what you actually want - things like writing good web
-apps and not decipheryng cryptic docs.
+Hopefully this article helps you navigate the muddy waters of ASP.NET MVC and saves you few minutes 
+of your time.
 
-Sign up to my **Untangling ASP.NET MVC** mailing list to get articles on how to tame the ASP.NET
-MVC beast -- there'll be tons more actionable advice on how to write apps faster and easier and how
-to avoid spending hours when you get stuck with ASP.NET MVC.
+If you don't want to miss next article -- sign up to my mailing list below. There'll be lots more 
+actionable advice on how to write apps faster and easier and how to fix things when you get stuck.
 
 {% include subscription.html %}
 
@@ -210,3 +208,4 @@ to avoid spending hours when you get stuck with ASP.NET MVC.
 [5]:https://github.com/ArtS/aspnetmvc-dropdown-enums/archive/master.zip
 [6]:https://github.com/ArtS/aspnetmvc-dropdown-enums/tree/mvc4
 [7]:https://github.com/ArtS/aspnetmvc-dropdown-enums
+

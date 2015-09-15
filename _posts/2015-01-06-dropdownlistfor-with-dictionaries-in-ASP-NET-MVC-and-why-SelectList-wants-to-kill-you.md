@@ -160,12 +160,9 @@ Here is a [download link][5] for a complete Visual Studio solution that includes
 artice. You can [browse the code online][4] or clone the git repository.
 
 ####But wait, there's more
-I hope this clears things up for you -- leave a comment here if you have any questions or shoot me
-an email and I'll do my best to answer it.
-
-Subscribe to my mailing list so you can get the freshly baked articles as soon as I publish
-them -- I want to help you build your web apps better and faster and avoid getting stuck in the
-intricacies .NET and ASP.NET MVC.
+I hope this article helped you. If you don't want to miss my next post on how to tame the MVC
+beast - subscribe to my mailing list. This way you will get freshly baked articles as soon as I 
+publish them.
 
 {% include subscription.html %}
 

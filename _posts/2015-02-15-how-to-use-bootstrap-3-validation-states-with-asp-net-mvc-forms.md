@@ -145,9 +145,8 @@ standard validation, you can use solutions listed above to make it work.
 You can get the source code for the examples used in this article here as a [Zip archive][8] or [browse
 the code][9] on github.
 
-I hope this article helped you to sort out your problems. Subscribe to my mailing list *__'Untangling
-ASP.NET MVC'__* to get handy tips on working with the framework, various libraries and all sort of
-surrounding stuff.
+I hope this article helped you to sort out your problems. Subscribe to my mailing list to get handy
+tips on working with the framework, various libraries and all sort of surrounding stuff.
 
 {% include subscription.html %}
 

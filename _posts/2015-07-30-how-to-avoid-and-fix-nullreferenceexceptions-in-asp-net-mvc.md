@@ -323,9 +323,8 @@ public ActionResult NewListing(ListingModel model) {
 ###Get yourself some good stuff!
 I hope this article helped you to solve your problem and saved you a bit of time and frustration!
 
-If you want to receive notifications when I publish new articles that are based on real-world
-problems, offering real-world solutions, nifty tips and timesavers -- then subscribe to my mailing
-list below.
+Don't miss my next post - subscribe to my mailing list to get handy tips and solutions for your ASP.NET 
+MVC problems.
 
 {% include subscription.html %}
 
