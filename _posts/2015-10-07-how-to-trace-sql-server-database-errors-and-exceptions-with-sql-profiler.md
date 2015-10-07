@@ -51,7 +51,7 @@ Then again on "Event Selection" tab, in the event grid, select following events:
 
 And then click "Run". You should get a stream of events that looks something like the screen below.
 Do not freak out if there's too many events and they run screaming at you, which happens if you have
-a big systems with lots of users. What you really interested in is lines that have "Exception" in
+a big system with lots of users. What you're really interested in is lines that have "Exception" in
 the "EventClass" column, like this:
 
 ![Events trace][6]
@@ -60,8 +60,8 @@ And that exception is caused by the command just above, one with the title `RPC:
 
 ![Real cause, bitch!][7]
 
-So in this instance we can clearly tell that certain table is missing it's ID column, which
-could be a result of missing database update.
+So in this instance we can clearly tell that certain table is missing its `ID` column, which
+could be a result of missing/incomplete database schema update.
 
 [1]:/img/profiler/trace-properties.png
 [2]:/img/profiler/edit-filter.png
