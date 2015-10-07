@@ -12,11 +12,11 @@ published: true
 ###Why bother?
 
 Sometimes, when errors or exceptions happen you can't just attach a debugger to your web app - for
-example, errors may happen only in production, and you can only sit and watch the error logs fly past,
-or sometimes there's even no meaningful logs available. Maybe you need to debug a closed system - proprietary
-component/nuget package that fails. Maybe it's a combination of several factors - licenses, data,
-environment settings, external processes - all that makes local error replication really hard or 
-impossible.
+example, errors may happen only in production, and you can only sit and watch the error logs fly
+past, or sometimes there's even no meaningful logs available. Maybe you need to debug a closed
+system - proprietary component/nuget package that fails. Maybe it's a combination of several factors
+- licenses, data, environment settings, external processes - all that makes local error replication
+really hard or impossible.
 
 ###How to catch the bastard
 But if you know from the logs or other sources that error occurs when database is accessed, you can
@@ -62,6 +62,16 @@ And that exception is caused by the command just above, one with the title `RPC:
 
 So in this instance we can clearly tell that certain table is missing its `ID` column, which
 could be a result of missing/incomplete database schema update.
+
+###Want more?
+I hate wasting my time on stupid bugs, environment problems and trying to make sense of obscure 
+documentation - that's why whenever I find a faster way of doing something I share that with you.
+
+So if you don't want to miss my next article, sign up to the mailing list below. There'll be lots
+more time-saving and frustration-avoiding advice there, so sign right up.
+
+{% include subscription.html %}
+
 
 [1]:/img/profiler/trace-properties.png
 [2]:/img/profiler/edit-filter.png
