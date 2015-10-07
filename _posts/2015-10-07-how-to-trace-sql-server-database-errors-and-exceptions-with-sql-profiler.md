@@ -9,7 +9,7 @@ status: publish
 type: post
 published: true
 ---
-###Why bother with Profiler?
+###Why bother?
 
 Sometimes, when errors or exceptions happen you can't just attach a debugger to your web app - for
 example, errors may happen only in production, and you can only sit and watch the error logs fly past,
@@ -18,6 +18,7 @@ component/nuget package that fails. Maybe it's a combination of several factors 
 environment settings, external processes - all that makes local error replication really hard or 
 impossible.
 
+###How to catch the bastard
 But if you know from the logs or other sources that error occurs when database is accessed, you can
 find out which queries fail and why. Firstly, you need to attach SQL Profiler to an instance of SQL
 Server. Run SQL Profiler, from "File" menu select "New trace...", then enter your server address and
