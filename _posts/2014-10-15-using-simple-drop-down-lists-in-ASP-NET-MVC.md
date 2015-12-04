@@ -263,7 +263,7 @@ Check out my [next article on how to use `DropDownListFor` with enums][5] - ther
 properly show enums in readable form in a drop down list, how to specify a default "Please Select"
 text and how to get selected enum value in the controller.
 
-Next, sign up to my **Untangling ASP.NET MVC** mailing list and learn how to tackle the complexity 
+Next, sign up to my mailing list **Untangling .NET** and learn how to tackle the complexity 
 of ASP.NET MVC with ease, save yourself hours of wasted time and frustration and become a better 
 person overall. I never spam, period.
 
