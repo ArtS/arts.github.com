@@ -36,7 +36,7 @@
 
                 <script>
                   (function($) {
-                    $('#mc-embedded-subscribe').click(function() { ga('send', 'event', 'Subscribe', window.location.pathname); })
+                    $('#mc-embedded-subscribe').click(function() { ga('send', 'event', 'Subscribe', window.location.pathname, $('#mce-EMAIL').val()); })
                     $('#mce-page').val(window.location.pathname);
                   })(jQuery);
                 </script>
