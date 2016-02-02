@@ -59,7 +59,7 @@ The following bits and pieces are needed:
 Here's the [complete code][3] of the solution used in this article. You can also [browse the
 code][4] online or clone the git repository. Now let's dive right into the details.
 
-####Model
+#### Model
 {% highlight csharp %}
     public class SignUpModel
     {
@@ -196,7 +196,7 @@ are posted back**, and if you want to display the form after a postback (in case
 validation error in one of the form's controls, for example), you need to populate all the
 supplementary data again, otherwise controls such as DropDownLists will be just rendered empty.
 
-####View
+#### View
 And View is the final destination where it all comes together with the help of
 `Html.DropDownListFor()` function.
 {% highlight html %}
