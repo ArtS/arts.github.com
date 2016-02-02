@@ -12,6 +12,7 @@ published: true
 ---
 <script src="//www.google-analytics.com/cx/api.js?experiment=2w87ahlPSw6M93zJ0HC4KA"></script>
 <script>
+(function() {
   var varIndex = cxApi.chooseVariation();
   var variations = [
     function() {},
@@ -20,6 +21,7 @@ published: true
     }
   ];
   $(document).ready(variations[varIndex]);
+})();
 </script>
 It's surprising how many subtle, but frustrating traps one can fall into when building sites with
 ASP.NET MVC. Creating forms for the web is one of them. It's common to spend hours on something
