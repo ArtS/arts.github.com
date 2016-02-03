@@ -10,7 +10,7 @@ status: publish
 type: post
 published: true
 ---
-###Introduction
+#### Introduction
 Quite often people stumble into same problems again and again, and getting a NullReferenceException
 is the one that occurs most frequently, and frankly can be quite annoying. This problem happens when
 writing brand-new ASP.NET MVC code, such as controllers or views, but also when modifying existing
@@ -18,13 +18,13 @@ code that used to work just fine, but somehow suddenly got broken. Here I want t
 exceptions happen and how to fix them, so you can stop wasting your time and do more of the
 programming that you actually enjoy.
 
-### What is NullReferenceException and where can it happen?
+#### What is NullReferenceException and where can it happen?
 NullReferenceException is exactly what it says - it is thrown by .NET Runtime
 when your code tries to access properties or call methods using empty, or null,
 reference. It sounds obvious and trite, but finding a place in your code where
 things went haywire may take some time.
 
-####NullReferenceException in .cshtml Razor views
+#### NullReferenceException in .cshtml Razor views
 
 Let's say you have a UserProfile.cshtml page that displays "Industry" selection
 drop down list for a logged in user (to put a dropdown on a form see my [other
@@ -139,7 +139,7 @@ public ActionResult UserProfile() {
 }
 {% endhighlight %}
 
-####NullReferenceException when working with database entities
+#### NullReferenceException when working with database entities
 
 This is a second most-common problem - when loading entities from a database,
 you cannot always be sure whether an object you're trying to load or one of its
@@ -219,7 +219,7 @@ public int? GetUserPostCode(int userId) { // Notice that function returns nullab
 }
 {% endhighlight %}
 
-####NullReferenceException when calling methods on null
+#### NullReferenceException when calling methods on null
 
 Similarly, calling any functions on a null reference will result in
 NullReferenceException. Say you are building an auction site, where users can
@@ -320,7 +320,7 @@ public ActionResult NewListing(ListingModel model) {
 }
 {% endhighlight %}
 
-###Get yourself some good stuff!
+### GET YOURSELF SOME GOOD STUFF!
 I hope this article helped you to solve your problem and saved you a bit of time and frustration!
 
 Don't miss my next post - subscribe to my mailing list to get handy tips and solutions for your ASP.NET 

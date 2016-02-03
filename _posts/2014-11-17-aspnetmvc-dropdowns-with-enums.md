@@ -28,7 +28,7 @@ Check out my previous article [Using simple Drop Down Lists in ASP.NET MVC][1] f
 breakdown on how to create a simple drop down list on a form, populate it with values from a
 controller, send selected value back and render the drop down with the value selected.
 
-####Solution walkthrough
+#### Solution walkthrough
 Let's put together a fictitious user profile page which has text boxes for First and Last names and
 Industry selection drop down list. It's going to look like this:
 
@@ -56,7 +56,7 @@ public enum Industry
 }
 {% endhighlight %}
 
-#####ASP.NET MVC 5.1 -- a shortcut
+##### ASP.NET MVC 5.1 -- a shortcut
 If you are amongst the more lucky ones and happen to use 5.1 or a later version of the ASP.NET MVC,
 there's a really neat shortcut -- check out this [`EnumDropDownListFor`][2] helper function. (By the
 way, isn't that wonderful how cryptic Microsoft's doco is? Fear not though.)
@@ -77,7 +77,7 @@ on POST. The helper function will also do all the heavy lifting to create proper
 under the `<select>` tag, which will have their text set to the corresponding value from
 `[Display(Name="...")]` attribute.
 
-#####ASP.NET MVC 5 & 4 -- the hard way
+##### ASP.NET MVC 5 & 4 -- the hard way
 In case of an earlier version of the MVC you need to do some work to get those pesky enum values and
 their descriptions out. You can use [`@Html.DropDownListFor`][1] helper function, although it needs 
 a list of `SelectListItem` objects, so we need to convert the members of the enum into instances of the
@@ -110,7 +110,7 @@ private IEnumerable<SelectListItem> GetSelectListItems()
 }
 {% endhighlight %}
 
-####Show selected enum value on a page
+#### Show selected enum value on a page
 Both of the solutions above help you to get a user-selected value in the model on postback, but how
 can you actually render that value, in its readable form, on another page? Instead of using the enum
 value, we want to render the value specified in those `[Display(Name="...")]` attributes.
@@ -153,8 +153,8 @@ public ActionResult ViewProfile()
 }
 {% endhighlight %}
 
-####But wait, there's more!
-That's all good and everything, I hear you saying, but what if I have more than just one enum? Say I
+#### What if my problem is different?
+That's all good, I hear you saying, but what if I have more than just one enum? Say I
 also want to use fields like '_Gender_', '_State_' and '_Time Zone_' on my profile page.  Wouldn't
 it be nicer if instead of having to declare a new, slightly different function for each of those
 enums you could create just a **_generic_** function, that deals with any enum, as long as it
@@ -187,12 +187,12 @@ new `GetEnumDisplayName`, except for the piece where we broaden the usage of thi
 enum via the generic specification: `<T>(T value) where T: struct`. All it really does is to say:
 _"accept an argument of type T as long this type is a struct"_ (and enums are structs in CLR).
 
-####Source code
+#### Source code
 Here are the download links to the [MVC4][4] and [MVC5.1+][5] versions of Visual Studio solutions
 that include the above code. You can browse the code ([MVC4][6], [MVC5.1+][7]) online or clone the
 git repository.
 
-###But wait, there's more
+### BUT WAIT, THERE'S MORE
 Hopefully this article helps you navigate the muddy waters of ASP.NET MVC and saves you few minutes 
 of your time.
 
@@ -208,4 +208,3 @@ actionable advice on how to write apps faster and easier and how to fix things w
 [5]:https://github.com/ArtS/aspnetmvc-dropdown-enums/archive/master.zip
 [6]:https://github.com/ArtS/aspnetmvc-dropdown-enums/tree/mvc4
 [7]:https://github.com/ArtS/aspnetmvc-dropdown-enums
-

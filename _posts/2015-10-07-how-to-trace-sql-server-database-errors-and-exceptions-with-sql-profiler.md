@@ -9,7 +9,7 @@ status: publish
 type: post
 published: true
 ---
-###Why bother?
+#### Why bother?
 
 Sometimes, when errors or exceptions happen you can't just attach a debugger to your web app - for
 example, errors may happen only in production, and you can only sit and watch the error logs fly
@@ -18,7 +18,7 @@ system - proprietary component/nuget package that fails. Maybe it's a combinatio
 - licenses, data, environment settings, external processes - all that makes local error replication
 really hard or impossible.
 
-###How to catch the bastard
+#### How to catch the bastard
 But if you know from the logs or other sources that error occurs when database is accessed, you can
 find out which queries fail and why. Firstly, you need to attach SQL Profiler to an instance of SQL
 Server. Run SQL Profiler, from "File" menu select "New trace...", then enter your server address and
@@ -63,7 +63,7 @@ And that exception is caused by the command just above, one with the title `RPC:
 So in this instance we can clearly tell that certain table is missing its `ID` column, which
 could be a result of missing/incomplete database schema update.
 
-###Want more?
+### WANT MORE? SUBSCRIBE HERE
 I hate wasting my time on stupid bugs, environment problems and trying to make sense of obscure 
 documentation - that's why whenever I find a faster way of doing something I share that with you.
 

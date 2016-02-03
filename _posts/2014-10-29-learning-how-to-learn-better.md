@@ -30,7 +30,7 @@ tricks that I discovered the hard way are discussed in the course and apparently
 scientific backing. I'd like to list my favourite ones here - I do hope they'll help you to be more
 effective and less frustrated (read - more happy) or maybe even encourage you to take the course.
 
-###Distractions kill attention
+### Distractions kill attention
 
 It turns out that people do not multitask all that well - there's actually an inverse correlation:
 those thinking they are good multitaskers are more likely to be quite bad at it. Multitasking uses
@@ -65,7 +65,7 @@ changed my messy life for the better][4]". Setting a 25 minutes timer and focusi
 piece of work while avoiding distractions and interruptions feels surprisingly great and most
 importantly, it gets stuff done.
 
-###Problem dead end
+### Problem dead end
 I always suspected it's hard to solve novel problems by just intently focusing, and almost always
 solutions to problems at work or precursors to those solutions popped up in my mind while I was
 doing something completely different, like riding a bike or walking. I outlined some strategies that
@@ -87,7 +87,7 @@ to be particularly beneficial for enhancement of cognitive abilities - it helps 
 [cope with stress better](http://www.princeton.edu/main/news/archive/S37/28/70Q72/index.xml?section=topstories),
 increase [growth of new neurone and their integration into existing networks](http://onlinelibrary.wiley.com/doi/10.1046/j.1460-9568.2003.02647.x/abstract;jsessionid=E4134A5195F3AD3E841B52CBD741F937.f01t03?deniedAccessCustomisedMessage=&userIsAuthenticated=false).
 
-###Understanding is the key
+### Understanding is the key
 I hated statistics at school, but later I found out that you can actually do pretty amazing things
 with it. Since then I took a couple of online courses on statistics - some bad, some really good.
 What made the good ones to stand apart from the bad ones was the way new learning material was
@@ -111,13 +111,13 @@ It's much easier to remember something visually striking than just a dull set of
 Another proverb, "morning is wiser than the evening" is something that we now have a scientific
 confirmation for - sleep is essential for the [formation and enhancement of new memory](http://www.pnas.org/content/104/18/7723.abstract)
 
-###Meditation
+### Meditation
 Something that I am yet to find a scientific explanation for is the effects of meditation on
 attention. I noticed that my attention span improved dramatically after a few weeks of 30 to 40
 minutes per day of mindfulness meditation practice. See my blog post "[You are batshit crazy](/you-are-batshit-crazy/)" for more
 details on that. I really wish I started meditating earlier in my life, such a great effect it had.
 
-###Sources
+### Sources
 - [Immordino-Yang, M. H., J. A. Christodoulou, and V. Singh. "Rest Is Not Idleness: Implications of the Brain's Default Mode for Human Development and Education." Perspectives on Psychological Science 7,no. 4 (2012): 352-64.](http://www-bcf.usc.edu/~immordin/papers/Immordino-YangetalRESTISNOTIDLENESSPPS2012.pdf)
 - [Takeuchi, H., Y. Taki, H. Hashizume, Y. Sassa, T. Nagase, R. Nouchi, and R. Kawashima. "The Association between Resting Functional Connectivity and Creativity." Cerebral Cortex 22, no. 12 (Jan 10 2012): 2921-29.](http://www.ncbi.nlm.nih.gov/pubmed/22235031)
 - [Physical Exercise Prevents Stress-Induced Activation of Granule Neurons and Enhances Local Inhibitory Mechanisms in the Dentate Gyrus](http://www.jneurosci.org/content/33/18/7770.abstract)
