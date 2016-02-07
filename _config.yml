@@ -8,7 +8,7 @@ url: http://nimblegecko.com
 permalink: /:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
 
 url: http://nimblegecko.com
