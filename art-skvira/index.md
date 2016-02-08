@@ -14,7 +14,7 @@ description: Art Skvira is a Web and Mobile Developer, laser-focused on deliveri
 Hi, my name is Art Skvira and I am a Web and Mobile developer from Melbourne, Australia.
 I tell machines what to do so you can focus on your business.
 
-###Highlights
+### Highlights
 
 * Developed an **_Internet Banking App_** for my client, enabling
 them to service a _**growing customer base**_ on an emerging mobile platform, 
@@ -32,11 +32,11 @@ as to _**acquire new customers**_.
 * Upgraded legacy invoicing system for a client, ensuring there is _**no
 interruption in invoicing and billing**_ during the upgrade and support periods.
 
-###Let's Talk
+### Let's Talk
 
 Got a new project coming up? Drop me a line and we will discuss it - my email is <a href="mailto:art@nimblegecko.com" data-ga-category="Links" data-ga-action="Contact" data-ga-label="email">art@nimblegecko.com</a>
 
-###What my clients say
+### What my clients say
 <blockquote>
     <p>
     Art has been instrumental in the early days of Scheduleflow. His expertise 
@@ -117,7 +117,7 @@ Got a new project coming up? Drop me a line and we will discuss it - my email is
         TFS, SVN, CVS, Git, Mercurial</dd>
 </dl>
 
-###Social
+### Social
 
 <div class="row">
     <div class="span3">
