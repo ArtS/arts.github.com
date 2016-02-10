@@ -149,7 +149,7 @@ Subscribe to my mailing list to get handy tips on working with the framework, va
 
 {% include subscription.html %}
 
-[1]:http://nimblegecko.com/dropdownlistfor-with-dictionaries-in-ASP-NET-MVC-and-why-SelectList-wants-to-kill-you/
+[1]:/dropdownlistfor-with-dictionaries-in-ASP-NET-MVC-and-why-SelectList-wants-to-kill-you
 [2]:/img/mvc/bootstrap3/no-style.png
 [3]:/img/mvc/bootstrap3/like-a-boss.png
 [4]:http://getbootstrap.com/css/#forms-control-validation

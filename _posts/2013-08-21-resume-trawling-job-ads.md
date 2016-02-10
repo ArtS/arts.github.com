@@ -110,7 +110,7 @@ unlikely to matches your circumstances, as you probably will have found a job by
 
 So there's no immediate dangers or strong inconveniences in applying for those
 fake jobs (as it is in case of [recruiters trying to solicit sales
-leads from you]({{ site.url }}/never-trust-what-recruiters-say/)), it's just that most of the time it can be somewhat
+leads from you]({{ site.url }}/never-trust-what-recruiters-say)), it's just that most of the time it can be somewhat
 pointless.
 
 #### More

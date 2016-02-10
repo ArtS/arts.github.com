@@ -133,4 +133,4 @@ details on that. I really wish I started meditating earlier in my life, such a g
 [1]:http://news.bbc.co.uk/2/hi/uk/4471607.stm
 [2]:http://www.nytimes.com/2008/10/25/business/yourmoney/25shortcuts.html?pagewanted=2
 [3]:http://www.nytimes.com/2008/10/25/business/yourmoney/25shortcuts.html
-[4]:/four-apps-that-changed-my-messy-life-for-the-better/
+[4]:/four-apps-that-changed-my-messy-life-for-the-better
