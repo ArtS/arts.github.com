@@ -69,7 +69,7 @@ importantly, it gets stuff done.
 I always suspected it's hard to solve novel problems by just intently focusing, and almost always
 solutions to problems at work or precursors to those solutions popped up in my mind while I was
 doing something completely different, like riding a bike or walking. I outlined some strategies that
-seem to work for me in a blog post "[When You Are Stuck](/when-you-are-stuck/)".
+seem to work for me in a blog post "[When You Are Stuck](/when-you-are-stuck)".
 
 Now I have a scientific confirmation for this finding - apparently our brains use two distinct modes
 of operation: focused and diffused (aka 'default mode network'). When you work on a problem
@@ -114,7 +114,7 @@ confirmation for - sleep is essential for the [formation and enhancement of new 
 ### Meditation
 Something that I am yet to find a scientific explanation for is the effects of meditation on
 attention. I noticed that my attention span improved dramatically after a few weeks of 30 to 40
-minutes per day of mindfulness meditation practice. See my blog post "[You are batshit crazy](/you-are-batshit-crazy/)" for more
+minutes per day of mindfulness meditation practice. See my blog post "[You are batshit crazy](/you-are-batshit-crazy)" for more
 details on that. I really wish I started meditating earlier in my life, such a great effect it had.
 
 ### Sources
