@@ -108,9 +108,8 @@ although there's non-zero possibility of somebody contacting you a few months do
 when a recruiter has an urgent need to fill out some burning role. But again it's
 unlikely to matches your circumstances, as you probably will have found a job by then.
 
-So there's no immediate dangers or strong inconveniences in applying for those
-fake jobs (as it is in case of [recruiters trying to solicit sales
-leads from you]({{ site.url }}/never-trust-what-recruiters-say)), it's just that most of the time it can be somewhat
+So there's no immediate dangers or strong inconveniences in applying for those fake jobs (as it is
+in case of [recruiters trying to solicit sales leads from you]({% post_url 2013-02-02-never-trust-what-recruiters-say %}), it's just that most of the time it can be somewhat
 pointless.
 
 #### More

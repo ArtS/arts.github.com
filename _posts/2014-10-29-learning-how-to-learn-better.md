@@ -69,7 +69,7 @@ importantly, it gets stuff done.
 I always suspected it's hard to solve novel problems by just intently focusing, and almost always
 solutions to problems at work or precursors to those solutions popped up in my mind while I was
 doing something completely different, like riding a bike or walking. I outlined some strategies that
-seem to work for me in a blog post "[When You Are Stuck](/when-you-are-stuck)".
+seem to work for me in a blog post "[When You Are Stuck][5]".
 
 Now I have a scientific confirmation for this finding - apparently our brains use two distinct modes
 of operation: focused and diffused (aka 'default mode network'). When you work on a problem
@@ -97,7 +97,7 @@ easy to remember, sometimes visually striking metaphors.
 For example the concept of the average value was presented like a see-saw with weights at different
 places.
 
-![mean or average is really a see-saw](/img/lh2l/seesaw.png)
+![mean or average is really a see-saw][6]
 
 This unexpected, yet easy to grasp image that related to something that I already new and made it
 really easy to remember the idea.
@@ -114,7 +114,7 @@ confirmation for - sleep is essential for the [formation and enhancement of new 
 ### Meditation
 Something that I am yet to find a scientific explanation for is the effects of meditation on
 attention. I noticed that my attention span improved dramatically after a few weeks of 30 to 40
-minutes per day of mindfulness meditation practice. See my blog post "[You are batshit crazy](/you-are-batshit-crazy)" for more
+minutes per day of mindfulness meditation practice. See my blog post "[You are batshit crazy][8]" for more
 details on that. I really wish I started meditating earlier in my life, such a great effect it had.
 
 ### Sources
@@ -133,4 +133,7 @@ details on that. I really wish I started meditating earlier in my life, such a g
 [1]:http://news.bbc.co.uk/2/hi/uk/4471607.stm
 [2]:http://www.nytimes.com/2008/10/25/business/yourmoney/25shortcuts.html?pagewanted=2
 [3]:http://www.nytimes.com/2008/10/25/business/yourmoney/25shortcuts.html
-[4]:/four-apps-that-changed-my-messy-life-for-the-better
+[4]:{% post_url 2013-06-07-four-apps-that-changed-my-messy-life-for-the-better %}
+[5]:{% post_url 2012-11-09-when-you-are-stuck %}
+[6]:/img/lh2l/seesaw.png
+[7]:{% post_url 2013-07-13-you-are-batshit-crazy %}

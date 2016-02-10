@@ -328,4 +328,4 @@ MVC problems.
 
 {% include subscription.html %}
 
-[1]:/dropdownlistfor-with-dictionaries-in-ASP-NET-MVC-and-why-SelectList-wants-to-kill-you/
+[1]:{% post_url 2015-01-06-dropdownlistfor-with-dictionaries-in-ASP-NET-MVC-and-why-SelectList-wants-to-kill-you %}

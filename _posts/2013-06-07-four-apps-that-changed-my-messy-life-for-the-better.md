@@ -24,7 +24,7 @@ Those short intervals transport me into an awesome state of concentration and ac
 
 I cannot stress this enough - this technique *changed my life*. I get lots more stuff done now, and when I look at the past, where short periods of productive work were far and apart, separated by aimless and jumpy interwebs browsing and rss reading, I just want to punch my former self in the stomach.
 
-*Be careful* with this technique though - it won't help to force yourself to do any kind of boring work. It won't help if you <a href="/why-i-quit-my-job/">hate your job</a>, yet deadlines are looming and your boss is breathing down your neck. As Neil Fiore suggests in his <a title="The Now Habit" href="http://amzn.to/NnIYaW">The Now Habit</a> book, procrastination is more than justified in situations like that - in fact it's one of the best coping mechanisms your brain can deploy.
+*Be careful* with this technique though - it won't help to force yourself to do any kind of boring work. It won't help if you <a href="{% post_url 2012-09-05-why-i-quit-my-job %}">hate your job</a>, yet deadlines are looming and your boss is breathing down your neck. As Neil Fiore suggests in his <a title="The Now Habit" href="http://amzn.to/NnIYaW">The Now Habit</a> book, procrastination is more than justified in situations like that - in fact it's one of the best coping mechanisms your brain can deploy.
 
 <a href="https://itunes.apple.com/au/app/evernote/id281796108"><img class="left" src="/assets/img/47e8a-Evernote-Icon-256.jpg"/></a>
 
