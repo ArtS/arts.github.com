@@ -23,7 +23,7 @@ some juice, my `analytics.js` is still in place and ticking (you can still see a
 traffic directed to your site by Google). Quick look at [Google Search Console (aka Google Webmaster tools)][2] 
 reveals no particularly important messages or warnings.
 
-__Has this happened to your site? How can you get traffic and visitors back? Read on to find out.__
+__Has this happened to your site? How can you get the traffic and visitors back? Read on to find out.__
 
 ## What did just happen?
 
