@@ -20,8 +20,8 @@ Organic Search report and suddenly you see this.
 There's a noticeable, 500% drop in the organic search traffic directed to your site. Wait a minute,
 you say to yourself -- I made no big changes to the site, did none of those shady SEO tricks to get
 some juice, my `analytics.js` is still in place and ticking (you can still see at least _some_
-traffic directed to your by Google). Quick look at the [Google Search Console (aka Google Webmaster
-tools)][2] reveals no particularly important messages or warnings.
+traffic directed to your site by Google). Quick look at the [Google Search Console (aka Google
+Webmaster tools)][2] reveals no particularly important messages or warnings.
 
 __Has this happened to your site? What can you do to get the traffic and the visitors back? Read on
 to find out.__
