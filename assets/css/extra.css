@@ -1,20 +1,40 @@
 body {
-    font-size: 18px;
-    line-height: 30px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+nav.top {
+  margin-top:20px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
 }
 
 p {
-    margin: 0 0 30px 0;
+  margin: 0 0 30px 0;
+}
+
+p:last-child {
+  margin: 0;
 }
 
 img.right {
-    margin: 0.5em 0 0.3em 1em;
-    float: right;
+  margin: 0.5em 0 0.3em 1em;
+  float: right;
 }
 
 img.left {
-    margin: 0.4em 0.9em 0.3em 0;
-    float: left;
+  margin: 0.4em 0.9em 0.3em 0;
+  float: left;
 }
 
 p.center {
@@ -22,7 +42,7 @@ p.center {
 }
 
 blockquote p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .highlight {
@@ -30,7 +50,7 @@ blockquote p {
 }
 
 .page-header {
-    padding-bottom: 20px;
-    margin: 30px 0 20px;
-    border-bottom: 1px solid #d7dfe2;
+  padding-bottom: 20px;
+  margin: 30px 0 20px;
+  border-bottom: 1px solid #d7dfe2;
 }

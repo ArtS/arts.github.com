@@ -111,13 +111,13 @@ It's much easier to remember something visually striking than just a dull set of
 Another proverb, "morning is wiser than the evening" is something that we now have a scientific
 confirmation for - sleep is essential for the [formation and enhancement of new memory](http://www.pnas.org/content/104/18/7723.abstract)
 
-### Meditation
+## Meditation
 Something that I am yet to find a scientific explanation for is the effects of meditation on
 attention. I noticed that my attention span improved dramatically after a few weeks of 30 to 40
 minutes per day of mindfulness meditation practice. See my blog post "[You are batshit crazy][8]" for more
 details on that. I really wish I started meditating earlier in my life, such a great effect it had.
 
-### Sources
+## Sources
 - [Immordino-Yang, M. H., J. A. Christodoulou, and V. Singh. "Rest Is Not Idleness: Implications of the Brain's Default Mode for Human Development and Education." Perspectives on Psychological Science 7,no. 4 (2012): 352-64.](http://www-bcf.usc.edu/~immordin/papers/Immordino-YangetalRESTISNOTIDLENESSPPS2012.pdf)
 - [Takeuchi, H., Y. Taki, H. Hashizume, Y. Sassa, T. Nagase, R. Nouchi, and R. Kawashima. "The Association between Resting Functional Connectivity and Creativity." Cerebral Cortex 22, no. 12 (Jan 10 2012): 2921-29.](http://www.ncbi.nlm.nih.gov/pubmed/22235031)
 - [Physical Exercise Prevents Stress-Induced Activation of Granule Neurons and Enhances Local Inhibitory Mechanisms in the Dentate Gyrus](http://www.jneurosci.org/content/33/18/7770.abstract)

@@ -59,7 +59,7 @@ The following bits and pieces are needed:
 Here's the [complete code][3] of the solution used in this article. You can also [browse the
 code][4] online or clone the git repository. Now let's dive right into the details.
 
-#### Model
+## Model
 {% highlight csharp %}
     public class SignUpModel
     {
@@ -80,7 +80,7 @@ As you can see model is pretty simple and reflects the form's fields except for 
 `States`. It works together with the `State` property -- while the the `State` receives user's
 selection, `States` hold a list of all possible selections.
 
-#### Controller
+## Controller
 Controller's a bit more complex - it consists of 3 action methods and a couple of utility functions.
 {% highlight csharp %}
     public class SignUpController : Controller
@@ -196,7 +196,7 @@ are posted back**, and if you want to display the form after a postback (in case
 validation error in one of the form's controls, for example), you need to populate all the
 supplementary data again, otherwise controls such as DropDownLists will be just rendered empty.
 
-#### View
+## View
 And View is the final destination where it all comes together with the help of
 `Html.DropDownListFor()` function.
 {% highlight html %}
@@ -274,7 +274,7 @@ for this article -- but I will cover that in the later articles too.
 Also check out my [next article on how to use `DropDownListFor` with enums][5] - you'll learn how to 
 show enums in a readable form in drop down lists and heaps more.
 
-<h3 id="ctaTitle">But wait, there's more</h3>
+<h2 id="ctaTitle">But wait, there's more</h2>
 If you don't want to miss my new articles, sign up to **Untangling .NET** below, and learn how to 
 tackle complex problems of ASP.NET MVC with ease, and how to stop wasting hours on trivial problems. 
 Stop the vicios frustration cycle and become a better person overall. I never spam, period.
