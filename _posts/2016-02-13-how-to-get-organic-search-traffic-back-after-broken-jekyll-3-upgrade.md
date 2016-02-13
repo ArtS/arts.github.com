@@ -20,11 +20,10 @@ Organic Search report and suddenly you see this.
 There's a noticeable, 500% drop in the organic search traffic directed to your site. Wait a minute,
 you say to yourself -- I made no big changes to the site, did none of those shady SEO tricks to get
 some juice, my `analytics.js` is still in place and ticking (you can still see at least _some_
-traffic directed to your site by Google). Quick look at the [Google Search Console (aka Google
-Webmaster tools)][2] reveals no particularly important messages or warnings.
+traffic directed to your site by Google). Quick look at [Google Search Console (aka Google Webmaster tools)][2] 
+reveals no particularly important messages or warnings.
 
-__Has this happened to your site? What can you do to get the traffic and the visitors back? Read on
-to find out.__
+__Has this happened to your site? How can you get traffic and visitors back? Read on to find out.__
 
 ## What did just happen?
 
@@ -32,10 +31,10 @@ It's possible that your Jekyll site got screwed up by the recent migration to Je
 upgraded it yourself, or if you're using Github pages, you may want to read this announcement --
 [Github just upgraded to Jekyll 3][3].
 
-If that's the case, these are the first things you need to check:
+If that's the case, these are the things you need to check first:
 
  - Are all pages rendering as expected (navigation elements, headers, paragraphs, code snippets etc)?
- - Are all the pages loading, or is there any 404?
+ - Are all pages loading, or is there any 404?
 
 These would be some major turn-offs, in terms of SEO, that can move your site down in Google Search
 ranks.
@@ -45,9 +44,9 @@ ranks.
 ### Broken markdown: headers
 
 [__Kramdown__][4], the new rendering engine that Jekyll 4 uses is rather opinionated when it comes
-to what it considers to be the 'proper' markdown. HTML titles, in particular, caused me a lot of
+to what it considers to be 'proper' markdown. HTML titles, in particular, caused me a lot of
 pain.  You see, if you write your titles like this: '\#\#\#My lovely title', Kramdown is going to
-render it just as normal text. __You need to put a space in between the hashes and the title text.
+render it just as normal text. __You need to put a space in between hashes and the title text.
 So make sure you change all your titles from__
 
 `##My lovely title` to `## My lovely title`
@@ -65,25 +64,25 @@ If your site gets some 404 hits that are coming from google search results, you 
 
 ![Crawl Errors shows you 404s][6]
 
-If you see a sudden spike, like the on on this screenshot from Google Search Console, you can be
-quite certain something changed on your site and lots of URLs are no longer valid. Check out the
-details table underneath the graph to see what are the particular URLs that are missing, and if they
-have a trailing slash -- you've hit a jackpot. Go fix them, Governor!
+If you see a sudden spike, like the one on this screenshot above, you can be quite certain something
+changed on your site and lots of URLs are no longer valid. Check out the details table underneath
+that graph to see what are the particular imissing URLs, and if they have a trailing slash -- you've
+hit a jackpot. Go fix them, Governor!
 
 ### How to fix 404 errors
 
 While some people suggest using a Javascript redirection on 404 page, that’s a terrible solution -
 it will not help in recovering your Google rank, because the server is still going to send HTTP 404
-back to the user's browser or the Google crawler.
+back to users' browsers or Google crawler.
 
-So do the right thing and add a trailing slash at the end of the `permalink` parameter in
-`_config.yml`:
+So do the right thing and fix it properly by adding a trailing slash at the end of the `permalink`
+parameter in `_config.yml`:
 
 {% highlight markdown %}
 permalink: /:categories/:year/:month/:day/:title/
 {% endhighlight %}
 
-__WARNING__: string above is just an example, and your `permalink` value may differ -- it’s very
+__WARNING__: the string above is just an example, and your `permalink` value may differ -- it’s very
 important to keep it as it is, adding the trailing slash __only__, otherwise all your URLs will
 change and you’ll miss out on SEO juice (this is exactly what happened when your site was
 regenerated with Jekyll 3)
