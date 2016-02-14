@@ -10,19 +10,6 @@ status: publish
 type: post
 published: true
 ---
-<script src="//www.google-analytics.com/cx/api.js?experiment=2w87ahlPSw6M93zJ0HC4KA"></script>
-<script>
-(function() {
-  var varIndex = cxApi.chooseVariation();
-  var variations = [
-    function() {},
-    function() {
-      $('#ctaTitle').text('STOP now and subscribe!');
-    }
-  ];
-  $(document).ready(variations[varIndex]);
-})();
-</script>
 It's surprising how many subtle, but frustrating traps one can fall into when building sites with
 ASP.NET MVC. Creating forms for the web is one of them. It's common to spend hours on something
 trivial, such as displaying a selected value in a DropDownList on postback, or getting that selected
@@ -274,7 +261,9 @@ for this article -- but I will cover that in the later articles too.
 Also check out my [next article on how to use `DropDownListFor` with enums][5] - you'll learn how to 
 show enums in a readable form in drop down lists and heaps more.
 
-<h2 id="ctaTitle">But wait, there's more</h2>
+{% include experiment.html %}
+
+## But wait, there's more {#ctaTitle}
 If you don't want to miss my new articles, sign up to **Untangling .NET** below, and learn how to 
 tackle complex problems of ASP.NET MVC with ease, and how to stop wasting hours on trivial problems. 
 Stop the vicios frustration cycle and become a better person overall. I never spam, period.
