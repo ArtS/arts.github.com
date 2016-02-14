@@ -1,0 +1,13 @@
+<script src="//www.google-analytics.com/cx/api.js?experiment=2w87ahlPSw6M93zJ0HC4KA"></script>
+<script>
+(function() {
+  var varIndex = cxApi.chooseVariation();
+  var variations = [
+    function() {},
+    function() {
+      $('#ctaTitle').text('STOP now and Subscribe!');
+    }
+  ];
+  $(document).ready(variations[varIndex]);
+})();
+</script>
