@@ -9,13 +9,13 @@ status: publish
 type: post
 published: true
 ---
-## My traffic tanked, wtf Google?
-
 It's a fine day, your site runs smoothly, thanks to Jekyll with its static HTML generation and your
 clean and clever markdown. Then for some reason you decide to have a look at the Google Analytics
-Organic Search report and suddenly you see this.
+Organic Search report and suddenly you see that your traffic just jumped off the cliff.
 
 ![Sudden drop in Google Analytics Organic Search Results][1]
+
+## My traffic tanked, wtf Google?
 
 There's a noticeable, 500% drop in the organic search traffic directed to your site. Wait a minute,
 you say to yourself -- I made no big changes to the site, did none of those shady SEO tricks to get

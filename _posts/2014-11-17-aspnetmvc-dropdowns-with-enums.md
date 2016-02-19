@@ -11,9 +11,8 @@ type: post
 published: true
 ---
 ASP.NET MVC is a very powerful, yet quite complex (if not complicated) web development framework.
-It's got heaps of various namespaces, classes, functions and it's hard to tell from just online
-manuals, such as MSDN, which particular class or function overload you need to use for your specific
-task.
+There's a heaps of various namespaces, classes and functions. It's bloody hard to figure out which
+particular class or function overload you need to use for your specific task.
 
 Seemingly simple things, such as creating a humble drop down list with elements from a given enum
 can be quite perplexing, and lots of people get stuck there, not even knowing how to start.  In this

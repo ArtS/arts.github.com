@@ -9,8 +9,6 @@ status: publish
 type: post
 published: true
 ---
-## Why bother?
-
 Sometimes, when errors or exceptions happen you can't just attach a debugger to your web app - for
 example, errors may happen only in production, and you can only sit and watch the error logs fly
 past, or sometimes there's even no meaningful logs available. Maybe you need to debug a closed

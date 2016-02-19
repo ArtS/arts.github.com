@@ -10,11 +10,10 @@ status: publish
 type: post
 published: true
 ---
-## Introduction
 Recently, when writing code for my blog post on drop downs, "[DropDownListFor with Dictionaries in
 ASP.NET MVC and why SelectList wants to kill you][1]", I stumbled over an interesting problem --
 when using ASP.NET MVC HTML helpers, such as `@Html.TextBoxFor()` and `@Html.DropDownListFor()` to
-render controls and `@Html.ValidationMessageFor()` to render validation error messages, I reaslised
+render controls and `@Html.ValidationMessageFor()` to render validation error messages, I realised
 that ASP.NET MVC uses its own CSS classes, so no errors are getting highlighted when using Bootstrap
 3.
 

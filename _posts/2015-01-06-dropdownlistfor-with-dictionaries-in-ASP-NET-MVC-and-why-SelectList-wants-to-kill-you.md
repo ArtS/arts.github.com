@@ -10,8 +10,6 @@ status: publish
 type: post
 published: true
 ---
-#### Intro
-
 I would like to show you how to use ASP.NET MVC helper function `DropDownListFor` and `SelectList`
 class with generic Dictionaries, such as `Dictionary<string, string>` or `Dictionary<int, string>`.
 Dictionaries can be quite useful for a number of scenarios -- serving as a data source for select
@@ -22,7 +20,7 @@ Also, check out my previous articles on [how DropDownListFor works, how to get t
 your controller and how to make sure the selected value is rendered back][1], as well as [how to use
 enums in drop down lists][2] in a humane, non-cryptic way.
 
-#### DropDownListFor and Dictionary<TKey, TValue>
+## DropDownListFor and Dictionary<TKey, TValue>
 Let's start with a simplistic user registration page that amongst other things, has a drop down
 list with names of US states (I used Australian states in my [earlier example][1], so this should
 balance it nicely). A user needs to be able to see full names of the states, such as '_Alabama_',
@@ -123,7 +121,7 @@ So in the end you get some nice and clean HTML that looks like this:
 
 Check you the [full source code of the project here on github][4] or download it as a [zip file][5].
 
-#### It's a trap
+## It's a trap
 You might have noticed in the documentation for one of the [`SelectList` constructors][6] a beningly
 named parameter `selectedValue`, whose name suggests that you should, naturally, use it to select an
 item in the list. The description only confirms this. But there be dragons.
@@ -155,11 +153,11 @@ trees and the air is clean), that's how it would look like:
                       )
 {% endhighlight %}
 
-#### Source code
+## Source code
 Here is a [download link][5] for a complete Visual Studio solution that includes the code used in this
 artice. You can [browse the code online][4] or clone the git repository.
 
-### BUT WAIT, THERE'S MORE
+## BUT WAIT, THERE'S MORE
 I hope this article helped you. If you don't want to miss my next post on how to tame the MVC
 beast - subscribe to my mailing list. This way you will get freshly baked articles as soon as I 
 publish them.

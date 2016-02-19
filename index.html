@@ -1,24 +1,23 @@
 ---
 layout: default
-title: NimbleGecko.com
+title: nimblegecko.com - Replacing pain and suffering with bliss and joy in your .NET journeys
 ---
 
-<h1 class="page-header">{{ site.title }}</h1>
+<h1 class="page-header">{{ site.title }}<small>Blog of an upside-down developer, <a href="/art-skvira/">Art Skvira</a></small></h1>
 <p class="lead">{{ site.tagline }}</p>
 
-<div class="list-group">
-  <a class="list-group-item" href="/art-skvira/">Blog of an upside-down developer, Art Skvira</a>
-</div>
+
 
 <div class="panel text-left">
 
-  <div class="panel-heading">
-    <h2>Blog Posts</h3>
-  </div>
-
   <div class="panel-body">
     {% for post in site.posts %}
-      <p>{{ post.date | date_to_string }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a></p>
+      <center>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <small><p class="text-muted">{{ post.date | date_to_string }}</p></small>
+      </center>
+      <div class="excerpt">{{ post.excerpt | remove: '<h2>' | remove: '</h2>' }}</div>
+      <a href="{{ post.url }}">Read more 	&rarr;</a>
     {% endfor %}
   </div>
 

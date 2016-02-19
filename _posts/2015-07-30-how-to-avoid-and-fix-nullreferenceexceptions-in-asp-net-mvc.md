@@ -10,7 +10,6 @@ status: publish
 type: post
 published: true
 ---
-## Introduction
 Quite often people stumble into same problems again and again, and getting a NullReferenceException
 is the one that occurs most frequently, and frankly can be quite annoying. This problem happens when
 writing brand-new ASP.NET MVC code, such as controllers or views, but also when modifying existing
