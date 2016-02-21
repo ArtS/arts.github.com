@@ -11,13 +11,13 @@ published: true
 ---
 Sometimes, when errors or exceptions happen you can't just attach a debugger to your web app - for
 example, errors may happen only in production, and you can only sit and watch the error logs fly
-past, or sometimes there's even no meaningful logs available. Maybe you need to debug a closed
-system - proprietary component/nuget package that fails. Maybe it's a combination of several factors
+past, or sometimes there are even no meaningful logs available. Maybe you need to debug a closed
+system - proprietary component/NuGet package that fails. Maybe it's a combination of several factors
 - licenses, data, environment settings, external processes - all that makes local error replication
 really hard or impossible.
 
 ## How to catch the bastard
-But if you know from the logs or other sources that error occurs when database is accessed, you can
+But if you know from the logs or other sources that error occurs when a database is accessed, you can
 find out which queries fail and why. Firstly, you need to attach SQL Profiler to an instance of SQL
 Server. Run SQL Profiler, from "File" menu select "New trace...", then enter your server address and
 connection credentials, click "Connect".
@@ -28,7 +28,7 @@ connection credentials, click "Connect".
 ![Trace window][1]
 
 Then on "Event Selection" tab click "Column filters" and enter your database name under "Like"
-filter. You can skip this step if you have just one database, otherwise you're risking being flooded
+filter. You can skip this step if you have just one database, otherwise, you're risking being flooded
 with too many tracing messages.
 
 ![Edit filter][2]
@@ -48,7 +48,7 @@ Then again on "Event Selection" tab, in the event grid, select following events:
 ![TSQL][5]
 
 And then click "Run". You should get a stream of events that looks something like the screen below.
-Do not freak out if there's too many events and they run screaming at you, which happens if you have
+Do not freak out if there are too many events and they run screaming at you, which happens if you have
 a big system with lots of users. What you're really interested in is lines that have "Exception" in
 the "EventClass" column, like this:
 

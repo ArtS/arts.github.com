@@ -11,7 +11,7 @@ type: post
 published: true
 ---
 Quite often people stumble into same problems again and again, and getting a NullReferenceException
-is the one that occurs most frequently, and frankly can be quite annoying. This problem happens when
+is the one that occurs most frequently, and frankly, can be quite annoying. This problem happens when
 writing brand-new ASP.NET MVC code, such as controllers or views, but also when modifying existing
 code that used to work just fine, but somehow suddenly got broken. Here I want to show you why these
 exceptions happen and how to fix them, so you can stop wasting your time and do more of the
@@ -205,8 +205,8 @@ System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean&amp; complet
 </font>
 </div>
 
-To fix this exception you need to retrieve data in a safe manner - by checking all the reference
-types first and avoiding dengerous assumptions that related objects are always going to be present:
+To fix this exception, you need to retrieve data in a safe manner - by checking all the reference
+types first and avoiding dangerous assumptions that related objects are always going to be present:
 
 {% highlight csharp %}
 public int? GetUserPostCode(int userId) { // Notice that function returns nullable int now

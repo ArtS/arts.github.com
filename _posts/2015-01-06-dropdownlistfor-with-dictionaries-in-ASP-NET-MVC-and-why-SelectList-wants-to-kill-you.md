@@ -14,11 +14,11 @@ I would like to show you how to use ASP.NET MVC helper function `DropDownListFor
 class with generic Dictionaries, such as `Dictionary<string, string>` or `Dictionary<int, string>`.
 Dictionaries can be quite useful for a number of scenarios -- serving as a data source for select
 lists of countries, states, time zones, age ranges, genders -- basically any pre-defined, fixed-set
-option lists.
+options lists.
 
 Also, check out my previous articles on [how DropDownListFor works, how to get the selected value in
 your controller and how to make sure the selected value is rendered back][1], as well as [how to use
-enums in drop down lists][2] in a humane, non-cryptic way.
+enums in the drop down lists][2] in a humane, non-cryptic way.
 
 ## DropDownListFor and Dictionary<TKey, TValue>
 Let's start with a simplistic user registration page that amongst other things, has a drop down
@@ -100,10 +100,10 @@ stored in `Model.States`, into an instance of `IEnumerable<SelectListItem>` that
 <!-- ...some lines skipped... -->
 {% endhighlight %}
 
-You can see the [full source code of the view][3] on github.
+You can see the [full source code of the view][3] on GitHub.
 
 That magical line `new SelectList(Model.States, "Key", "Value")` is what does the job -- it
-basically says -- '_take this collection, and for each dictionary item create a `SelectListItem`
+basically says -- '_take this collection, and for each dictionary item, create a `SelectListItem`
 with its `Value` property set to the `Key` property and its `Text` property set to `Value` property
 of a given dictionary item_'.
 
@@ -122,11 +122,11 @@ So in the end you get some nice and clean HTML that looks like this:
 Check you the [full source code of the project here on github][4] or download it as a [zip file][5].
 
 ## It's a trap
-You might have noticed in the documentation for one of the [`SelectList` constructors][6] a beningly
+You might have noticed in the documentation for one of the [`SelectList` constructors][6] a benignly
 named parameter `selectedValue`, whose name suggests that you should, naturally, use it to select an
 item in the list. The description only confirms this. But there be dragons.
 
-This parameter is meant to be used as a __default value__ when form with a drop down is rendered for
+This parameter is meant to be used as a __default value__ when a form with a drop down is rendered for
 the first time. A good example would be trying to pre-fill new user's state based on their IP
 address to save them some time.
 
@@ -135,7 +135,7 @@ model field (`Model.State` in our case) that's used for storage of user's select
 If the model field has got __any__ value, the default `selectedOption` parameter is going to be
 ignored by ASP.NET MVC.
 
-If we were to modify the earier example to pre-select, say _Maine_ (because there's a lot of pine
+If we were to modify the earlier example to pre-select, say _Maine_ (because there's a lot of pine
 trees and the air is clean), that's how it would look like:
 
 {% highlight csharp %}
@@ -155,7 +155,7 @@ trees and the air is clean), that's how it would look like:
 
 ## Source code
 Here is a [download link][5] for a complete Visual Studio solution that includes the code used in this
-artice. You can [browse the code online][4] or clone the git repository.
+article. You can [browse the code online][4] or clone the git repository.
 
 ## BUT WAIT, THERE'S MORE
 I hope this article helped you. If you don't want to miss my next post on how to tame the MVC
