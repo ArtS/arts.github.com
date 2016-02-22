@@ -28,8 +28,8 @@ __Has this happened to your site? How can you get the traffic and visitors back?
 ## What did just happen?
 
 It's possible that your Jekyll site got screwed up by the recent migration to Jekyll 3. You may have
-upgraded it yourself, or if you're using Github pages, you may want to read this announcement --
-[Github just upgraded to Jekyll 3][3].
+upgraded it yourself, or if you're using GitHub pages, you may want to read this announcement --
+[GitHub just upgraded to Jekyll 3][3].
 
 If that's the case, these are the things you need to check first:
 
@@ -55,7 +55,7 @@ There can be many more problems like this, and I will keep updating this blog po
 ones.  In the meantime, I encourage you to share your problems in the comments section below.
 
 ### Terrible, terrible 404
-By default, Jekyll 3 generates post links with no trailing slash (see this [github issue][5], there’s
+By default, Jekyll 3 generates post links with no trailing slash (see this [GitHub issue][5], there’s
 quite a discussion there). So all your older links that had a slash at the end will stop working,
 generating ton load of 404s and causing your google ranking to tank.
 
@@ -110,13 +110,13 @@ If you liked this article and want to get more helpful updates - sign up for my 
 
 {% include subscription.html %}
 
-## PS: Two words on how Github handled the upgrade
-It's all over now, bugs are fixed and URLs are working, but I can't help but think that Github
+## PS: Two words on how GitHub handled the upgrade
+It's all over now, bugs are fixed and URLs are working, but I can't help but think that GitHub
 could've done a better job here and let his clients know that Jekyll is getting updated and it's
 likely to cause problems.
 
 I received no emails from them and only found out about this upgrade when shit hit the fan and my site
-began to lose traffic. Seriously, guys @ Github, you could've sent us all an email or two, is that too
+began to lose traffic. Seriously, guys @ GitHub, you could've sent us all an email or two, is that too
 much to ask?
 
 Frankly, I am still disappointed with this lack of service and forethought.
