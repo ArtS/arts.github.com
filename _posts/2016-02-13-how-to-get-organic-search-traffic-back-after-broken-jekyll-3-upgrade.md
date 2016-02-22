@@ -34,7 +34,7 @@ upgraded it yourself, or if you're using GitHub pages, you may want to read this
 If that's the case, these are the things you need to check first:
 
  - Are all pages rendering as expected (navigation elements, headers, paragraphs, code snippets etc)?
- - Are all pages loading, or is there any 404?
+ - Are all pages loading, or are there any 404?
 
 These would be some major turn-offs, in terms of SEO, that can move your site down in Google Search
 ranks.
@@ -57,9 +57,9 @@ ones.  In the meantime, I encourage you to share your problems in the comments s
 ### Terrible, terrible 404
 By default, Jekyll 3 generates post links with no trailing slash (see this [GitHub issue][5], there’s
 quite a discussion there). So all your older links that had a slash at the end will stop working,
-generating ton load of 404s and causing your google ranking to tank.
+generating ton load of 404s and causing your Google ranking to tank.
 
-If your site gets some 404 hits that are coming from google search results, you will see those in
+If your site gets some 404 hits that are coming from Google search results, you will see those in
 [Google Search Console][2], under [_'Crawl' -> 'Crawl errors'_][7].
 
 ![Crawl Errors shows you 404s][6]
@@ -71,7 +71,7 @@ hit a jackpot. Go fix them, Governor!
 
 ### How to fix 404 errors
 
-While some people suggest using a Javascript redirection on 404 page, that’s a terrible solution -
+While some people suggest using a JavaScript redirection on 404 page, that’s a terrible solution -
 it will not help in recovering your Google rank because the server is still going to send HTTP 404
 back to users' browsers or Google crawler.
 
