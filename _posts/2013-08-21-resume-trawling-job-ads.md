@@ -10,20 +10,18 @@ status: publish
 type: post
 published: true
 ---
-Sometimes you come across a job ad and think - man, that's totally awesome
-role, and the technologies are just right - all the new, sparkling stuff, none
-of the yesteryear's spaghetty-code-promoting proprietary technologies; and the
-project sounds way too rad - an uber social-geolocation-photosharing
-crowdsourcing app for neo-hipsters. Without further ado you reach for your CV
-that's been just updated and off it goes.
+Sometimes you come across a job ad and think - _man, that's a totally awesome role, and the
+technologies are just right - all the spanking new, koolkids tech, none of those yesteryear's
+spaghetty-code-promoting proprietary technologies; and the project sounds way too rad - an uber
+social-geolocation-photosharing crowdsourcing app for neo-hipsters_. Without further ado you reach
+for your CV that's been just updated and off it goes.
 
-If the process above looks awfully similar to an impulse purchase that all of
-us had fallen for at some point (credit due to clever marketers and display
-front designers with their social-proof instilling, immediate-urgency
-exploitation techniques), there's a reason why it is so. But first let's look
-at what resume trawling, as a practice, is.
+If the process above looks awfully similar to an impulse purchase that all of us had fallen for at
+some point (credit due to clever marketers and display front designers with their social-proof
+instilling, immediate-urgency exploitation techniques), there's a reason why it is so. But first
+let's look at what resume trawling, as a practice, is.
 
-#### What is trawling
+## What is trawling
 
 There's a particular type of job ads out there in the
 wild - ones that have no real job opening behind them. These are posted by
@@ -45,7 +43,7 @@ marketing/positioning gimmick, really, than an evil recruiter pinky-to-the-lips
 kind of ad, allowing recruiters to cover different audiences, say Web
 Developers with one ad and Freelance Developers with another.
 
-#### What does it look like
+## What does it look like
 There are some common patterns in how trawling
 job ads look. As with the case of goods that meant to illicit an immediate "buy
 this thing"type of response in shoppers, trawling ads make you want to
@@ -95,7 +93,7 @@ So, these are the general patterns to look for - too broad technology ranges,
 too many different employment types (contract/permanent), different locations,
 different types of roles (development/architecture/management).
 
-#### Why to avoid 
+## Why to avoid 
 
 *"So what"*, you may say, *"trawling-shmawling, I just need
 a job so I'll apply to as many roles as I can to get my CV in front of as many
@@ -112,7 +110,7 @@ So there's no immediate dangers or strong inconveniences in applying for those f
 in case of [recruiters trying to solicit sales leads from you]({% post_url 2013-02-02-never-trust-what-recruiters-say %}), it's just that most of the time it can be somewhat
 pointless.
 
-#### More
+## More
 
 Did you ever come across trawling ads or those that made you feel
 there's something sketchy/not-quite-right about them? I'd love to hear your
