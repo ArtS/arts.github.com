@@ -323,7 +323,7 @@ public ActionResult NewListing(ListingModel model) {
 I hope this article helped you to solve your problem and saved you a bit of time and frustration!
 
 Don't miss my next post - subscribe to my mailing list to get handy tips and solutions for your ASP.NET 
-MVC problems.
+MVC problems. I never spam, period.
 
 {% include subscription.html %}
 

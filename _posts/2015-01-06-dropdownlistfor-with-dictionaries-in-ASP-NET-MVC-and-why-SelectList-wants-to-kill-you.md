@@ -160,7 +160,7 @@ article. You can [browse the code online][4] or clone the git repository.
 ## BUT WAIT, THERE'S MORE
 I hope this article helped you. If you don't want to miss my next post on how to tame the MVC
 beast - subscribe to my mailing list. This way you will get freshly baked articles as soon as I 
-publish them.
+publish them. I never spam, period.
 
 {% include subscription.html %}
 

@@ -106,7 +106,8 @@ Losing traffic to your site sucks, especially when it happens due to factors out
 control. I wrote this article to help you fix the problem and avoid losing time, traffic and
 potentially money.
 
-If you liked this article and want to get more helpful updates - sign up for my mailing list below.
+If you liked this article and want to get more helpful updates - sign up for my mailing list below. 
+I never spam, period.
 
 {% include subscription.html %}
 

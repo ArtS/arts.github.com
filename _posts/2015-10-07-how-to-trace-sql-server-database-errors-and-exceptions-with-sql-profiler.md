@@ -68,7 +68,7 @@ I hate wasting my time on stupid bugs, environment problems and trying to make s
 documentation - that's why whenever I find a faster way of doing something I share that with you.
 
 So if you don't want to miss my next article, sign up to the mailing list below. There'll be lots
-more time-saving and frustration-avoiding advice there, so sign right up.
+more time-saving and frustration-avoiding advice there, so sign right up. I never spam, period.
 
 {% include subscription.html %}
 

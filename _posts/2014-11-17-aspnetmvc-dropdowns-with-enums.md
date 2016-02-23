@@ -196,7 +196,8 @@ Hopefully this article helps you navigate the muddy waters of ASP.NET MVC and sa
 of your time.
 
 If you don't want to miss next article -- sign up to my mailing list below. There'll be lots more 
-actionable advice on how to write apps faster and easier and how to fix things when you get stuck.
+actionable advice on how to write apps faster and easier and how to fix things when you get stuck. 
+I never spam, period.
 
 {% include subscription.html %}
 

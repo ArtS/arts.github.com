@@ -144,7 +144,8 @@ standard validation, you can use solutions listed above to make it work.
 You can get the source code for the examples used in this article here as a [Zip archive][8] or [browse
 the code][9] on GitHub.
 
-Subscribe to my mailing list to get handy tips on working with the framework, various libraries and all sort of surrounding stuff.
+Subscribe to my mailing list to get handy tips on working with the framework, various libraries and
+all sort of surrounding stuff. I never spam, period.
 
 {% include subscription.html %}
 
