@@ -13,7 +13,7 @@ title: nimblegecko.com - Replacing pain and suffering with bliss and joy in your
   <div class="panel-body">
     {% for post in site.posts %}
       <center>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <h2 class="list"><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <small><p class="text-muted">{{ post.date | date_to_string }}</p></small>
       </center>
       <div class="excerpt">{{ post.excerpt | remove: '<h2>' | remove: '</h2>' }}</div>
