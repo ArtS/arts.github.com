@@ -114,7 +114,7 @@ confirmation for - sleep is essential for the [formation and enhancement of new 
 ## Meditation
 Something that I am yet to find a scientific explanation for is the effects of meditation on
 attention. I noticed that my attention span improved dramatically after a few weeks of 30 to 40
-minutes per day of mindfulness meditation practice. See my blog post "[You are batshit crazy][7]" for more
+minutes per day of mindfulness meditation practice. See my blog post ["You are batshit crazy"][7] for more
 details on that. I really wish I started meditating earlier in my life, such a great effect it had.
 
 ## Sources
