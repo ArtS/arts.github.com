@@ -9,13 +9,13 @@ status: publish
 type: post
 published: true
 ---
-Let’s dive right in, plain and simple: for some reason, you need to filter out all non-printable and
-non-ASCII characters from a text input field on a form. Maybe the data you’re capturing needs to
-travel to far reaches of the known universe, to a remote ancient banking backend system that runs on
-COBOL and mainframes (fueled by the energy of a dying brown dwarf). Or maybe the column in the
-database where this data is going to end up has never heard of Unicode. Or maybe that’s just one of
-those unexplainable, irrational so-called “business rules”, that some aspiring manager somewhere up
-in the ranks decided to implement.
+Let’s dive right in, plain and simple: for some reason, you need to make sure that user does not
+enter any non-printable characters into a text input field on a form. Maybe the data needs to travel
+to far reaches of the known universe, to a remote ancient banking backend system that runs on COBOL
+and mainframes (fueled by the energy of a dying brown dwarf). Or maybe the column in the database
+where this data is going to end up has never heard of Unicode. Or maybe that’s just one of those
+unexplainable, irrational so-called “business rules”, that some aspiring manager somewhere up in the
+ranks decided to implement.
 
 ##Good old friend, Regular Expression
 ASP.NET MVC comes with a plenty of inbuilt validators, and `RegularExpression` is one of them. I
