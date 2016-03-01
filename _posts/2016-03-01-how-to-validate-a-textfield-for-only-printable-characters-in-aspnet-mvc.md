@@ -9,7 +9,7 @@ status: publish
 type: post
 published: true
 ---
-Let’s dive right in, plain and simple: for some reason, you need to make sure that user does not
+Let’s dive right in, plain and simple: for some reason, you need to make sure that your users don't
 enter any non-printable characters into a text input field on a form. Maybe the data needs to travel
 to far reaches of the known universe, to a remote ancient banking backend system that runs on COBOL
 and mainframes (fueled by the energy of a dying brown dwarf). Or maybe the column in the database
