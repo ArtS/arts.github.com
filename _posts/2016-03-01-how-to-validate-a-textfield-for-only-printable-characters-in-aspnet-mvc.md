@@ -17,7 +17,7 @@ where this data is going to end up has never heard of Unicode. Or maybe that’s
 unexplainable, irrational so-called “business rules”, that some aspiring manager somewhere up in the
 ranks decided to implement.
 
-##Good old friend, Regular Expression
+## Good old friend, Regular Expression
 ASP.NET MVC comes with a plenty of inbuilt validators, and `RegularExpression` is one of them. I
 will spare you the lengthy details of how validation works in ASP.NET MVC, if you're interested
 in theory, check out [this article][1].
@@ -92,7 +92,7 @@ complete source code, or you can [browse it][7] on GitHub.
 
 {% include experiment.html %}
 
-## Wait, there's more {#ctaTitle}
+## But Wait, There's More! {#ctaTitle}
 I hope this short article helped you to avoid the same trap I fell into and saved you some time.
 
 Do you want to avoid wasting your time on stupid bugs and traps in ASP.NET MVC? Did you ever waste
