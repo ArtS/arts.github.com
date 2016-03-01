@@ -20,7 +20,7 @@ ranks decided to implement.
 ## Good old friend, Regular Expression
 ASP.NET MVC comes with a plenty of inbuilt validators, and `RegularExpression` is one of them. I
 will spare you the lengthy details of how validation works in ASP.NET MVC, if you're interested
-in theory, check out [this article][1].
+in the theory, check out [this article][1].
 
 All we need to do is to chuck a `[RegularExpression]` validation attribute on our model and specify
 a couple of parameters:
