@@ -191,7 +191,9 @@ Here are the download links to the [MVC4][4] and [MVC5.1+][5] versions of Visual
 that include the above code. You can browse the code ([MVC4][6], [MVC5.1+][7]) online or clone the
 git repository.
 
-## BUT WAIT, THERE'S MORE
+{% include experiment.html %}
+
+## But Wait, There's More! {#ctaTitle}
 Hopefully this article helps you navigate the muddy waters of ASP.NET MVC and saves you few minutes 
 of your time.
 

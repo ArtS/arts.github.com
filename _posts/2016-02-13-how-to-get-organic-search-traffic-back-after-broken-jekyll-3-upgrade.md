@@ -101,7 +101,9 @@ broken links on your site.
 
 ![W3C Validator tool][10]
 
-## Stop and subscribe
+{% include experiment.html %}
+
+## But Wait, There's More! {#ctaTitle}
 Losing traffic to your site sucks, especially when it happens due to factors outside of your
 control. I wrote this article to help you fix the problem and avoid losing time, traffic and
 potentially money.
