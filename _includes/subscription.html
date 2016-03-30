@@ -47,7 +47,8 @@
                     function handleScrolling() {
                         if (isVisible($('#mc-embedded-subscribe')[0])) {
                             $(document).off('scroll', handleScrolling);
-                            ga('send', 'event', {
+                            ga('send', {
+                                hitType: 'event',
                                 eventCategory: 'subscribe_seen',
                                 eventAction: 'scroll',
                                 eventLabel: window.location.pathname,
