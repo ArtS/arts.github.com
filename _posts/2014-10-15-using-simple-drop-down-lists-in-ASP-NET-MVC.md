@@ -264,10 +264,17 @@ show enums in a readable form in drop down lists and heaps more.
 {% include experiment.html %}
 
 ## But wait, there's more {#ctaTitle}
+
+{::options parse_block_html="true" /}
+<div id="ctaCopy">
 If you don't want to miss my new articles, sign up to **Untangling .NET** below, and learn how to 
 tackle complex problems of ASP.NET MVC with ease, and how to stop wasting hours on trivial problems. 
 Stop the vicios frustration cycle and become a better person overall. I never spam, period.
+</div>
 
+{% include alt-cta.html %}
+
+{::options parse_block_html="false" /}
 {% include subscription.html %}
 
 [1]:http://msdn.microsoft.com/en-us/library/system.web.mvc.html.selectextensions.dropdownlistfor(v=vs.118).aspx

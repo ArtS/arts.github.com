@@ -194,13 +194,20 @@ git repository.
 {% include experiment.html %}
 
 ## But Wait, There's More! {#ctaTitle}
+
+{::options parse_block_html="true" /}
+<div id="ctaCopy">
 Hopefully this article helps you navigate the muddy waters of ASP.NET MVC and saves you few minutes 
 of your time.
 
 If you don't want to miss next article -- sign up to my mailing list below. There'll be lots more 
 actionable advice on how to write apps faster and easier and how to fix things when you get stuck. 
 I never spam, period.
+</div>
 
+{% include alt-cta.html %}
+
+{::options parse_block_html="false" /}
 {% include subscription.html %}
 
 [1]:{% post_url 2014-10-15-using-simple-drop-down-lists-in-ASP-NET-MVC %}
