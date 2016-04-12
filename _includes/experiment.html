@@ -1,11 +1,16 @@
-<script src="//www.google-analytics.com/cx/api.js?experiment=eRz6uk5LTsmtVcSwEvyZPg"></script>
+<script src="//www.google-analytics.com/cx/api.js?experiment=3irFLCpxQfapnYIxCCBy_Q"></script>
 <script>
 (function() {
   var varIndex = cxApi.chooseVariation();
   var variations = [
     function() {},
     function() {
-      $('#ctaTitle').text('Never miss a new article');
+      $('#ctaTitle').text('What\'s Next? Get your FREE Guide.');
+      $('#mc-embedded-subscribe').prop('value', 'Yes, send me the guide!');
+      $('#ctaCopy').hide();
+      $('#titleSubscribe').hide();
+      $('#ctaCopyAlt').show();
+      window.campaignName = 'guide';
     }
   ];
   $(document).ready(variations[varIndex]);

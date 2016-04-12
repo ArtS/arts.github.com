@@ -104,13 +104,20 @@ broken links on your site.
 {% include experiment.html %}
 
 ## But Wait, There's More! {#ctaTitle}
+
+{::options parse_block_html="true" /}
+<div id="ctaCopy">
 Losing traffic to your site sucks, especially when it happens due to factors outside of your
 control. I wrote this article to help you fix the problem and avoid losing time, traffic and
 potentially money.
 
 If you liked this article and want to get more helpful updates - sign up for my mailing list below. 
 I never spam, period.
+</div>
 
+{% include alt-cta.html %}
+
+{::options parse_block_html="false" /}
 {% include subscription.html %}
 
 ## PS: Two words on how GitHub handled the upgrade

@@ -322,11 +322,18 @@ public ActionResult NewListing(ListingModel model) {
 {% include experiment.html %}
 
 ## But Wait, There's More! {#ctaTitle}
+
+{::options parse_block_html="true" /}
+<div id="ctaCopy">
 I hope this article helped you to solve your problem and saved you a bit of time and frustration!
 
 Don't miss my next post - subscribe to my mailing list to get handy tips and solutions for your ASP.NET 
 MVC problems. I never spam, period.
+</div>
 
+{% include alt-cta.html %}
+
+{::options parse_block_html="false" /}
 {% include subscription.html %}
 
 [1]:{% post_url 2015-01-06-dropdownlistfor-with-dictionaries-in-ASP-NET-MVC-and-why-SelectList-wants-to-kill-you %}

@@ -64,12 +64,19 @@ could be a result of missing/incomplete database schema update.
 {% include experiment.html %}
 
 ## WANT MORE? SUBSCRIBE HERE {#ctaTitle}
+
+{::options parse_block_html="true" /}
+<div id="ctaCopy">
 I hate wasting my time on stupid bugs, environment problems and trying to make sense of obscure 
 documentation - that's why whenever I find a faster way of doing something I share that with you.
 
 So if you don't want to miss my next article, sign up to the mailing list below. There'll be lots
 more time-saving and frustration-avoiding advice there, so sign right up. I never spam, period.
+</div>
 
+{% include alt-cta.html %}
+
+{::options parse_block_html="false" /}
 {% include subscription.html %}
 
 [1]:/img/profiler/trace-properties.png

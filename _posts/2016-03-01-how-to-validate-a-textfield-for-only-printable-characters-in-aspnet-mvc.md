@@ -93,7 +93,11 @@ complete source code, or you can [browse it][7] on GitHub.
 {% include experiment.html %}
 
 ## But Wait, There's More! {#ctaTitle}
-I hope this short article helped you to avoid the same trap I fell into and saved you some time.
+
+{::options parse_block_html="true" /}
+<div id="ctaCopy">
+I hope this short article helped you to avoid the same trap I fell into and saved you some
+time.
 
 Do you want to avoid wasting your time on stupid bugs and traps in ASP.NET MVC? Did you ever waste
 hours of your time on some infuriatingly obscure bug or an edge case? It doesn't have to be
@@ -101,7 +105,11 @@ like that.
 
 Subscribe to my mailing list and save HOURS of your life - I never spam, and I only send useful and
 actionable advice.
+</div>
 
+{% include alt-cta.html %}
+
+{::options parse_block_html="false" /}
 {% include subscription.html %}
 
 [1]:http://www.asp.net/mvc/overview/getting-started/introduction/adding-validation

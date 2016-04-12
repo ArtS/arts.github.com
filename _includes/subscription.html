@@ -4,7 +4,7 @@
 
             <form action="//nimblegecko.us6.list-manage.com/subscribe/post?u=e6274e9cfdaa85439612dbeaf&amp;id=1d1f2b0946" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-horizontal" target="_blank" novalidate role="form">
 
-                <div class="form-group"><label class="col-sm-12"><h4>Subscribe to "Untangling .NET" and never miss an article:</h4></label></div>
+                <div class="form-group"><label class="col-sm-12"><h4 id="titleSubscribe">Subscribe to "Untangling .NET" and never miss an article:</h4></label></div>
 
                 <div class="form-group">
                     <label for="mce-EMAIL" class="col-sm-2 control-label">Your email</label>
@@ -28,6 +28,7 @@
                 <div style="position: absolute; left: -5000px;"><input type="text" name="b_e6274e9cfdaa85439612dbeaf_1d1f2b0946" tabindex="-1" value=""></div>
 
                 <input type="hidden" value="" name="PAGE" class="form-control" id="mce-page" />
+                <input type="hidden" value="" name="CAMPAIGN" class="form-control" id="mce-campaign" />
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                         <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-primary">
@@ -37,6 +38,9 @@
                 <script>
                   (function($) {
 
+                    ///
+                    /// Scrolling to the subscribe form event
+                    ///
                     function isVisible(el) {
                       var elemTop = el.getBoundingClientRect().top;
                       var elemBottom = el.getBoundingClientRect().bottom;
@@ -58,20 +62,28 @@
                     }
                     $(document).on('scroll', handleScrolling);
 
-                    $('#mc-embedded-subscribe').click(function() {
+                    ///
+                    /// Subscribe data enrichment
+                    ///
+                    $('#mc-embedded-subscribe').click(function(e) {
                         var emailRgx = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/i;
                         var email = $('#mce-EMAIL').val();
                         var name = $('#mce-FNAME').val();
                         var logString = name + ':' + email;
                         if (emailRgx.test(email)) {
-                        //		     | Category        | Action    | Label
+                        //                    | Category        | Action    | Label
                           ga('send', 'event', 'subscribe_clean', logString,  window.location.pathname);
                         } else {
-			//		     | Category        | Action    | Label
+                        //                    | Category        | Action    | Label
                           ga('send', 'event', 'subscribe_dirty', logString,  window.location.pathname);
                         }
+
+                        $('#mce-page').val(window.location.pathname);
+                        if (typeof window.campaignName === 'string') {
+                            $('#mce-campaign').val(window.campaignName);
+                        }
                     });
-                    $('#mce-page').val(window.location.pathname);
+
                   })(jQuery);
                 </script>
             </form>
