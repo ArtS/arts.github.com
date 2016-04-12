@@ -10,14 +10,4 @@ published: true
 
 Thanks for signing up to "Untangling .NET"! Please click the link below to start the download.
 
-<a id="linkDownload" href="/assets/net-framework-or-net-core-which-one-should-i-use.pdf">Download my free guide ".NET Framework or .NET Core: Which one should I use?"</a>
-
-<script>
-    (function($) {
-        $(document).ready(function() {
-            $('#linkdownload').on('click', function() {
-                ga('send', 'pageview', '/assets/net-framework-or-net-core-which-one-should-i-use.pdf');
-            });
-        });
-    })(jQuery);
-</script>
+<a id="linkDownload" onclick="ga('send', 'pageview', '/assets/net-framework-or-net-core-which-one-should-i-use.pdf')" href="/assets/net-framework-or-net-core-which-one-should-i-use.pdf">Download my free guide ".NET Framework or .NET Core: Which one should I use?"</a>
