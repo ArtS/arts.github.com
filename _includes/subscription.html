@@ -79,9 +79,8 @@
                         }
 
                         $('#mce-page').val(window.location.pathname);
-                        if (typeof window.campaignName === 'string') {
-                            $('#mce-campaign').val(window.campaignName);
-                        }
+                        var campName = typeof window.campaignName !== 'string' ? '' : window.campaignName;
+                        $('#mce-campaign').val(campName);
                     });
 
                   })(jQuery);
