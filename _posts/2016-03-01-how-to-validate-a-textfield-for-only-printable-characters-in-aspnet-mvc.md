@@ -96,15 +96,14 @@ complete source code, or you can [browse it][7] on GitHub.
 
 {::options parse_block_html="true" /}
 <div id="ctaCopy">
-I hope this short article helped you to avoid the same trap I fell into and saved you some
-time.
+I hope this article helped you to move forward in your project work.
 
-Do you want to avoid wasting your time on stupid bugs and traps in ASP.NET MVC? Did you ever waste
-hours of your time on some infuriatingly obscure bug or an edge case? It doesn't have to be
-like that.
+You can probably recall a time when you were stuck on some problem and the solution seemed so close,
+yet it took hours to figure it out. And when you eventually did that, it was something so
+infuriatingly stupid, you might have wanted to punch the monitor.
 
-Subscribe to my mailing list and save HOURS of your life - I never spam, and I only send useful and
-actionable advice.
+Do you want to avoid wasting your time on stupid bugs and traps in .NET? Subscribe to my mailing
+list and save HOURS of your life - I never spam, and I only send useful and actionable advice.
 </div>
 
 {% include alt-cta.html %}
