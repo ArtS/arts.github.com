@@ -26,7 +26,7 @@ nimblegecko com.
 
 <a id="linkDownload" onclick="ga('send', 'pageview', '/assets/net-framework-or-net-core-which-one-should-i-use.pdf')" target="_new" href="/assets/net-framework-or-net-core-which-one-should-i-use.pdf">Download your free guide ".NET Framework or .NET Core: Which one should I use?"</a>
 
-<a onclick="ga('send', 'pageview', '/assets/net-framework-or-net-core-which-one-should-i-use.pdf')" href="/assets/net-framework-or-net-core-which-one-should-i-use.pdf">
+<a target="_new" onclick="ga('send', 'pageview', '/assets/net-framework-or-net-core-which-one-should-i-use.pdf')" href="/assets/net-framework-or-net-core-which-one-should-i-use.pdf">
     <img style="margin:auto" class="img-responsive" src="/img/guide/guide.png" alt="Download your free guide" />
 </a>
 
