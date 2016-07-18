@@ -16,28 +16,28 @@ here_:
 - [ASP.NET.MVC DropDownLists with enums][2]
 - [DropDownListFor with Dictionaries in ASP.NET MVC and why SelectList wants to kill you][3]
 
-As highlighed previously in [one of those articles][3], it's easy to get confused and stuck when
-trying to specify selected or default value for drop down lists. The problem stems from the fact
+As highlighted previously in [one of those articles][3], it's easy to get confused and stuck when
+trying to specify selected or default value for dropdown lists. The problem stems from the fact
 that, first and foremost, MSDN documentation is terrible for those things, and secondly because of 
 the approach that Microsoft took, trying to build "one-size-fits-all" solution. But let's not get
 too philosophical here and get down to the ground.
 
 ## 'Default' and 'Selected' values - why do we need two?
-There's two ways to specify which item is selected in a drop down list, and this is the main source
+There are two ways to specify which item is selected in a dropdown list, and this is the main source
 of confusion and problems. There are two distinct scenarios:
 
-1. Page is loaded for the first time and the dropdown selection is set to some default value, say
+1. The page is loaded for the first time and the dropdown selection is set to some default value, say
    'US' for the country selection.
-2. Page is loaded with real data, and the dropdown selection is set to a value that user had chosen
+2. The page is loaded with real data, and the dropdown selection is set to a value that user had chosen
    previously.
 
 ## How to specify default value
 Let's say you have a class 'Country' with two properties, 'Id' and 'Name', and you want
-to display a drop down list with country selection, where Australia is pre-selected by default
-(because naturalliy you expect that most of your users will be from Australia).
+to display a dropdown list with the country selection, where Australia is pre-selected by default
+(because naturally, you expect that most of your users will be from Australia).
 
-There's at least two ways you can do that: either by using a helper class `SelectList` which creates
-a collection of `SelectListItem` instances, or by creating that collection manually in the
+There are at least two ways you can do that: either by using a helper class `SelectList` which creates
+a collection of `SelectListItem` instances or by creating that collection manually in the
 controller.
 
 ### Use SelectList in the view
@@ -47,11 +47,11 @@ selection.
 {% highlight csharp %}
 @Html.DropDownListFor(
     m => m.CountryId, // Specifies where to store selected country Id
-                      // It need to be null for the default selection to work!
+                      // It needs to be null for the default selection to work!
 
     new SelectList(Model.Countries, // IEnumerable<Country>, contains all countries loaded from a database
-                   "Id",   // Use Country.Id as a data source for the values of drop down items
-                   "Name", // Use Country.Name as a data source for the text of drop down items
+                   "Id",   // Use Country.Id as a data source for the values of dropdown items
+                   "Name", // Use Country.Name as a data source for the text of dropdown items
                    13 // Specifies Australia (which has ID of 13) as the element selected by default
                    ),
 
@@ -87,7 +87,7 @@ And then in your view:
 {% highlight csharp %}
 @Html.DropDownListFor(
     m => m.CountryId, // Specifies where to store selected country Id
-                      // It need to be null for the default selection to work!
+                      // It needs to be null for the default selection to work!
 
     Model.Countries, // just supply already created collection of SelectListItems
 
@@ -98,12 +98,12 @@ And then in your view:
 
 ### DANGER. WARNING. THERE BE DRAGONS.
 There's one __BIG CAVEAT__: the default value supplied via one of those methods will be completely
-ignored if the value of first parameter of `DropDownListFor` (Model.CountryId in this case) is not
-null. In other words, if user had selected a value or if the model got this value set via some
-other pathway (like you loaded it from database), the default value __will be ignored__.
+ignored if the value of the first parameter of `DropDownListFor` (Model.CountryId in this case) is not
+null. In other words, if a user had selected a value or if the model got this value set via some
+other pathway (like you loaded it from a database), the default value __will be ignored__.
 
 I have tripped over this myself, time and again, even when writing this article. So make sure the
-model field that you use to store the selected Id from the drop down list is nullable, __and is set
+model field that you use to store the selected Id from the dropdown list is nullable __and is set
 to null__ on the first page load.
 
 Also, __do not use__ `SelectedList` or `SelectedListItem` to specify what user had selected, instead
@@ -111,14 +111,14 @@ use them for what they are built - to specify a __default__ value.
 
 ## How to specify selected value
 
-Selected value is different from default value in the way that it had, well, been selected at some
-point. You may have just loaded an object from database for editing and need to render already
+Selected value is different from the default value in the way that it had, well, been selected at some
+point. You may have just loaded an object from a database for editing and need to render already
 selected country.
 
-To do so you need to use first argument of the `DropDownListFor` function. Also note that whatever 
-you specify in `SelectList`/`SelectListItem` constuctors for selected value __will be ignored__.
+To do so you need to use the first argument of the `DropDownListFor` function. Also, note that whatever 
+you specify in `SelectList`/`SelectListItem` constructors for selected value __will be ignored__.
 
-Simplified controller code, which loads a user from database, sets values on the model:
+Simplified controller code, which loads a user from a database, sets values on the model:
 {% highlight csharp %}
 public EditUser(int userId) {
     var user = LoadUserFromDB(userId);
@@ -134,7 +134,7 @@ View code, uses `Model.ContryId` to specify selected value:
 {% highlight csharp %}
 @Html.DropDownListFor(
     m => m.CountryId, // Specifies where to store selected country Id
-                      // It need to be null for the default selection to work!
+                      // It needs to be null for the default selection to work!
 
     new SelectList(Model.Countries,
                    "Id",
