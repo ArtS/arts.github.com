@@ -16,6 +16,14 @@ Dictionaries can be quite useful for a number of scenarios -- serving as a data 
 lists of countries, states, time zones, age ranges, genders -- basically any pre-defined, fixed-set
 options lists.
 
+_This article is one of the 'DropDownList series' articles that should help you in dealing with 
+DropDownList / SelectList / SelectListItem related problems. Check out other DropDownList articles
+here_:
+
+- [Using simple DropDownLists in ASP.NET MVC][7]
+- [ASP.NET.MVC DropDownLists with enums][8]
+- [How to select a default value in DropDownList from a database][9]
+
 Also, check out my previous articles on [how DropDownListFor works, how to get the selected value in
 your controller and how to make sure the selected value is rendered back][1], as well as [how to use
 enums in the drop down lists][2] in a humane, non-cryptic way.
@@ -179,3 +187,6 @@ publish them. I never spam, period.
 [4]:https://github.com/ArtS/aspnetmvc-dropdowns-dictionaries
 [5]:https://github.com/ArtS/aspnetmvc-dropdowns-dictionaries/archive/master.zip
 [6]:http://msdn.microsoft.com/en-us/library/dd492553(v=vs.118).aspx
+[7]:{% post_url 2014-10-15-using-simple-drop-down-lists-in-ASP-NET-MVC %}
+[8]:{% post_url 2014-11-17-aspnetmvc-dropdowns-with-enums %}
+[9]:{% post_url 2016-07-09-how-to-set-default-selected-value-on-drop-down-list-from-database %}

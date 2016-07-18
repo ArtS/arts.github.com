@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to select a default value in DropDownList from database
+title: How to select a default value in DropDownList from a database
 categories:
 - programming
 tags:
@@ -8,6 +8,12 @@ status: publish
 type: post
 published: true
 ---
+As highlighted previously in [one of those articles][3], it's easy to get confused and stuck when
+trying to specify selected or default value for dropdown lists. The problem stems from the fact
+that, first and foremost, MSDN documentation is terrible for those things, and secondly because of 
+the approach that Microsoft took, trying to build "one-size-fits-all" solution. But let's not get
+too philosophical here and get down to the ground.
+
 _This article is one of the 'DropDownList series' articles that should help you in dealing with 
 DropDownList / SelectList / SelectListItem related problems. Check out other DropDownList articles
 here_:
@@ -15,12 +21,6 @@ here_:
 - [Using simple DropDownLists in ASP.NET MVC][1]
 - [ASP.NET.MVC DropDownLists with enums][2]
 - [DropDownListFor with Dictionaries in ASP.NET MVC and why SelectList wants to kill you][3]
-
-As highlighted previously in [one of those articles][3], it's easy to get confused and stuck when
-trying to specify selected or default value for dropdown lists. The problem stems from the fact
-that, first and foremost, MSDN documentation is terrible for those things, and secondly because of 
-the approach that Microsoft took, trying to build "one-size-fits-all" solution. But let's not get
-too philosophical here and get down to the ground.
 
 ## 'Default' and 'Selected' values - why do we need two?
 There are two ways to specify which item is selected in a dropdown list, and this is the main source

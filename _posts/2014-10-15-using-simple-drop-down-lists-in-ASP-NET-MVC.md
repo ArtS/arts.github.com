@@ -17,6 +17,14 @@ value in a controller. Quite often it happens when you just start learning ASP.N
 from an older tech. And boy, is this frustrating as hell -- instead of building an actual web app,
 you spend hours wrestling with the framework.
 
+_This article is one of the 'DropDownList series' articles that should help you in dealing with 
+DropDownList / SelectList / SelectListItem related problems. Check out other DropDownList articles
+here_:
+
+- [ASP.NET.MVC DropDownLists with enums][6]
+- [DropDownListFor with Dictionaries in ASP.NET MVC and why SelectList wants to kill you][7]
+- [How to select a default value in DropDownList from a database][8]
+
 I want to show you how to build a simple form with a drop down list that's got "Please select" text
 as the first option and is based on the list of strings supplied by the controller. I'll show you
 how to display that list on a form, how to get user's selection in the controller, check that user
@@ -282,3 +290,6 @@ Stop the vicios frustration cycle and become a better person overall. I never sp
 [3]:https://github.com/ArtS/aspnet-dropdowns/archive/master.zip
 [4]:https://github.com/ArtS/aspnet-dropdowns
 [5]:{% post_url 2014-11-17-aspnetmvc-dropdowns-with-enums %}
+[6]:{% post_url 2014-11-17-aspnetmvc-dropdowns-with-enums %}
+[7]:{% post_url 2015-01-06-dropdownlistfor-with-dictionaries-in-ASP-NET-MVC-and-why-SelectList-wants-to-kill-you %}
+[8]:{% post_url 2016-07-09-how-to-set-default-selected-value-on-drop-down-list-from-database %}

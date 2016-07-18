@@ -14,6 +14,14 @@ ASP.NET MVC is a very powerful, yet quite complex (if not complicated) web devel
 There's a heaps of various namespaces, classes and functions. It's bloody hard to figure out which
 particular class or function overload you need to use for your specific task.
 
+_This article is one of the 'DropDownList series' articles that should help you in dealing with 
+DropDownList / SelectList / SelectListItem related problems. Check out other DropDownList articles
+here_:
+
+- [Using simple DropDownLists in ASP.NET MVC][8]
+- [DropDownListFor with Dictionaries in ASP.NET MVC and why SelectList wants to kill you][9]
+- [How to select a default value in DropDownList from a database][10]
+
 Seemingly simple things, such as creating a humble drop down list with elements from a given enum
 can be quite perplexing, and lots of people get stuck there, not even knowing how to start.  In this
 article I will show in just a few simple steps how to do the following:
@@ -217,3 +225,6 @@ I never spam, period.
 [5]:https://github.com/ArtS/aspnetmvc-dropdown-enums/archive/master.zip
 [6]:https://github.com/ArtS/aspnetmvc-dropdown-enums/tree/mvc4
 [7]:https://github.com/ArtS/aspnetmvc-dropdown-enums
+[8]:{% post_url 2014-10-15-using-simple-drop-down-lists-in-ASP-NET-MVC %}
+[9]:{% post_url 2015-01-06-dropdownlistfor-with-dictionaries-in-ASP-NET-MVC-and-why-SelectList-wants-to-kill-you %}
+[10]:{% post_url 2016-07-09-how-to-set-default-selected-value-on-drop-down-list-from-database %}
