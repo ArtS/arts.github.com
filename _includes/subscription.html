@@ -39,6 +39,7 @@
                 <script>
                   (function($) {
 
+                    {% if page.url != "/" %}
                     ///
                     /// Scrolling to the subscribe form event
                     ///
@@ -62,6 +63,7 @@
                         }
                     }
                     $(document).on('scroll', handleScrolling);
+                    {% endif %}
 
                     ///
                     /// Subscribe data enrichment
