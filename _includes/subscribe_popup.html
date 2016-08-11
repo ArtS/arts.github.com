@@ -36,33 +36,6 @@
                     </div>
                 </div>
 
-                <script>
-                  (function($) {
-                    ///
-                    /// Scrolling to the subscribe form event
-                    ///
-                    function isVisible(el) {
-                      var elemTop = el.getBoundingClientRect().top;
-                      var elemBottom = el.getBoundingClientRect().bottom;
-
-                      return (elemTop >= 0) && (elemBottom <= window.innerHeight);
-                    }
-
-                    function handleScrolling() {
-                        if (isVisible($('#mc-embedded-subscribe')[0])) {
-                            $(document).off('scroll', handleScrolling);
-                            ga('send', {
-                                hitType: 'event',
-                                eventCategory: 'subscribe_seen',
-                                eventAction: 'scroll',
-                                eventLabel: window.location.pathname,
-                                nonInteraction: true
-                            });
-                        }
-                    }
-                    $(document).on('scroll', handleScrolling);
-                  })(jQuery);
-                </script>
                 {% include subscribe_data_enrichment.html %}
             </form>
         </div>

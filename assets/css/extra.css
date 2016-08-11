@@ -102,6 +102,11 @@ blockquote p {
 .email-popup {
   position: fixed;
   right: 1em;
-  width: 450px;
   top: 1em;
+  z-index: 1;
+  width: 400px;
+}
+
+.email-popup hr {
+  display: none;
 }
