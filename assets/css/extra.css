@@ -107,6 +107,21 @@ blockquote p {
   width: 400px;
 }
 
-.email-popup hr {
-  display: none;
+.email-popup h4 {
+  line-height: 1.5;
+}
+
+.email-popup .form-horizontal .control-label {
+  padding-top: 0px;
+}
+
+.email-popup .btn {
+  width: 100%;
+}
+
+.btn-subscribe {
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  font-weight: 800;
+  letter-spacing: 0.14em;
 }
