@@ -1,20 +1,23 @@
-{% comment %}
-<script src="//www.google-analytics.com/cx/api.js?experiment=ar4SZdbxREyIAXpG_Y2U8g"></script>
+<script src="//www.google-analytics.com/cx/api.js?experiment=lKQqH3uNSiO6naTYJEVlXg"></script>
 <script>
 (function() {
   var varIndex = cxApi.chooseVariation();
   var variations = [
     function() {},
     function() {
-      $('#ctaTitle').text('What\'s Next? Get your FREE Guide.');
-      $('#mc-embedded-subscribe').prop('value', 'Yes, send me the guide!');
+      // Hide default variant
+      $('#divCodeDownload').hide();
       $('#ctaCopy').hide();
-      $('#titleSubscribe').text('Yes, send me the free guide on .NET Core and .NET Framework');
+      //$('#hrSubDiv').hide();
+      // Show alternative variant
       $('#ctaCopyAlt').show();
-      window.campaignName = 'guide';
+      $('#ctaTitle').text('Get complete, tested and working source code for this article');
+      $('#titleSubscribe').text('Enter your name and email below to subscribe to my list, and I\'ll send you complete source code.');
+      $('#mc-embedded-subscribe').prop('value', 'Yes, send me the source codes!');
+      window.campaignName = 'content-upgrade';
     }
   ];
-  $(document).ready(variations[varIndex]);
+  //$(document).ready(variations[varIndex]);
+  $(document).ready(variations[1]);
 })();
 </script>
-{% endcomment %}

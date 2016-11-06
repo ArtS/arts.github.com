@@ -86,9 +86,14 @@ public ActionResult UpdateAccount(AccountModel model)
 
 ## Enabling FluentValidation
 If you want to add client-side JavaScript validation, refer to my earlier article, ["How to use
-Bootstrap 3 validation states with ASP.NET MVC Forms"][5], or simply download the code for this
-article from GitHub - I enabled FluentValidation in this project for you. Here's the [zip][6] with
-complete source code, or you can [browse it][7] on GitHub.
+Bootstrap 3 validation states with ASP.NET MVC Forms"][5].
+
+{::options parse_block_html="true" /}
+<div id="divCodeDownload">
+## Downloading the code 
+You can download the code for this article from GitHub (it comes with FluentValidation enabled
+already!). Here's the [zip file][6] with complete source code, or you can [browse it][7] on GitHub.
+</div>
 
 {% include experiment.html %}
 

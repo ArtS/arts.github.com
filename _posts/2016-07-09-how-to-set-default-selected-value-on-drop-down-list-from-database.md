@@ -145,9 +145,14 @@ View code, uses `Model.ContryId` to specify selected value:
 )
 {% endhighlight %}
 
-## Source codes
+{::options parse_block_html="true" /}
+<div id="divCodeDownload">
+## Source code
 Feel free to download the complete source code that shows you how to use `SelectedList`/`SelectedListItem`/
 `DropDownListFor` from [this GitHub repo][4].
+</div>
+
+{% include experiment.html %}
 
 ## Don't get stuck again, save yourself some precious time! {#ctaTitle}
 

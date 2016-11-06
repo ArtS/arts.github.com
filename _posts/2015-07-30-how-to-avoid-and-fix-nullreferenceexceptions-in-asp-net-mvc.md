@@ -319,7 +319,9 @@ public ActionResult NewListing(ListingModel model) {
 }
 {% endhighlight %}
 
+{% comment %}
 {% include experiment.html %}
+{% endcomment %}
 
 ## But Wait, There's More! {#ctaTitle}
 
@@ -331,7 +333,9 @@ Don't miss my next post - subscribe to my mailing list to get handy tips and sol
 MVC problems. I never spam, period.
 </div>
 
+{% comment %}
 {% include alt-cta.html %}
+{% endcomment %}
 
 {::options parse_block_html="false" /}
 {% include subscription.html %}

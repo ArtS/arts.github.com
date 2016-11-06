@@ -40,7 +40,6 @@ If you want to receive helpful guides and articles as I publish them, subscribe 
 list below. I only write actionable advice that is based on real-world problems, saves people time 
 and brings the joy of programming back. I never spam, period.
 </div>
-{% include alt-cta.html %}
 
 {::options parse_block_html="false" /}
 {% include subscription.html %}

@@ -101,13 +101,15 @@ broken links on your site.
 
 ![W3C Validator tool][10]
 
+{% comment %}
 {% include experiment.html %}
+{% endcomment %}
 
 ## But Wait, There's More! {#ctaTitle}
 
 {::options parse_block_html="true" /}
 <div id="ctaCopy">
-Losing traffic to your site sucks, especially when it happens due to factors outside of your
+Losing traffic to your site sucks, especially when it happens due to the factors outside of your
 control. I wrote this article to help you fix the problem and avoid losing time, traffic and
 potentially money.
 
@@ -115,7 +117,9 @@ If you liked this article and want to get more helpful updates - sign up for my 
 I never spam, period.
 </div>
 
+{% comment %}
 {% include alt-cta.html %}
+{% endcomment %}
 
 {::options parse_block_html="false" /}
 {% include subscription.html %}

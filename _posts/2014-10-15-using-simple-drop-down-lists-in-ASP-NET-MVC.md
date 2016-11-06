@@ -258,16 +258,15 @@ the dropdown. In the end you get something like this sent to user's browser:
 Oh, and remember that cryptic `optionLabel` argument of `DropDownListFor` function? It's actually used to render
 the 'prompt' option of the drop down list. I'd never be able to tell that from the name alone!
 
+Also check out my [next article on how to use `DropDownListFor` with enums][5] - you'll learn how to 
+show enums in readable form in drop down lists and heaps more.
+
+{::options parse_block_html="true" /}
+<div id="divCodeDownload">
+## Download the code
 Here's a download link to the [complete code][3] of the solution used in this article. You can 
 [browse the code][4] online or clone the git repository.
-
-I deliberately didn't put any data access or data validation code so it's easier to focus on the
-problem at hand. Validation is a complex topic and deserves to be covered separately, which I will
-do in the upcoming articles. I also completely skipped the process Model Binding as it's too big 
-for this article -- but I will cover that in the later articles too.
-
-Also check out my [next article on how to use `DropDownListFor` with enums][5] - you'll learn how to 
-show enums in a readable form in drop down lists and heaps more.
+</div>
 
 {% include experiment.html %}
 
@@ -275,9 +274,9 @@ show enums in a readable form in drop down lists and heaps more.
 
 {::options parse_block_html="true" /}
 <div id="ctaCopy">
-If you don't want to miss my new articles, sign up to **Untangling .NET** below, and learn how to 
-tackle complex problems of ASP.NET MVC with ease, and how to stop wasting hours on trivial problems. 
-Stop the vicios frustration cycle and become a better person overall. I never spam, period.
+If you don't want to miss my new articles, sign up to my mailing list below, and learn how to 
+tackle complex problems in ASP.NET MVC with ease, and how to stop wasting hours on trivial problems. 
+Stop that vicios frustration cycle and become a better person overall. I never spam, period.
 </div>
 
 {% include alt-cta.html %}

@@ -194,10 +194,13 @@ new `GetEnumDisplayName`, except for the piece where we broaden the usage of thi
 enum via the generic specification: `<T>(T value) where T: struct`. All it really does is to say:
 _"accept an argument of type T as long this type is a struct"_ (and enums are structs in CLR).
 
+{::options parse_block_html="true" /}
+<div id="divCodeDownload">
 ## Source code
 Here are the download links to the [MVC4][4] and [MVC5.1+][5] versions of Visual Studio solutions
 that include the above code. You can browse the code ([MVC4][6], [MVC5.1+][7]) online or clone the
 git repository.
+</div>
 
 {% include experiment.html %}
 

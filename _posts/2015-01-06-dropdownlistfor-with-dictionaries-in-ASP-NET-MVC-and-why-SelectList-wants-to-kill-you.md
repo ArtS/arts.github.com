@@ -161,9 +161,15 @@ trees and the air is clean), that's how it would look like:
                       )
 {% endhighlight %}
 
+Notice the "ME" parameter in the `new SelectList(...)` call above - but remember it's going to be
+ignored by ASP.NET MVC if `Model.State` is not `null`.
+
+{::options parse_block_html="true" /}
+<div id="divCodeDownload">
 ## Source code
 Here is a [download link][5] for a complete Visual Studio solution that includes the code used in this
 article. You can [browse the code online][4] or clone the git repository.
+</div>
 
 {% include experiment.html %}
 
