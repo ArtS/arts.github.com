@@ -108,8 +108,6 @@ stored in `Model.States`, into an instance of `IEnumerable<SelectListItem>` that
 <!-- ...some lines skipped... -->
 {% endhighlight %}
 
-You can see the [full source code of the view][3] on GitHub.
-
 That magical line `new SelectList(Model.States, "Key", "Value")` is what does the job -- it
 basically says -- '_take this collection, and for each dictionary item, create a `SelectListItem`
 with its `Value` property set to the `Key` property and its `Text` property set to `Value` property
