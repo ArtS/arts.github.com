@@ -77,7 +77,7 @@ ward off people that are not supposed to be poking around and sticking their nos
 however, this will probably not stop a serious attacker, capable of disassembling your source code
 that stores the password.
 
-If you a need higher level of security, you should consider asymetric keys and different crypto
+If you need a higher level of security, you should consider asymmetric keys and different crypto
 algorithms.
 
 {::options parse_block_html="true" /}
