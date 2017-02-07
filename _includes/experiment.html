@@ -1,3 +1,4 @@
+{% comment %}
 <script src="//www.google-analytics.com/cx/api.js?experiment=ipmvymFjQU2De4QK6dvwXg"></script>
 <script>
 (function() {
@@ -18,5 +19,20 @@
     }
   ];
   $(document).ready(variations[varIndex]);
+})();
+</script>
+{% endcomment %}
+<script>
+(function() {
+  $(document).ready(function() {
+      // Hide default variant
+      $('#divCodeDownload').hide();
+      $('#ctaCopy').hide();
+      // Show alternative variant
+      $('#ctaCopyAlt').show();
+      $('#ctaTitle').text('Get complete, tested and working source code for this article');
+      $('#titleSubscribe').text('Subscribe and get the complete, 100% tested and working source code.');
+      $('#mc-embedded-subscribe').prop('value', 'Yes, send me the source codes!');
+  });
 })();
 </script>
