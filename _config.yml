@@ -1,7 +1,7 @@
 # RSS settings
 name: Nimble Gecko
 description: Blog of Art Skvira, upside-down web developer
-url: http://nimblegecko.com
+url: https://nimblegecko.com
 
 # This is the default format.
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
@@ -10,8 +10,6 @@ permalink: /:title/
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: rouge
 markdown: kramdown
-
-url: http://nimblegecko.com
 
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
