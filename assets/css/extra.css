@@ -125,3 +125,10 @@ blockquote p {
   font-weight: 800;
   letter-spacing: 0.14em;
 }
+
+figure figcaption {
+    text-align: center;
+    font-style: italic;
+    color: gray;
+    font-size: 85%;
+}
