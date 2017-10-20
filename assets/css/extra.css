@@ -3,6 +3,10 @@ body {
   line-height: 30px;
 }
 
+a {
+  text-decoration: underline;
+}
+
 nav.top {
   margin-top:20px;
 }
