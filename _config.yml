@@ -11,6 +11,10 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: rouge
 markdown: kramdown
 
+paginate: 10
+plugins: [jekyll-paginate]
+paginate_path: "/blog/pages/:num"
+
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
