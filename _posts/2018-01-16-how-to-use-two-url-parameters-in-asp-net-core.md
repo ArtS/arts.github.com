@@ -16,9 +16,9 @@ requests to route handlers (controllers)][1].
 
 What MS is not telling you, is that Routing also provides copious amounts of reasons to hate it. If
 you ever said to yourself anything like _"OK cool, so I’ll just add a new route for this endpoint,
-and in no time will go back to the actual task at hand"_ and then, like, THREE hours down the track
-when nothing works and your manager is, like, _“Have you done it yet?”_, you really starting
-questioning whether this whole web developer career thing is going to work out for you.
+and in no time will go back to the actual task at hand"_ and then THREE hours down the track when
+nothing works and your manager is, like, _“Have you done it yet?”_, you really starting questioning
+whether this whole web developer career thing is going to work out for you.
 <!--more-->
 
 It’s not uncommon to spend hours, trying to modify an existing route in the application or trying to
