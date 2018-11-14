@@ -37,9 +37,10 @@ you just entering ASP.NET Core development and prefer a detailed, step-by-step g
 
 Some of the courses to look at:
 
+- [ASP.NET Core - Beginner][10]
+- [ASP.NET Core - Intermediate][11]
 - [Introduction to ASP.NET Core with Visual Studio 2017][5]
-- [Intermediate ASP.NET Core 1.0][6] (I know, I know, 1.0, though most of the stuff should be still relevant for 1.1 version)
-- [ASP.NET Core 1.0 Cross-Platform][7] -- pay this guy a visit if you’re on Mac or on Linux
+- [ASP.NET Core 1.0 Cross-Platform][7] -- check this out if you’re on Mac or Linux
 
 Again, in case you run into outdated instructions or code in the videos, make sure to check out
 course-related Github repositories, those are more likely to contain more up-to-date versions of the
@@ -119,13 +120,13 @@ and brings the joy of creation. I never spam, period.
 {::options parse_block_html="false" /}
 {% include subscription.html %}
 
-
 [1]:https://github.com/dotnet/coreclr/releases/tag/v1.1.2
 [2]:https://github.com/dotnet/cli/releases/tag/v1.0.4
 [3]:https://github.com/dotnet/announcements/issues/12
 [4]:https://mva.microsoft.com/search/SearchResults.aspx#!q=ASP.NET%20Core&topic=Web%20Development&lang=1033
 [5]:https://mva.microsoft.com/en-US/training-courses/introduction-to-aspnet-core-with-visual-studio-2017-16841
-[6]:https://mva.microsoft.com/en-US/training-courses/intermediate-aspnet-core-10-16964
 [7]:https://mva.microsoft.com/en-US/training-courses/aspnet-core-10-crossplatform-17039
 [8]:https://docs.microsoft.com/en-us/aspnet/index#pivot=core
 [9]:https://www.visualstudio.com/dev-essentials/
+[10]:https://mva.microsoft.com/en-US/training-courses/aspnet-core-beginner-18153
+[11]:https://mva.microsoft.com/en-US/training-courses/aspnet-core-intermediate-18154
