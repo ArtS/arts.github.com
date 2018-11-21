@@ -84,18 +84,11 @@ I think it’s a great option, and the only reason I am not listing it as the fi
 article is that I am not sure for how long this is going to be available, so jump on the bandwagon
 and get yourself some free courses while you can.
 
-## [Stackoverflow Documentation](https://stackoverflow.com/documentation?tab=name)
-Stackoverflow Documentation project was created with a noble goal in mind -- to create an up-to-date
-repository of various examples, how-tos and “getting started" guides.
+## [Scott Hansleman's Blog](https://www.hanselman.com/blog/)
+Scott works for Microsoft, and his blog is a great mix of C#/.NET/Tools/Cross platform dev advice, as well
+as news, hacks and off-topic posts.
 
-To date, its [ASP.NET Core](https://stackoverflow.com/documentation/asp.net-core/topics) section
-has 25 articles, followed by [.NET Core](https://stackoverflow.com/documentation/.net-core/topics) 
-(9 articles) and [ASP.NET Core MVC](https://stackoverflow.com/documentation/asp.net-core-mvc/topics) 
-(3 articles).
-
-The best thing about the whole project is that you can contribute by writing articles, adding new
-chapters and fixing bugs in the code examples. This project is most likely to contain up-to-date
-examples.
+Totally recommended if you want to stay up to date with the most recent developments in the .NET space.
 
 ## [.NET Core Guide](https://docs.microsoft.com/en-us/dotnet/core/)
 This is an assorted collection of installation manuals, various tutorials, deployment and migration
