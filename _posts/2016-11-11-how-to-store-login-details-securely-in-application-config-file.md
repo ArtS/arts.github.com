@@ -72,13 +72,17 @@ retrieving and updating of config values. You can, however, get fully working cr
 downloading the source code that goes with this article (see below for that).
 
 The encryption/decryption functions use symmetric key (or password), meaning the same key is used
-for encryption and decryption. This is can be a reasonable level of protection if you just want to
+for encryption and decryption. This can be a reasonable level of protection if you just want to
 ward off people that are not supposed to be poking around and sticking their noses into everything,
 however, this will probably not stop a serious attacker, capable of disassembling your source code
 that stores the password.
 
 If you need a higher level of security, you should consider asymmetric keys and different crypto
 algorithms.
+
+I have written a new article that shows how to use AWS Secrets Manager to retrieve secrets from a
+secure storage -- check it out here, it's a much more secure way of storing sensitive data: 
+[How to use AWS Secrets Manager to retrieve passwords in .Net Core apps][2]
 
 {::options parse_block_html="true" /}
 <div id="divCodeDownload">
@@ -110,3 +114,4 @@ actionable advice, no spam ever, and you can unsubscribe at any time.
 
 
 [1]:https://github.com/ArtS/secure-local-config
+[2]:/how-to-use-aws-secret-manager-secrets-in-dotnet-core-application/

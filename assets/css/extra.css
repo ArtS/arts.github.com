@@ -142,3 +142,7 @@ figure figcaption {
   color: gray;
   font-size: 85%;
 }
+
+ul, ol {
+  margin-bottom: 30px;
+}
