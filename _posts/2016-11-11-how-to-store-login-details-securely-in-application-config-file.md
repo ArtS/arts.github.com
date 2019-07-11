@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to store login details securely in application config file
+title: How to store login details securely in the application config file
 categories:
 - programming
 tags:
