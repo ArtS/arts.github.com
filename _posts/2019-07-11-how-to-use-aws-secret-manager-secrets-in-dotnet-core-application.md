@@ -48,14 +48,14 @@ key. Having a simple naming convention helps when you have several secrets to ke
 ![Example of a secret name in AWS Secrets Manager][5]
 
 ## Secret access control
-Unfortunately, secret access control is a big topic that is outsde of this article. I am going to 
+Unfortunately, secret access control is a big topic that is outside of this article. I am going to 
 assume that you already have a user or a role set up in AWS that has corresponding permissions to 
 access AWS Secrets Manager. 
 
 In case you need to get that sorted first, check out this article -
 ["Authentication and Access Control for AWS Secrets Manager"][2]. But in short, you'll need to:
 
-- Create a new user or a role (or use an exisiting one)
+- Create a new user or a role (or use an existing one)
 - Assign an IAM policy to that user/role that allows accessing this secret
 
 If this proves to be problematic, leave a comment below, or shoot me an email, and I'll write a
@@ -111,10 +111,10 @@ Some critical moments to call out here:
    containing those. You can skip these parameters, and it will force the
    `AmazonSecretsManagerClient` to use the environment variables.
 2. It is important to specify the correct AWS Region where your secret is stored, either via
-   `AmazonSecretsManagerClient` call as above, or by setting the default region, like so: 
+   `AmazonSecretsManagerClient` call as above or by setting the default region, like so: 
    `AWSConfigs.AWSRegion = RegionEndpoint.APSoutheast2.SystemName;`
 
-It's quite likely that your app won't retrieve the secret correctly first time you test it. Don't
+It's quite likely that your app won't retrieve the secret correctly the first time you test it. Don't
 despair - security is a tricky area. There are quite a few hoops to jump through:
 - your IAM user's policy needs to be set up correctly
 - your app needs to get its creds (Access Key & Secret Access Key)
@@ -126,7 +126,7 @@ which error you get. Inspect the exception object in detail, as it will contain 
 particular issue you're having. Alternatively, add ample logging.
 
 ## Conclusion
-In this article I demonstrated how you can store secrets using AWS Secrets Manager, how to retrieve
+In this article, I demonstrated how you can store secrets using AWS Secrets Manager, how to retrieve
 them using `AmazonSecretsManagerClient` from `AWSSDK.SecretsManager` package and how to troubleshoot
 any issues you may have.
 
