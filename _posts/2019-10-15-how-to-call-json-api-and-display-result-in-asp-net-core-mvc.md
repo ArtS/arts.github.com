@@ -8,10 +8,10 @@ tags:
 excerpt_separator: <!--more-->
 type: post
 ---
-In today's world of interconnected apps & services you may often need to call another API to get or
+In today's world of interconnected apps & services, you may often need to call another API to get or
 modify information.
 
-In this article I'd like to show how how to do the following:
+In this article I'd like to show you how to do the following:
 
 - call another API in a reliable fashion
 - receive and parse the result so that your app can work with it
@@ -36,11 +36,11 @@ where `MyMvcApp` is the name for your new project. If you already have a project
 
 <div class="alert alert-warning" role="alert">
 <strong>Warning!</strong> The step below is only going to work if your project is using .NET Core
-2.2 or a higher version. If you're on a lower version, you should really upgrade. Alternatively,
+2.2 or a higher version. If you're on a lower version, you really should upgrade. Alternatively,
 just create a new project that runs on the latest .NET Core
 </div>
 
-Given your your app will be calling some remote API, you want to make sure that in case of a flaky
+Given your app will be calling some remote API, you want to make sure that in case of a flaky
 connection or a timeout it's going to re-try to eventually get the data. That's why you going to
 need to add a reference to `Microsoft.Extensions.Http.Polly` package. To read more about Polly and
 re-try policies, check out this article: ["Implement HTTP call retries with exponential backoff with
@@ -54,7 +54,7 @@ dotnet add package Microsoft.Extensions.Http.Polly
 {% endhighlight %}
 
 Also, you'll need a Newtonsoft.Json package so that you could turn all this JSON into neat C#
-objects that are easier to work with. So go ahead and run thi command to add it:
+objects that are easier to work with. So go ahead and run this command to add it:
 
 {% highlight shell %}
 dotnet add package newtonsoft.json
@@ -62,13 +62,13 @@ dotnet add package newtonsoft.json
 
 ## Haaang on, wait, but why do I need all this?
 
-There's several approaches and classes you may use to call external APIs, and you might have come across
+There are several approaches and classes you may use to call external APIs, and you might have come across
 some of them already - classes like `WebClient` or `HttpClient`. While still working, they provide
-quite a manual and low-level access to APIs. However in web apps, since they may have several threads
+quite manual and low-level access to APIs. However in web apps, since they may have several threads
 running and calling different APIs, you want to let the application manage creation, re-use and 
 disposal of these resources.
 
-That's why the one of recommended practices at the moment is to use Http Client Factory pattern.
+That's why one of the recommended practices at the moment is to use Http Client Factory pattern.
 That is a standard part of .NET Core, and it takes good care of things like configuring
 `HttpClient`s, managing creation and disposal of them (to avoid socket exhaustion, that's when OS
 runs out of available network sockets) and does a few more things for you -- see [here][2] for the
@@ -127,7 +127,7 @@ C#. Luckily, there's a web app for that! Head to [http://json2csharp.com/][5], p
 JSON response in there, click 'Generate' and you'll get your C# class(es).
 
 I am going to use [this MetaWeather API response][6] to generate C# classes. Feel free to change the
-generated class names, however do not change the field names, as those need to match your JSON.
+generated class names, however, do not change the field names, as those need to match your JSON.
 
 In my case, I get something like this:
 {% highlight csharp %}
@@ -189,7 +189,7 @@ using Newtonsoft.Json;
 Things to pay particular attention to:
 
 - Notice how we get an instance `HttpClient` with the help of `HttpCientFactory`
-- `result.IsSuccessfulStatusCode` needs to be checked before proceeding to retrieve response
+- `result.IsSuccessfulStatusCode` needs to be checked before proceeding to retrieve the response
 - `JsonConvert.DeserializeObject<WeatherForecast>()` call does all the magic of converting JSON
   response in string form to C# class instance
 
