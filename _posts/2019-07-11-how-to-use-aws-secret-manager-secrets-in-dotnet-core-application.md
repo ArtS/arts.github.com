@@ -132,7 +132,7 @@ any issues you may have.
 
 Leave a comment below if you have any issues or questions!
 
-## Get the complete, tested and working source code for this article {#ctaTitle}
+## Get complete, tested and working source code for this article {#ctaTitle}
 {% include experiment.html %}
 {% include alt-cta.html %}
 {::options parse_block_html="false" /}
