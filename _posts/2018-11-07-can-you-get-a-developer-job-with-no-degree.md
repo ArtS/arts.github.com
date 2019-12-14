@@ -110,13 +110,13 @@ tips, subscribe to my mailing list below. You can unsubscribe at any moment, no 
 {% include subscription.html %}
 
 [1]:https://www.glassdoor.com/blog/no-degree-required/
-[2]:https://www.indeed.com/jobs?q=%28developer+or+programmer%29&l=&radius=25
-[3]:https://au.indeed.com/jobs?q=%28developer+or+programmer%29+-degree&l=&radius=25
+[2]:https://www.indeed.com/jobs?q=%28developer+or+programmer%29&radius=25
+[3]:https://au.indeed.com/jobs?q=%28developer+or+programmer%29+-degree&radius=25
 [4]:/img/career/google-search.png "Google search"
 [5]:/img/career/indeed-us.png
 [6]:/img/career/indeed-au.png
 [7]:/recruiter-interviews-are-they-a-waste-of-time/
-[8]:https://medium.freecodecamp.org/how-i-landed-a-full-stack-developer-job-without-a-tech-degree-or-work-experience-6add97be2051
+[8]:https://medium.freecodecamp.org/how-i-landed-a-full-stack-developer-job-without-a-tech-degree-or-work-experience-6add97be2051/
 [9]:https://medium.com/@samanthaming/how-i-got-my-first-developer-job-without-a-cs-degree-962e885eba25
-[10]:https://medium.freecodecamp.org/how-i-transformed-from-a-30-year-old-plumber-into-a-32-year-old-web-developer-c0cfda7dc23a
+[10]:https://medium.freecodecamp.org/how-i-transformed-from-a-30-year-old-plumber-into-a-32-year-old-web-developer-c0cfda7dc23a/
 [11]:/top-5-resources-to-learn-dotnet-core-web-development/
