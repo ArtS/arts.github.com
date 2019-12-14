@@ -146,3 +146,7 @@ figure figcaption {
 ul, ol {
   margin-bottom: 30px;
 }
+
+p.small {
+  font-size: 85%;
+}

@@ -14,10 +14,10 @@ title: nimblegecko.com - Bringing bliss and joy to your .NET journeys
 
   <div class="panel-body">
     {% for post in paginator.posts %}
-      <center>
+      <div class="text-center">
         <h2 class="list"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-        <small><p class="text-muted">{{ post.date | date_to_string }}</p></small>
-      </center>
+        <p class="small text-muted">{{ post.date | date_to_string }}</p>
+      </div>
       <div class="excerpt">{{ post.excerpt | remove: '<h2>' | remove: '</h2>' }}</div>
       <a href="{{ post.url }}">Read more 	&rarr;</a>
     {% endfor %}
