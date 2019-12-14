@@ -51,7 +51,7 @@ Got a new project coming up? Drop me a line and we will discuss it - my email is
     have worked with. I recommend him whole heartedly and would work with him 
     again in a nano second.
     </p>
-    <small><cite>Paul Tyrrel, CEO, <a target="_blank" href="http://scheduleflow.com">scheduleflow.com</a></cite></small>
+    <small><cite>Paul Tyrrel, CEO, <a target="_blank" href="https://scheduleflow.com">scheduleflow.com</a></cite></small>
 </blockquote>
 <blockquote>
     <p>
@@ -68,7 +68,7 @@ Got a new project coming up? Drop me a line and we will discuss it - my email is
     problems others would hate. Never scared to refactor the most complex code.
     The quality of his work and attention to detail was a great asset to SEEK during some really challenging and complex projects.
     </p>
-    <small><cite>Alan Mastrantoni, Solutions Lead, <a target="_blank" href="http://www.seek.com.au">seek.com.au</a></cite></small>
+    <small><cite>Alan Mastrantoni, Solutions Lead, <a target="_blank" href="https://www.seek.com.au">seek.com.au</a></cite></small>
 </blockquote>
 <blockquote>
     <p>

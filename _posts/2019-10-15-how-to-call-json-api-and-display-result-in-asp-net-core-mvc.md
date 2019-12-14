@@ -235,7 +235,7 @@ In this article, you have just learnt how to:
 
 [1]:https://docs.microsoft.com/en-us/dotnet/architecture/microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly
 [2]:https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory#what-is-httpclient-factory
-[3]:https://www.metaweather.com/api
+[3]:https://www.metaweather.com/api/
 [4]:https://docs.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-3.0
 [5]:http://json2csharp.com/
 [6]:https://www.metaweather.com/api/location/1103816/

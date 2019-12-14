@@ -57,8 +57,8 @@ If you want to disable or remove the extension, go to _Tools &#8594; Extensions 
 ## Most frequently used refactoring features
 
 I decided to give Refactoring Essentials a fair shot, and switched to it from Resharper for a few
-days, and tried to discover as many features as I could during this week. The list of [C#
-Refactorings][4] and [C# Analysers][5] looks impressively long, but how useful are all those
+days, and tried to discover as many features as I could during this week. The list of C#
+Refactorings and C# Analysers looks impressively long, but how useful are all those
 features?
 
 ### Code preview
@@ -103,7 +103,7 @@ shorten the code somewhat.
 {:/}
 
 ### Strange code formatting
-Some [users complained][3] about strange code formatting issue -- apparently Refactoring Essentials
+Some users complained about strange code formatting issue -- apparently Refactoring Essentials
 tends to ignore existing location of braces and spacing, applying VS code formatting rules.
 
 Here you can see how existing code with no spaces between curly braces is being refactored into a
@@ -193,8 +193,4 @@ and brings the joy of creation. I never spam, period.
 {::options parse_block_html="false" /}
 {% include subscription.html %}
 
-[1]:http://vsrefactoringessentials.com/
-[2]:http://vsrefactoringessentials.com/Features/All#collapseCSharpRefactorings
-[3]:https://marketplace.visualstudio.com/items?itemName=SharpDevelopTeam.RefactoringEssentialsforVisualStudio#review-details
-[4]:http://vsrefactoringessentials.com/Features/All#collapseCSharpRefactorings
-[5]:http://vsrefactoringessentials.com/Features/All#collapseCSharpAnalyzers
+[1]:https://github.com/icsharpcode/RefactoringEssentials
