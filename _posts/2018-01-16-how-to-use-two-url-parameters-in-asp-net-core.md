@@ -155,4 +155,4 @@ parameter is redundant.
 {::options parse_block_html="false" /}
 {% include subscription.html %}
 
-[1]:https://docs.microsoft.com/en-us/aspnet/core/fundamentals/routing
+[1]:https://docs.microsoft.com/en-us/aspnet/core/fundamentals/routing?view=aspnetcore-3.1
