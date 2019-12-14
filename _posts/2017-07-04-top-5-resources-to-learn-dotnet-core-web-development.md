@@ -54,8 +54,8 @@ and outdated references due the to ease of maintenance and community participati
 Don’t be afraid and have a browse, it’s definitely more friendly than your regular MSDN
 documentation, as it contains [plenty of tutorials](https://docs.microsoft.com/en-us/aspnet/core/tutorials/),
 as well as an overview of
-[architecture fundamentals](ttps://docs.microsoft.com/en-us/aspnet/core/fundamentals/). There’s a
-dedicated section for [ASP.NET Core MVC](ttps://docs.microsoft.com/en-us/aspnet/core/mvc/overview)
+[architecture fundamentals](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/). There’s a
+dedicated section for [ASP.NET Core MVC](https://docs.microsoft.com/en-us/aspnet/core/mvc/overview)
 that covers the building of websites and APIs.
 
 For offline access, you can download a [hefty PDF](https://opbuildstorageprod.blob.core.windows.net/output-pdf-files/en-us/MSDN.aspnet-core-conceptual/live.pdf)
