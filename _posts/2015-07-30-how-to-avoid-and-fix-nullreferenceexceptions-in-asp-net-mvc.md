@@ -17,7 +17,12 @@ code that used to work just fine, but somehow suddenly got broken. Here I want t
 exceptions happen and how to fix them, so you can stop wasting your time and do more of the
 programming that you actually enjoy.
 
+_Not sure where should those `try`...`catch` blocks go in your code? Learn how to deal with various
+types of exceptions in your apps: [Where should you put "try ... catch" statements in your C#
+code][2]_
+
 ## What is NullReferenceException and where can it happen?
+
 NullReferenceException is exactly what it says - it is thrown by .NET Runtime
 when your code tries to access properties or call methods using empty, or null,
 reference. It sounds obvious and trite, but finding a place in your code where
@@ -329,15 +334,12 @@ public ActionResult NewListing(ListingModel model) {
 <div id="ctaCopy">
 I hope this article helped you to solve your problem and saved you a bit of time and frustration!
 
-Don't miss my next post - subscribe to my mailing list to get handy tips and solutions for your ASP.NET 
-MVC problems. I never spam, period.
+Don't miss my next post - subscribe to the mailing list to get handy tips and solutions for ASP.NET
+NVC Core. I never spam, and you can unsubscribe at any time.
 </div>
-
-{% comment %}
-{% include alt-cta.html %}
-{% endcomment %}
 
 {::options parse_block_html="false" /}
 {% include subscription.html %}
 
 [1]:{% post_url 2015-01-06-dropdownlistfor-with-dictionaries-in-ASP-NET-MVC-and-why-SelectList-wants-to-kill-you %}
+[2]:{% post_url 2020-02-17-where-should-you-put-try-catch-statements-in-your-code %}
