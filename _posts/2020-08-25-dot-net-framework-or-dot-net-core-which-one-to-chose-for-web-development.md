@@ -1,6 +1,6 @@
 ---
 layout: post
-title: .NET Framework or .NET Core &mdash; which one should you learn for web development?
+title: .NET Framework or .NET Core &ndash; which one should you learn for web development?
 categories:
 - programming
 tags:
