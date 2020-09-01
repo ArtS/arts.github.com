@@ -60,12 +60,17 @@ free and paid online courses, blog post available for .NET Core.  Also, most of 
 developers migrated to .NET Core, so you'll find ample online presence in discussion forums such as
 [/r/dotnet][3] and [forums.asp.net][4].
 
-While you can use same programming languages (C#, F#, VB.NET) with both .NET Framework and .NET
-Core, the way projects are structured, system & SDK library names and APIs are quite different, so
-there's definitely going to some learning curve whichever way you go. If you start with .NET
-Core there's always a chance you'll get asked to look into a legacy .NET Framework web app at work,
-but don't be afraid -- while they are different in a lot of ways, you'll still have a bit of a head
-start when it comes to C#, CLR and .NET as a platform.
+While you can use same programming languages (C#, F#, VB.NET (_limited support_)) with both .NET
+Framework and .NET Core, the way projects are structured, system & SDK library names and APIs are
+quite different, so there's definitely going to some learning curve whichever way you go. If you
+start with .NET Core there's always a chance you'll get asked to look into a legacy .NET Framework
+web app at work, but don't be afraid -- while they are different in a lot of ways, you'll still have
+a bit of a head start when it comes to C#, CLR and .NET as a platform.
+
+_One of my awesome readers pointed out that complete VB.Net support is lacking in the current .NET
+Core (3.1). Seems like you can only target Console apps and Class Libraries if you're using VB. Full
+support is planned for .NET 5. See this blog post for more details: [Visual Basic support planned
+for .NET 5.0][9]_
 
 ## Future
 Microsoft stopped actively developing __.NET Framework__, and will only be releasing maintenance and
@@ -152,3 +157,4 @@ Also, join my mailing list to get helpful advice, tips & tricks on .NET developm
 [6]:https://docs.microsoft.com/en-us/aspnet/core/razor-pages/?view=aspnetcore-3.1&tabs=visual-studio
 [7]:https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-3.1
 [8]:https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-3.1
+[9]:https://devblogs.microsoft.com/vbteam/visual-basic-support-planned-for-net-5-0/
