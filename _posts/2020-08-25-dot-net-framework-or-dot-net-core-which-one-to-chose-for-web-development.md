@@ -52,7 +52,10 @@ drawbacks -- there was a handful of very popular .NET Framework libraries that w
 .NET Core immediately, although over time the ecosystem has mostly caught up, whether with
 Microsoft releasing new versions of popular libraries (Entity Framework, SignalR), or the
 open-source movement implementing the missing pieces (WCF). Some libraries still haven't been
-ported and probably not ever going to be -- such as WebForms or WinForms.
+ported and probably not ever going to be -- such as WebForms.
+
+_By the way, if you're looking to use WinForms with .NET Core, seems like it's your lucky day!
+Microsoft recently released [Windows Forms Designer for .NET Core][10]_
 
 As far as the documentation is concerned -- Microsoft has done a fantastic job at documenting .NET
 Core, so it's heaps better than your general useless MSDN madness. There's also tons of tutorial,
@@ -158,3 +161,4 @@ Also, join my mailing list to get helpful advice, tips & tricks on .NET developm
 [7]:https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-3.1
 [8]:https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-3.1
 [9]:https://devblogs.microsoft.com/vbteam/visual-basic-support-planned-for-net-5-0/
+[10]:https://devblogs.microsoft.com/dotnet/windows-forms-designer-for-net-core-released/
