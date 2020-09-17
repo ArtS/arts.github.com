@@ -19,7 +19,7 @@ paginate_path: "/blog/pages/:num/"
 # so be sure to set them if your theme uses them.
 #
 title : Nimble Gecko
-tagline: Bringing bliss and joy to your .NET journeys
+tagline: More bliss and joy to your .NET journeys
 author :
   name : Art Skvira
   email : artem.skvira@gmail.com
