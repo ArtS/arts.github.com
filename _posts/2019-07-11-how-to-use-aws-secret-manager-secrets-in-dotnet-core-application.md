@@ -132,11 +132,7 @@ any issues you may have.
 
 Leave a comment below if you have any issues or questions!
 
-## Get complete, tested and working source code for this article {#ctaTitle}
-{% include experiment.html %}
-{% include alt-cta.html %}
-{::options parse_block_html="false" /}
-{% include subscription.html %}
+{% include code-download-cta.html %}
 
 [1]:/how-to-store-login-details-securely-in-application-config-file/
 [2]:https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access.html

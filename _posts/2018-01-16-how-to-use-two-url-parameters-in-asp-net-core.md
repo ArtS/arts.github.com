@@ -134,7 +134,7 @@ Which will produce the following HTML in the browser:
 
 {% highlight html %}
 <ul>
-    <li><a href="/master/Australia/detail/England">Australia - England: /master/Australia/detail/England</a></li>
+  <li><a href="/master/Australia/detail/England">Australia - England: /master/Australia/detail/England</a></li>
 </ul>
 {% endhighlight %}
 
@@ -149,10 +149,6 @@ obtained from a database. So in the example, where we may look at a hypothetical
 there's no need to specify ID of the University: `/uni/1/student/2` - in this instance, the first
 parameter is redundant.
 
-## Get complete, tested and working source code for this article {#ctaTitle}
-{% include experiment.html %}
-{% include alt-cta.html %}
-{::options parse_block_html="false" /}
-{% include subscription.html %}
+{% include code-download-cta.html %}
 
 [1]:https://docs.microsoft.com/en-us/aspnet/core/fundamentals/routing?view=aspnetcore-3.1

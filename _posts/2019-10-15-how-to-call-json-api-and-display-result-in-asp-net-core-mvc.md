@@ -227,11 +227,7 @@ In this article, you have just learnt how to:
 - Call the API & deserialse the result into instances of C# class(es)
 - Display the result on the page
 
-## Get complete, tested, and working source code for this article {#ctaTitle}
-{% include experiment.html %}
-{% include alt-cta.html %}
-{::options parse_block_html="false" /}
-{% include subscription.html %}
+{% include code-download-cta.html %}
 
 [1]:https://docs.microsoft.com/en-us/dotnet/architecture/microservices/implement-resilient-applications/implement-http-call-retries-exponential-backoff-polly
 [2]:https://github.com/App-vNext/Polly/wiki/Polly-and-HttpClientFactory#what-is-httpclient-factory
