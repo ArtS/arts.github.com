@@ -23,7 +23,7 @@ In this article, I would like to show you a much more secure way of storing and 
 information -- such as usernames and passwords, encryption keys, API keys etc. This method will come
 particularly handy if you already rely on AWS for some of your application needs.
 
-_Looking for an Microsoft Azure-specific solution to store & read your passwords? Check out this
+_Looking for a Microsoft Azure-specific solution to store & read your passwords? Check out this
 article: ["How to securely store and retrieve sensitive info in .NET Core apps with Azure Key Vault"][6]_
 
 <!--more-->
