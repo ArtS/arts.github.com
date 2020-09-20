@@ -8,11 +8,25 @@ status: publish
 type: post
 published: true
 ---
-
 It is very common in our day and age of interconnected integratedness for an application to be
 reaching out to external services such as email servers, databases etc. This creates a problem
 -- you need to store usernames, passwords, access codes, API keys etc somewhere and mitigate the
  risks of that sensitive information either not being found or read by a wrong person.
+
+__WARNING__:
+This article is quite outdated now. I do not recommend using this approach for anything that even
+remotely resembles a real production app. You should be using a secure cloud secrets storage
+service, such as AWS Secrets Manager or Azure Key Vault. I wrote some new articles to help you
+navigate this space:
+
+- [How to securely store and retrieve sensitive info in .NET Core apps with Azure Key Vault][1]
+- [How to use AWS Secrets Manager to retrieve passwords in .Net Core apps][2]
+
+The article below is preserved for purely historical purposes. Feel free to play around with the
+code in there, but please, for the love of all that's good, do not store passwords locally with the
+apps.
+
+---
 
 One of the ways of securing such sensitive information is symmetric encryption - when same
 password/key is used for encryption and decryption. In this article, I want to show you how to read 
@@ -80,38 +94,8 @@ that stores the password.
 If you need a higher level of security, you should consider asymmetric keys and different crypto
 algorithms.
 
-I have written a new article that shows how to use AWS Secrets Manager to retrieve secrets from a
-secure storage -- check it out here, it's a much more secure way of storing sensitive data: 
-[How to use AWS Secrets Manager to retrieve passwords in .Net Core apps][2]
-
-{::options parse_block_html="true" /}
-<div id="divCodeDownload">
-## Source code
-To download fully working and tested source code with this example head to this [GitHub repo][1].
-</div>
-
-{% include experiment.html %}
-
-## Don't get stuck again, save yourself some precious time! {#ctaTitle}
-
-{::options parse_block_html="true" /}
-<div id="ctaCopy">
-I hope this article helped you to move forward in your work.
-
-You can probably recall a time when you were stuck on some problem and the solution seemed so close,
-yet it took hours to figure it out. And when you eventually did that, it was something so
-infuriatingly stupid, you wanted to punch the monitor.
-
-Do you want to avoid wasting your time on stupid bugs and traps in .NET? Subscribe to my mailing
-list and save HOURS of your life and bring the joy back into programming. I only send useful and 
-actionable advice, no spam ever, and you can unsubscribe at any time.
-</div>
-
-{% include alt-cta.html %}
-
-{::options parse_block_html="false" /}
-{% include subscription.html %}
-
+{% include code-download-cta.html %}
 
 [1]:https://github.com/ArtS/secure-local-config
-[2]:/how-to-use-aws-secret-manager-secrets-in-dotnet-core-application/
+[2]:{% post_url 2019-07-11-how-to-use-aws-secret-manager-secrets-in-dotnet-core-application %}
+[3]:{% post_url 2020-09-17-how-to-securely-store-and-retrieve-passwords-in-dot-net-core-apps-with-azure-key-vault %}

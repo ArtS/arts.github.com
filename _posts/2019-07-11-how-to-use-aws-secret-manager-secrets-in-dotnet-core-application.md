@@ -23,6 +23,9 @@ In this article, I would like to show you a much more secure way of storing and 
 information -- such as usernames and passwords, encryption keys, API keys etc. This method will come
 particularly handy if you already rely on AWS for some of your application needs.
 
+_Looking for an Microsoft Azure-specific solution to store & read your passwords? Check out this
+article: ["How to securely store and retrieve sensitive info in .NET Core apps with Azure Key Vault"][6]_
+
 <!--more-->
 
 ## Storing a secret
@@ -139,3 +142,4 @@ Leave a comment below if you have any issues or questions!
 [3]:/img/secret-type-choice.png "AWS Secrets Manager 'Store a new secret' screen"
 [4]:/img/secret-value.png "Example of a secret in AWS Secrets Manager"
 [5]:/img/secret-name.png "Example of a secret name in AWS Secrets Manager"
+[6]:{% post_url 2020-09-17-how-to-securely-store-and-retrieve-passwords-in-dot-net-core-apps-with-azure-key-vault %}
