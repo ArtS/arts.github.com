@@ -27,10 +27,12 @@ Dreadful, I know.
 
 What if there was a tool that let you quickly write & run some C# code without too much fuss?
 
+_Looking for a comparison of C# REPLs? Check out this article: [How to quickly run some C# without a project][24]_
+
 ### .NET Fiddle
 [.NET Fiddle][1] lets you run C# code in your browser. It has syntax and error highlighting,
-autocompletion and it runs latest C#, so you get access to all latest language features. To get
-that working, make sure to select ".NET Core" in the `Compiler` dropdown.
+autocompletion and it runs the latest version of C#, so you get access to all the cool language
+features. To get that working, make sure to select ".NET Core" in the `Compiler` dropdown.
 
 [![dotnetfiddle.net interfaces screenshot][2]][1]
 
@@ -206,3 +208,4 @@ development related.
 [21]:https://www.toptal.com/developers/gitignore
 [22]:/img/gitignoreio.png
 [23]:mailto:art@nimblegecko.com
+[24]:{% post_url 2020-10-01-how-to-quickly-run-some-csharp-code-without-creating-a-project %}
