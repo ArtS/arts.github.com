@@ -12,12 +12,12 @@ type: post
 Do you ever wish you could just quickly run some C# code, without all the heavy lifting, like
 creating a new project, setting it up etc? Or worse yet, starting to experiment with some temporary
 code by modifying an existing solution, and then forgetting to remove your code, and lo and behold,
-next thing you know it's deployed to production?!
+the next thing you know it's deployed to production?!
 
 Wouldn't it be nice to be able to play around with any C# code, as if from a command line, but with
 all the goodies like highlighting and code completion? How awesome it'd be to see all the properties
 on the objects you're working with and their actual values, without having to rely on some
-vague description from MSDN? Think of this as iPython or JavaScript console, but for C#.
+vague description from MSDN? Think of this as iPython or dev tools Javascript console, but for C#.
 
 That would let you try different ways to solve problems, running code straight away, line by line,
 without having to restart your project and step into whichever function you'd be modifying instead.
@@ -28,7 +28,7 @@ without having to restart your project and step into whichever function you'd be
 
 If you're on Windows, this is your lucky day (if you're on macOS or Linux -- don't despair, read on,
 there's a solution for you too). Both paid-for Visual Studio and free [Visual Studio Community
-Edition][2] have an awesome feature - __C# Interactive__.
+Edition][2] have this awesome feature - __C# Interactive__.
 
 To open C# Interactive panel, go to _"View" -> "Other Windows" -> "C# Interactive"._
 
@@ -61,7 +61,7 @@ does the job just fine.
 Also, you can use it as a script execution engine for your C# code -- imagine writing your shell
 scripts in C# instead of bash/zsh/PowerShell!
 
-It supports loading of NuGet packages in much better way than C# Intractive. Refer to the 
+It supports loading of NuGet packages in much better way than C# Interactive. Refer to the 
 documentation for `#r` and `#load` [commands][9]:
 
 {% highlight shell %}
