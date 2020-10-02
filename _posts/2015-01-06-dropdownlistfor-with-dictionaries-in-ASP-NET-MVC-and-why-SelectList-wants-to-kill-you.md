@@ -37,6 +37,7 @@ and when a state is selected, we want to get its abbreviation, such as '_AL_', i
 <p class="center" markdown="1">
     <img src="/img/mvc/dropdowns-3/profile.png" data-gif="/img/mvc/dropdowns-3/profile-animated.gif" class="gifs" />
 </p>
+<link href="/assets/css/gifplayer.min.css" rel="stylesheet">
 <script src="/js/jquery.gifplayer.js"></script>
 <script>
   (function($) {
