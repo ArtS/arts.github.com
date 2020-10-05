@@ -6,12 +6,14 @@
   <li><a href="/resume-trawling-job-ads/">Resume trawling job ads</a></li>
 </ul>
 <script>
-(function($) { 
-  $('#ulLinks li').each(function(i, elem) {
-    var href = $(elem).find('a')[0];
-    if(href.pathname === window.location.pathname) {
-      $(elem).hide();
-    }
+  window.addEventListener('DOMContentLoaded', function() {
+    (function($) { 
+      $('#ulLinks li').each(function(i, elem) {
+        var href = $(elem).find('a')[0];
+        if(href.pathname === window.location.pathname) {
+          $(elem).hide();
+        }
+      });
+    })(jQuery);
   });
-})(jQuery);
 </script>

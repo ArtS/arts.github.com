@@ -38,12 +38,14 @@ and when a state is selected, we want to get its abbreviation, such as '_AL_', i
     <img src="/img/mvc/dropdowns-3/profile.png" data-gif="/img/mvc/dropdowns-3/profile-animated.gif" class="gifs" />
 </p>
 <link href="/assets/css/gifplayer.min.css" rel="stylesheet">
-<script src="/js/jquery.gifplayer.js"></script>
+<script src="/js/jquery.gifplayer.js" defer></script>
 <script>
-  (function($) {
-    $('.gifs').gifplayer({label: 'PLAY'});
-    $('ins.play-gif').click(function() { ga('send', 'event', 'button', 'PLAY', {href: window.location.pathname}); })
-  })(jQuery);
+  window.addEventListener('DOMContentLoaded', function() {
+    (function($) {
+      $('.gifs').gifplayer({label: 'PLAY'});
+      $('ins.play-gif').click(function() { ga('send', 'event', 'button', 'PLAY', {href: window.location.pathname}); })
+    })(jQuery);
+  });
 </script>
 
 In the example above I used `Html.DropDownListFor` helper function, which needs a collection of

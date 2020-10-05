@@ -75,11 +75,13 @@ class of `text-danger`. That's how HTML needs to look like to get proper error h
 {% endhighlight %}
 
 <script>
-  // Hacky hack to highlight changes in HTML
-  (function($) {
-    $('span.s:contains("has-error form-group")').html('"<strong>has-error</strong> form-group"');
-    $('span.s:contains("text-danger field-validation-error")').html('"<strong>text-danger</strong> field-validation-error"');
-  })(jQuery);
+  window.addEventListener('DOMContentLoaded', function() {
+    // Hacky hack to highlight changes in HTML
+    (function($) {
+      $('span.s:contains("has-error form-group")').html('"<strong>has-error</strong> form-group"');
+      $('span.s:contains("text-danger field-validation-error")').html('"<strong>text-danger</strong> field-validation-error"');
+    })(jQuery);
+  });
 </script>
 
 ## Solution

@@ -9,12 +9,14 @@ articles on the site, as well as access to my mailing list, which receives
 handy time-saving tips on .NET Core programming.
 
 <script>
-(function($) {
-  $(document).ready(function() {
-      $('#titleSubscribe').text('Leave your email to get complete, 100% tested, and working source code');
-      $('#mc-embedded-subscribe').prop('value', 'Yes, send me the source code!');
+  window.addEventListener('DOMContentLoaded', function() {
+    (function($) {
+      $(document).ready(function() {
+          $('#titleSubscribe').text('Leave your email to get complete, 100% tested, and working source code');
+          $('#mc-embedded-subscribe').prop('value', 'Yes, send me the source code!');
+      });
+    })(jQuery);
   });
-})(jQuery);
 </script>
 {::options parse_block_html="false" /}
 
