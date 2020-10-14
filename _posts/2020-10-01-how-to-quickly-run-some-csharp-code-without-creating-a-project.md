@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to quickly run some C# without a project
+description: How to run C# without needing to create a project or a solution, in REPL like fashion
 categories:
 - programming
 tags:
@@ -32,12 +33,12 @@ Edition][2] have this awesome feature - __C# Interactive__.
 
 To open C# Interactive panel, go to _"View" -> "Other Windows" -> "C# Interactive"._
 
-![C# Interactive screenshot][3]
+<img src="/img/c-sharp-interactive-screenshot.png" class="img-fluid" alt="C# Interactive screenshot">
 
 If you need to load additional assemblies (3rd party SDKs / libraries), you can use `#r` command
 and provide a full path to the assembly:
 
-![C# interactive load assembly][4]
+<img src="/img/c-sharp-interactive-load-assembly.png" class="img-fluid" alt="C# interactive load assembly">
 
 Also, run `#help` to see useful keyboard shortcuts that save you time when re-running and editing commands.
 
@@ -47,7 +48,7 @@ I have previously mentioned [.NET Fiddle][5] in the article on [tools for .NET a
 development][6].  It's an awesome online REPL for C# (as well as F# and VB.NET). It's the only
 online REPL that supports latest (at the time of writing) [C# 8.0 features][1]
 
-![.NET Fiddle - online C# REPL][7]
+<img src="/img/dotnetfiddle.png" class="img-fluid" alt=".NET Fiddle - online C# REPL">
 
 Similar to __C# Interactive__ in VS, it has syntax highlighting, code completion and loading of
 libraries -- although the choice of is somewhat constrained to a pre-defined list.

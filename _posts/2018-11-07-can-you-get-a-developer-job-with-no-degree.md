@@ -51,7 +51,7 @@ take data in, then and display it in some shape and form. It's mostly good old C
 need to know quite a few things to build a usable, accessible, maintainable, scalable and performing
 app, but do you absolutely MUST have a degree? No way, Jose.
 
-![alt text][4]
+<img src="/img/career/google-search.png" class="img-fluid" alt="Developer job without google search">
 
 But let’s hear it from the fellow developers -- are there any people who landed a job without,
 GASP!, having proper credentials? You bet there are.
@@ -76,13 +76,17 @@ naturally, good old asking around often works much better than sending your CV i
 See for yourself: according to Indeed.com, there are a whopping __58 thousand__ developer jobs in
 the US alone that don’t require a degree. That’s 44% of all dev jobs!
 
-[![indeed.com search][5]][2]
+<a href="https://www.indeed.com/jobs?q=%28developer+or+programmer%29&radius=25">
+<img src="/img/career/indeed-us.png" class="img-fluid" alt="Developer job without google search">
+</a>
 
 The ratio seems to be even better here, in Australia: out of 6899 dev jobs, 5700 don’t seem to need
 a degree. That’s flipping 82%! To put simply, __for every job with a degree, there are 4 jobs without
 one!__
 
-[![indeed.com search][6]][3]
+<a href="https://au.indeed.com/jobs?q=%28developer+or+programmer%29+-degree&radius=25">
+<img src="/img/career/indeed-au.png" class="img-fluid" alt="Developer job without google search">
+</a>
 
 ### How to get ready
 

@@ -42,7 +42,7 @@ simplistic "Sign Up" form that consists of two fields: Name and State. Both of t
 required -- this way we can test rendering of selected dropdown list value on the postback.
 
 <p class="center" markdown="1">
-    ![Sign Up form][2]
+  <img src="/img/mvc/dropdowns-1/sign-up.png" class="img-fluid" alt="Sign Up form">
 </p>
 
 The following bits and pieces are needed:
@@ -194,6 +194,7 @@ supplementary data again, otherwise controls such as DropDownLists will be just 
 ## View
 And View is the final destination where it all comes together with the help of
 `Html.DropDownListFor()` function.
+
 {% highlight html %}
 @model Dropdowns.Models.SignUpModel
 

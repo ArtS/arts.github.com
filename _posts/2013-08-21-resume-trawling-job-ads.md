@@ -7,6 +7,7 @@ tags:
 - job search
 - recruiters
 status: publish
+excerpt_separator: <!--more-->
 type: post
 published: true
 ---
@@ -16,6 +17,8 @@ _Man, that's a totally awesome role, and the technologies are just right -- all 
 koolkids tech, none of those yesteryear's spaghetty-code-promoting proprietary technologies; and the
 project sounds way too rad -- an uber social-geolocation-photosharing crowdsourcing app for
 neo-hipsters_.
+
+<!--more-->
 
 Without further ado you reach for your CV that's been just updated and off it goes.
 

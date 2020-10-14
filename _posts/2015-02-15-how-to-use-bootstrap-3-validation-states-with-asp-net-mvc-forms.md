@@ -44,15 +44,15 @@ text for the error.
 
 Without proper styling the above HTML looks like this:
 
-<p class="center" markdown="1">
-    ![No styling on the control][2]
+<p class="center">
+  <img src="/img/mvc/bootstrap3/no-style.png" class="img-fluid" alt="No styling on the control">
 </p>
 
 Not too bad, but could be better. Bootstrap 3 has this awesome indication for invalid form controls,
 and it highlights the entire control and the error text:
 
-<p class="center" markdown="1">
-    ![Like a boss][3]
+<p class="center">
+  <img src="/img/mvc/bootstrap3/like-a-boss.png" class="img-fluid" alt="Like a boss">
 </p>
 
 So following [Bootstrap's own documentation][4] we need to make sure that control with error has a

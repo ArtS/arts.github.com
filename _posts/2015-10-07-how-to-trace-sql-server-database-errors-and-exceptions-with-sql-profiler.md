@@ -25,13 +25,13 @@ connection credentials, click "Connect".
 "Trace properties" window will appear, where on "General" tab, under "Use the template" select
 "Blank"
 
-![Trace window][1]
+<img src="/img/profiler/trace-properties.png" class="img-fluid" alt="Trace window">
 
 Then on "Event Selection" tab click "Column filters" and enter your database name under "Like"
 filter. You can skip this step if you have just one database, otherwise, you're risking being flooded
 with too many tracing messages.
 
-![Edit filter][2]
+<img src="/img/profiler/edit-filter.png" class="img-fluid" alt="Edit filter">
 
 Then again on "Event Selection" tab, in the event grid, select following events:
 
@@ -41,22 +41,22 @@ Then again on "Event Selection" tab, in the event grid, select following events:
 - SQL: BatchCompleted under TSQL
 - SQL: BatchStarting under TSQL
 
-![Errors and warnings][3]
+<img src="/img/profiler/errors-and-warnings.png" class="img-fluid" alt="Errors and warnings">
 
-![Stored procedures][4]
+<img src="/img/profiler/stored-procedures.png" class="img-fluid" alt="Stored procedures">
 
-![TSQL][5]
+<img src="/img/profiler/tsql.png" class="img-fluid" alt="TSQL">
 
 And then click "Run". You should get a stream of events that looks something like the screen below.
 Do not freak out if there are too many events and they run screaming at you, which happens if you have
 a big system with lots of users. What you're really interested in is lines that have "Exception" in
 the "EventClass" column, like this:
 
-![Events trace][6]
+<img src="/img/profiler/trace.png" class="img-fluid" alt="Events trace">
 
 And that exception is caused by the command just above, one with the title `RPC: Starting`:
 
-![Real cause, bitch!][7]
+<img src="/img/profiler/error.png" class="img-fluid" alt="Real cause, bitch!">
 
 So in this instance we can clearly tell that certain table is missing its `ID` column, which
 could be a result of missing/incomplete database schema update.
@@ -82,11 +82,3 @@ more time-saving and frustration-avoiding advice there, so sign right up. I neve
 
 {::options parse_block_html="false" /}
 {% include subscription.html %}
-
-[1]:/img/profiler/trace-properties.png
-[2]:/img/profiler/edit-filter.png
-[3]:/img/profiler/errors-and-warnings.png
-[4]:/img/profiler/stored-procedures.png
-[5]:/img/profiler/tsql.png
-[6]:/img/profiler/trace.png
-[7]:/img/profiler/error.png

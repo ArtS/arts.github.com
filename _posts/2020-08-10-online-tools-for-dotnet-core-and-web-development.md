@@ -34,7 +34,9 @@ _Looking for a comparison of C# REPLs? Check out this article: [How to quickly r
 autocompletion and it runs the latest version of C#, so you get access to all the cool language
 features. To get that working, make sure to select ".NET Core" in the `Compiler` dropdown.
 
-[![dotnetfiddle.net interfaces screenshot][2]][1]
+<a href="https://dotnetfiddle.net/">
+<img src="/img/dotnetfiddle.png" class="img-fluid" alt="dotnetfiddle.net interface screenshot">
+</a>
 
 You can also import packages such as `JSON.NET`, `EntityFramework`, `Linq` and many others, see the
 full list [here][3].
@@ -65,7 +67,7 @@ If you having authorisation issues between your browser and the backend, or betw
 you can take the particular auth token in question, plug it into [jwt.io][7] and see what exactly is
 stored in there.
 
-[![jwt.io interface][6]][7]
+<a href="https://jwt.io"><img src="/img/jwtio.png" class="img-fluid" alt="jwt.io interface screenshot"></a>
 
 ## JSON stuff
 
@@ -75,8 +77,7 @@ stored in there.
 when you're defining boundaries of your API / microservice or integrating new services into existing
 code base -- just take an example JSON payload and turn it into C# class.
 
-[![quicktype.io interface][8]][9]
-
+<a href="https://quicktype.io/csharp/"><img src="/img/quicktypeio.png" class="img-fluid" alt="quicktype.io interface"></a>
 
 It lets you generate C# classes from other data, such as:
 
@@ -133,7 +134,9 @@ numbers and alike. The following tools can help with that:
 You can generate single profiles or request a whole bunch of them to be generated. The download link
 to a CSV file will be sent to your email after a reasonably short wait.
 
-[![fakenamegenerator.com generated CSV file][15]][14]
+<a href="https://www.fakenamegenerator.com/">
+<img src="/img/fakenamegenerator.png" class="img-fluid" alt="fakenamegenerator.com generated CSV file">
+</a>
 
 ### Bogus
 
@@ -167,7 +170,9 @@ Generate .gitignore files for your projects easily with [gitignore.io][21]. Just
 / IDE / Framework into the search box and Richard's your father's brother. You can add several
 keywords to generate a file that covers all of the tech you're using.
 
-[![gitignore.io search results][22]][21]
+<a href="https://www.toptal.com/developers/gitignore">
+<img src="/img/gitignoreio.png" class="img-fluid" alt="gitignore.io search results">
+</a>
 
 ## Conclusion
 

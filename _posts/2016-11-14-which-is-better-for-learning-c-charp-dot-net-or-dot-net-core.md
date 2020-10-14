@@ -30,7 +30,9 @@ The current version of .NET Core is 1.0, but that's only part of the story. You 
 what's the current version of tooling, meaning build/package management tools and such. And the
 truth is - it's still in the Preview 2 version ([check out the latest release in here][3])
 
-[![.Net Core Tooling Preview 2][2]][3]
+<a href="https://github.com/dotnet/cli/releases">
+<img src="/img/dotnetcore/release.png" class="img-fluid" alt=".Net Core Tooling Preview 2">
+</a>
 
 Again, it's understandable Microsoft wants to get the product out of the door as soon as possible,
 but if for you, who's just starting to learn C\#, it means added risk of having to deal with flaky

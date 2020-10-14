@@ -35,7 +35,7 @@ released in April 2019. In 2016 Microsoft released the first version of .NET Cor
 nearly as full-featured, but had a massive advantage over its predecessor -- it was truly
 cross-platform.
 
-![Timeline of .NET][2]
+<img src="/img/dotnet-history.png" class="img-fluid" alt="Timeline of .NET">
 
 _Each major release of .NET Core brought a lot of breaking changes, that's why you want to be
 careful when looking for answers to your questions or tutorials -- make sure you looking at the

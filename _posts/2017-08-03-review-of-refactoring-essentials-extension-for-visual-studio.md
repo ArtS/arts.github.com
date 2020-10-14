@@ -45,9 +45,9 @@ settings screen appears under _Tools &#8594; Options_. There’s not a lot of se
 -- you can only hide conversion from/to C# to/from Visual Basic from the context menu.
 
 {::nomarkdown}
-<figure>
-  <img src="/img/refactoring-essentials/options.png" title="Refactoring Essentials settings"/>
-  <figcaption>Refactoring Essentials settings</figcaption>
+<figure class="figure">
+  <img class="figure-img img-fluid rounded" src="/img/refactoring-essentials/options.png" title="Refactoring Essentials settings"/>
+  <figcaption class="figure-caption">Refactoring Essentials settings</figcaption>
 </figure>
 {:/}
 
@@ -69,9 +69,9 @@ However, I quickly realised that I tend to ignore the preview after first few gl
 may not be all that useful in the medium to long run. 
 
 {::nomarkdown}
-<figure>
-  <img src="/img/refactoring-essentials/code-preview.png" title="Code preview in Refactoring Essentials"/>
-  <figcaption>Code preview in Refactoring Essentials</figcaption>
+<figure class="figure">
+  <img class="figure-img img-fluid rounded" src="/img/refactoring-essentials/code-preview.png" title="Code preview in Refactoring Essentials"/>
+  <figcaption class="figure-caption">Code preview in Refactoring Essentials</figcaption>
 </figure>
 {:/}
 
@@ -81,9 +81,9 @@ This function comes handy when you need to assign an integer variable to an
 can be helpful in this case, although the code it produces is somewhat redundant.
 
 {::nomarkdown}
-<figure>
-  <img src="/img/refactoring-essentials/cast-to-redundant.png" title="Cast to refactoring"/>
-  <figcaption>Example of "Cast to" refactoring</figcaption>
+<figure class="figure">
+  <img class="figure-img img-fluid rounded" src="/img/refactoring-essentials/cast-to-redundant.png" title="Cast to refactoring"/>
+  <figcaption class="figure-caption">Example of "Cast to" refactoring</figcaption>
 </figure>
 {:/}
 
@@ -96,9 +96,9 @@ If you have a lot of old-school properties that rely on a backing field, this re
 shorten the code somewhat.
 
 {::nomarkdown}
-<figure>
-  <img src="/img/refactoring-essentials/auto-property.png" title="convert to auto property refactoring"/>
-  <figcaption>Example of "Cast to" refactoring</figcaption>
+<figure class="figure">
+  <img class="figure-img img-fluid rounded" src="/img/refactoring-essentials/auto-property.png" title="convert to auto property refactoring"/>
+  <figcaption class="figure-caption">Example of "Cast to" refactoring</figcaption>
 </figure>
 {:/}
 
@@ -111,9 +111,9 @@ statement with spaces between curly braces. It also applies to all sorts of othe
 function calls, flow control statements such as `if` and `switch` etc.
 
 {::nomarkdown}
-<figure>
-  <img src="/img/refactoring-essentials/formatting-problem.png" title="Formatting problem in generated code"/>
-  <figcaption>Unwanted changes introduced in generated code.</figcaption>
+<figure class="figure">
+  <img class="figure-img img-fluid rounded" src="/img/refactoring-essentials/formatting-problem.png" title="Formatting problem in generated code"/>
+  <figcaption class="figure-caption">Unwanted changes introduced in generated code.</figcaption>
 </figure>
 {:/}
 

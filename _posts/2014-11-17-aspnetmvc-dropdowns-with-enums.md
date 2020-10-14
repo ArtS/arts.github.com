@@ -39,8 +39,8 @@ controller, send selected value back and render the drop down with the value sel
 Let's put together a fictitious user profile page which has text boxes for First and Last names and
 Industry selection drop down list. It's going to look like this:
 
-<p class="center" markdown="1">
-    ![User Profile][3]
+<p class="center">
+  <img src="/img/mvc/dropdowns-2/profile.png" class="img-fluid" alt="User Profile">
 </p>
 
 Contents of the drop down list will be based on the following enum:

@@ -67,7 +67,7 @@ development. You can get a free (albeit limited) access to Pluralsight courses f
 [sign up for Microsoft Visual Studio Dev Essentials][9] program. After signing up, get your free
 Pluralsight subscription by clicking on “Get Code” under “Pluralsight” card in “Education” section:
 
-![Pluralsight access code](/img/misc/pluralsight.png)
+<img src="/img/misc/pluralsight.png" class="img-fluid" alt="Pluralsight access code">
 
 Following Pluralsight courses on .NET Core are available:
 

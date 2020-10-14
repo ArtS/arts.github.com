@@ -1,6 +1,6 @@
 # RSS settings
 name: Nimble Gecko
-description: Blog of Art Skvira, upside-down web developer
+description: Articles on .net core and .net framework, helpful tips, techniques, code samples to help you develop web apps with C# faster and easier
 url: https://nimblegecko.com
 
 # This is the default format.
@@ -22,7 +22,7 @@ title : Nimble Gecko
 tagline: More bliss and joy in your .NET journeys
 author :
   name : Art Skvira
-  email : artem.skvira@gmail.com
+  email : art@nimblegecko.com
   github : ArtS
   twitter : smartial_arts
   feedburner : NimbleGecko

@@ -216,7 +216,7 @@ you can render it to the user:
 
 Which gives us something like this:
 
-![Show JSON in ASP.NET Core MVC app][7]
+<img src="/img/json-to-asp-net-core-mvc.png" class="img-fluid" alt="Show JSON in ASP.NET Core MVC app">
 
 ## Conclusion
 

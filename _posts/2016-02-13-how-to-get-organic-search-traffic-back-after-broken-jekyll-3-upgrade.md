@@ -13,7 +13,7 @@ It's a fine day, your site runs smoothly, thanks to Jekyll with its static HTML 
 clean and clever markdown. Then for some reason you decide to have a look at the Google Analytics
 Organic Search report and suddenly you see that your traffic just jumped off the cliff.
 
-![Sudden drop in Google Analytics Organic Search Results][1]
+<img src="/img/jekyll/drop.png" class="img-fluid" alt="Sudden drop in Google Analytics Organic Search Results">
 
 ## My traffic tanked, wtf Google?
 
@@ -62,7 +62,7 @@ generating ton load of 404s and causing your Google ranking to tank.
 If your site gets some 404 hits that are coming from Google search results, you will see those in
 [Google Search Console][2], under [_'Crawl' -> 'Crawl errors'_][7].
 
-![Crawl Errors shows you 404s][6]
+<img src="/img/jekyll/404s.png" class="img-fluid" alt="Crawl Errors shows you 404s">
 
 If you see a sudden spike, like the one on this screenshot above, you can be quite certain something
 changed on your site and lots of URLs are no longer valid. Check out the details table underneath
@@ -99,7 +99,7 @@ layout and styling you also want to run a thorough check for missing links.
 I recommend using this [free online tool from W3C][9], which, amongst the host of other things, can check for
 broken links on your site.
 
-![W3C Validator tool][10]
+<img src="/img/jekyll/w3cvalidator.png" class="img-fluid" alt="W3C Validator tool">
 
 {% comment %}
 {% include experiment.html %}
@@ -126,14 +126,14 @@ I never spam, period.
 
 ## PS: Two words on how GitHub handled the upgrade
 It's all over now, bugs are fixed and URLs are working, but I can't help but think that GitHub
-could've done a better job here and let his clients know that Jekyll is getting updated and it's
+could've done a better job here and let its clients know that Jekyll is getting updated and it's
 likely to cause problems.
 
 I received no emails from them and only found out about this upgrade when shit hit the fan and my site
 began to lose traffic. Seriously, guys @ GitHub, you could've sent us all an email or two, is that too
 much to ask?
 
-Frankly, I am still disappointed with this lack of service and forethought.
+Frankly, I am still disappointed with the lack of service and forethought.
 
 [1]:/img/jekyll/drop.png
 [2]:https://www.google.com/webmasters/tools/

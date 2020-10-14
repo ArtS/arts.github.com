@@ -1,20 +1,16 @@
 ---
-layout: default
+layout: base
 ---
-<nav class="top nav-big">
-    <a href="/" alt="MORE ARTICLES">&laquo; MORE ARTICLES</a>
-</nav>
+<nav class="nav-top nav-big"><a href="/" alt="MORE ARTICLES">&laquo; MORE ARTICLES</a></nav>
 
-<h1 class="page-header">{{ page.title }}</h1>
-<small><p class="text-muted">{{ page.date | date_to_string }}</p></small>
+<div class="text-center">
+  <h1 class="page-header">{{ page.title }}</h1>
+  <small><p class="text-muted">{{ page.date | date_to_string }}</p></small>
+</div>
 
-<div class="panel text-left">
+{{ content }}
 
-  <div class="panel-body">
-    {{ content }}
-  </div>
-
-  <div class="nav-big"><a href="/?b" alt="MORE ARTICLES">&laquo; MORE ARTICLES</a></div>
+<div class="nav-big"><a href="/?b" alt="MORE ARTICLES">&laquo; MORE ARTICLES</a></div>
 
   <!--div id="disqus_thread"></div>
   <script type="text/javascript">

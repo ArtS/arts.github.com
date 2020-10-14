@@ -34,21 +34,21 @@ Creating a secret is easy:
 - Navigate to Secrets Manager, and click on "Store a new secret" button
 - Select "Other type of secrets"
 
-![AWS Secrets Manager "Store a new secret" screen][3]
+<img src="/img/secret-type-choice.png" class="img-fluid" alt="AWS Secrets Manager "Store a new secret" screen">
 
 You can both supply a free-text value for the secret, as well as provide a JSON-formatted data (this
 will need to be de-serialised by your app later). JSON is preferable if you want to store a complex
 structure, however, if you have just a password to store, replace everything in that text box with
 your secret string:
 
-![Example of a secret in AWS Secrets Manager][4]
+<img src="/img/secret-value.png" class="img-fluid" alt="Example of a secret in AWS Secrets Manager">
 
 Next step is to name the secret. You may want to use some form of "path emulation" in your secrets
 naming. For example, `web-api/passwords/database` may store a DB password used by your Web API
 back-end, and `worker/password/web-api-key` for your worker app, that calls Web API and needs an API
 key. Having a simple naming convention helps when you have several secrets to keep the track of.
 
-![Example of a secret name in AWS Secrets Manager][5]
+<img src="/img/secret-name.png" class="img-fluid" alt="Example of a secret name in AWS Secrets Manager">
 
 ## Secret access control
 Unfortunately, secret access control is a big topic that is outside of this article. I am going to 

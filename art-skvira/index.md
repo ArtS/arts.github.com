@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: base
 title: Art Skvira, upside down developer
 categories:
 tags:
@@ -10,9 +10,10 @@ header: Hello there!
 tagline: Web and Mobile Developer
 description: Art Skvira is a Web and Mobile Developer, laser-focused on delivering lasting business solutions that add value, help to bring revenue, cut costs, expand customer base and solve pressing problems.
 ---
+<nav class="nav-top nav-big"><a href="/" alt="MORE ARTICLES">&laquo; MORE ARTICLES</a></nav>
 
-Hi, my name is Art Skvira and I am a Web and Mobile developer from Melbourne, Australia.
-I tell machines what to do so you can focus on your business.
+Hey there! My name is Art Skvira and I am a software developer from Melbourne, Australia. I tell
+the machines what to do so you can focus on your business.
 
 ### Highlights
 
@@ -37,8 +38,8 @@ interruption in invoicing and billing**_ during the upgrade and support periods.
 Got a new project coming up? Drop me a line and we will discuss it - my email is <a href="mailto:art@nimblegecko.com" data-ga-category="Links" data-ga-action="Contact" data-ga-label="email">art@nimblegecko.com</a>
 
 ### What my clients say
-<blockquote>
-    <p>
+<blockquote class="blockquote">
+    <p class="mb-0">
     Art has been instrumental in the early days of Scheduleflow. His expertise 
     and hands-on involvement enabled us to iterate rapidly, build and deliver 
     what our target market needed.
@@ -51,38 +52,38 @@ Got a new project coming up? Drop me a line and we will discuss it - my email is
     have worked with. I recommend him whole heartedly and would work with him 
     again in a nano second.
     </p>
-    <small><cite>Paul Tyrrel, CEO, <a target="_blank" href="https://scheduleflow.com">scheduleflow.com</a></cite></small>
+    <footer class="blockquote-footer">Paul Tyrrel, CEO, <cite title="Source Title"><a target="_blank" href="https://scheduleflow.com">scheduleflow.com</a></cite></footer>
 </blockquote>
-<blockquote>
-    <p>
+<blockquote class="blockquote">
+    <p class="mb-0">
     Art ranks amongst the best web developers I have worked with. He has the rare combination
     of strong technical skills, people skills and a good awareness of the larger business challenges.
     He is always proactive with his research and contributions to the rest of the team. I recommend
     Art thoroughly to any prospective employer and would happily work with him on any future engagements.
     </p>
-    <small><cite>David Hodgman, Business Analyst, <a target="_blank" href="http://linkme.com.au">linkme.com.au</a></cite></small>
+    <footer class="blockquote-footer">David Hodgman, Business Analyst, <cite title="Source Title"><a target="_blank" href="http://linkme.com.au">linkme.com.au</a></cite></footer>
 </blockquote>
-<blockquote>
-    <p>
+<blockquote class="blockquote">
+    <p class="mb-0">
     Art is an extremely talented developer with a passion to do things better. Art was always willing to tackle the 
     problems others would hate. Never scared to refactor the most complex code.
     The quality of his work and attention to detail was a great asset to SEEK during some really challenging and complex projects.
     </p>
-    <small><cite>Alan Mastrantoni, Solutions Lead, <a target="_blank" href="https://www.seek.com.au">seek.com.au</a></cite></small>
+    <footer class="blockquote-footer">Alan Mastrantoni, Solutions Lead, <cite title="Source Title"><a target="_blank" href="https://www.seek.com.au">seek.com.au</a></cite></footer>
 </blockquote>
-<blockquote>
-    <p>
+<blockquote class="blockquote">
+    <p class="mb-0">
     Art is a highly skilled and highly motivated developer. He has an excellent grasp of software architecture and .net technologies.
     His skills combined with his enthusiasm for software development make him a valuable asset to any team.
     He is definitely one of the best developers I have worked with.
     </p>
-    <small id="contact"><cite>Andrew Harvey, Senior Developer, Department of Education, Victoria</cite></small>
+    <footer class="blockquote-footer">Andrew Harvey, Senior Developer, Department of Education, Victoria</footer>
 </blockquote>
 
 
 <h3>My Experience</h3>
 <div class="summary" markdown="1">
-- 12+ years of experience in Web, Mobile and Database development
+- 15+ years of experience in Web, Mobile and Database development
 - Reverse-engineering and dealing with legacy codebases
 - Architecture, Design Patterns, Code Review/Refactoring, Continuous Integration, Test-Driven Development
 - Thorough experience in Object-Oriented Programming and Design and Functional Programming

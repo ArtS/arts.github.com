@@ -192,7 +192,7 @@ You can easily verify that value has been set by going to Azure web console, und
 selecting your Key Vault, then clicking on "Secrets", selecting your secret and then clicking on
 "Show Secret Value".
 
-![Show secret value in Azure Key Vault][6]
+<img src="/img/azure-show-secret-value.png" class="img-fluid" alt="Show secret value in Azure Key Vault">
 
 You can also read the value of that secret using the following command:
 

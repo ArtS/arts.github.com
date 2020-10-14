@@ -94,17 +94,17 @@ What made the good ones to stand apart from the bad ones was the way new learnin
 structured and explained. Everything was broken down to small, digestible bits and supplemented with
 easy to remember, sometimes visually striking metaphors.
 
-For example the concept of the average value was presented like a see-saw with weights at different
+For example, the concept of the average value was presented like a see-saw with weights at different
 places.
 
-![mean or average is really a see-saw][6]
+<img src="/img/lh2l/seesaw.png" class="img-fluid" alt="mean or average is really a see-saw">
 
 This unexpected, yet easy to grasp image that related to something that I already new and made it
 really easy to remember the idea.
 
 Again, there's a strong evidence that we don't remember abstract facts, numbers and ideas all that
 well, but when we try to connect new information to something that we already know it becomes much
-easier to remember. Our visual cortex - area of the brain that processes visual and spatial
+easier to memorise. Our visual cortex - area of the brain that processes visual and spatial
 information has remarkable memorisation abilities, that's why "a picture's worth thousand words".
 It's much easier to remember something visually striking than just a dull set of numbers or facts.
 

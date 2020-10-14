@@ -24,24 +24,20 @@ That's what happened next.
 
 I unfolded the back of the wallet and cut a small incision from approximately 1cm mark to 9cm mark on the wallet, adding romb-like holes as rip-stops.
 
-![First cut][1]
+<img src="/img/tyvek/1-cut.png" class="img-fluid" alt="First cut">
 
 That's how wide it is relative to coins size, not too long but not too short either.
 
-![Coins][2]
+<img src="/img/tyvek/2-cut-coins.jpg" class="img-fluid" alt="Coins">
 
 Using velcro strap I cut a piece that's approximately 5mm wide and 10cm long - just a bit longer than the actual incision.
 
-![Velcro][3]
+<img src="/img/tyvek/3-velcro.jpg" class="img-fluid" alt="Velcro">
 
 And glue-slapped the velcro strip inside the wallet, while it was still unfolded.
 
-![Final result][4]
+<img src="/img/tyvek/4-tyvek-final.jpg" class="img-fluid" alt="Final result">
 
-Voilà, a [bad-ass wallet][5] with a [toight like a toiger](https://www.youtube.com/watch?v=gu31VyXlTzo) coins pocket!
+Voilà, a [bad-ass wallet][1] with a [toight like a toiger](https://www.youtube.com/watch?v=gu31VyXlTzo) coins pocket!
 
-[1]:/img/tyvek/1-cut.png
-[2]:/img/tyvek/2-cut-coins.jpg
-[3]:/img/tyvek/3-velcro.jpg
-[4]:/img/tyvek/4-tyvek-final.jpg
-[5]:http://amzn.to/1qX3LX2
+[1]:http://amzn.to/1qX3LX2
