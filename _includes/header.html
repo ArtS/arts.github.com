@@ -22,16 +22,13 @@
 
     <title>{{ page.title }}</title>
 
-    <!-- link rel="preload" href="/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/dist/css/bootstrap.min.css"></noscript-->
-
-    <link rel="preload" href="/assets/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" media="none" onload="if(media!='all')media='all'">
     <noscript><link rel="stylesheet" href="/assets/css/bootstrap.min.css"></noscript>
 
-    <link rel="preload" href="/assets/css/extra.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="/assets/css/extra.css" media="none" onload="if(media!='all')media='all'">
     <noscript><link rel="stylesheet" href="/assets/css/extra.css"></noscript>
 
-    <link rel="preload" href="/assets/css/pygments-manni.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="/assets/css/pygments-manni.css" media="none" onload="if(media!='all')media='all'">
     <noscript><link rel="stylesheet" href="/assets/css/pygments-manni.css"></noscript>
 
     <script src="/assets/js/jquery-3.5.1.slim.min.js" defer></script>
