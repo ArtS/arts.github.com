@@ -5,12 +5,14 @@ layout: base
 
 <div class="text-center">
   <h1 class="page-header">{{ page.title }}</h1>
-  <small><p class="text-muted">{{ page.date | date_to_string }}</p></small>
+  <p class="text-muted">{{ page.date | date_to_string }}</p>
 </div>
 
 {{ content }}
 
-<div class="nav-big"><a href="/?b" alt="MORE ARTICLES">&laquo; MORE ARTICLES</a></div>
+<nav class="nav-big nav-bottom">
+  <a href="/?b" alt="MORE ARTICLES">&laquo; MORE ARTICLES</a>
+</nav>
 
   <!--div id="disqus_thread"></div>
   <script type="text/javascript">

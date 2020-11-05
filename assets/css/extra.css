@@ -17,8 +17,18 @@ a {
   text-decoration: underline;
 }
 
-nav.nav-top {
+.nav-big{
+  text-align:center;
+  font-size:1.2em
+}
+
+.nav-top {
   margin-top: 1em;
+}
+
+.nav-bottom {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6 {
@@ -97,7 +107,7 @@ blockquote p {
   pointer-events: none;
 }
 
-.nav-big {
+.mav-big {
   text-align: center;
   font-size: 1.2em;
 }
