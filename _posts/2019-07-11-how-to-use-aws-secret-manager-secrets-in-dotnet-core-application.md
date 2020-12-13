@@ -34,7 +34,7 @@ Creating a secret is easy:
 - Navigate to Secrets Manager, and click on "Store a new secret" button
 - Select "Other type of secrets"
 
-<img src="/img/secret-type-choice.png" class="img-fluid" alt="AWS Secrets Manager "Store a new secret" screen">
+<img src="/img/secret-type-choice.png" class="img-fluid" alt="AWS Secrets Manager 'Store a new secret' screen">
 
 You can both supply a free-text value for the secret, as well as provide a JSON-formatted data (this
 will need to be de-serialised by your app later). JSON is preferable if you want to store a complex
