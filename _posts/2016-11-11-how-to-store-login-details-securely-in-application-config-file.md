@@ -13,18 +13,21 @@ reaching out to external services such as email servers, databases etc. This cre
 -- you need to store usernames, passwords, access codes, API keys etc somewhere and mitigate the
  risks of that sensitive information either not being found or read by a wrong person.
 
+{::options parse_block_html="true" /}
+<div class="alert alert-danger" role="alert">
 __WARNING__:
 This article is quite outdated now. I do not recommend using this approach for anything that even
 remotely resembles a real production app. You should be using a secure cloud secrets storage
 service, such as AWS Secrets Manager or Azure Key Vault. I wrote some new articles to help you
 navigate this space:
+</div>
 
 - [How to securely store and retrieve sensitive info in .NET Core apps with Azure Key Vault][1]
 - [How to use AWS Secrets Manager to retrieve passwords in .Net Core apps][2]
 
 The article below is preserved for purely historical purposes. Feel free to play around with the
-code in there, but please, for the love of all that's good, do not store passwords locally with the
-apps.
+code in there, but please, for the love of all that's good, __do not store encoded passwords in your
+app config file__.
 
 ---
 
