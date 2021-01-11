@@ -99,6 +99,5 @@ algorithms.
 
 {% include code-download-cta.html %}
 
-[1]:https://github.com/ArtS/secure-local-config
+[1]:{% post_url 2020-09-17-how-to-securely-store-and-retrieve-passwords-in-dot-net-core-apps-with-azure-key-vault %}
 [2]:{% post_url 2019-07-11-how-to-use-aws-secret-manager-secrets-in-dotnet-core-application %}
-[3]:{% post_url 2020-09-17-how-to-securely-store-and-retrieve-passwords-in-dot-net-core-apps-with-azure-key-vault %}
