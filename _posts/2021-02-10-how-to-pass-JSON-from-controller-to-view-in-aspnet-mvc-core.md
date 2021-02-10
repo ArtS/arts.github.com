@@ -84,6 +84,31 @@ encoding and output the __raw__ data:
   </script>
 {% endhighlight %}
 
+## Passing the data from Controller to View
+In this instance, I strongly recommend avoid using `TempData`, `Session`, `ViewData` or `ViewBag`
+and just pass the data you need in the view as part of the controller's model. There are multiple
+reasons why you shouldn't be using the methods listed above, but the main is to keep things simple
+and strongly-typed. So in your controller return the view in the following manner:
+
+{% highlight csharp %}
+  public IActionResult YourControllerMethod()
+  {
+      var model = new YourModelClass
+      {
+        // Set whichever fields in here
+      };
+      return View(model);
+  }
+{% endhighlight %}
+
+...and in your view, at the top of the page, declare the model class, so that you can have
+compile-time checking and code completion:
+
+{% highlight html %}
+  @model YourModelClass
+  <!-- rest of your View.cshtml -->
+{% endhighlight %}
+
 ## A word of warning about XSS
 As mentioned previously, check out that [XSS article][1], and also be mindful of how you use the
 data received from the server, whether that's embedded in the page with `@Html.Raw` or via Ajax.
