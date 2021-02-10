@@ -59,8 +59,8 @@ then all you are going to end up in the browser is going to look something like 
   </script>
 {% endhighlight %}
 
-and it's not even a correct JSON! ASP.NET MVC made it really safe for you, but also, unfortunatelly,
-really broken.
+and it's not even a correct JSON! ASP.NET MVC made it safe for you, but also, unfortunately, also
+broke it.
 
 ## @Html.Raw to the rescue
 To turn all those `&quot;` and such into proper Javascript, you need to tell ASP.NET to skip the
