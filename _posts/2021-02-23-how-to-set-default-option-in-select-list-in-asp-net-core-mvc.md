@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Set Default Option In Select List In Asp.NET Core Mvc
+title: How To Set Default Option In Select List In ASP.NET Core MVC
 description: Learn how to set a default option in Select List and which mistakes to avoid to save time
 categories:
 - programming
