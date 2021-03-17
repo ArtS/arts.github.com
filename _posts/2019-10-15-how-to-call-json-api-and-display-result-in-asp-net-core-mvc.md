@@ -114,7 +114,7 @@ using Polly;
 
 In this example we are going to use weather forecasting API from [MetaWeather][3] - it's free and
 doesn't need any API keys or other credentials, so should be easy to get working on your computer.
-[Download complete, fully tested and working project](#ctaTitle) for this article if you want to
+[Download complete, fully tested and working project](#titleSubscribe) for this article if you want to
 save yourself all the typing or if you run into any issues along the way.
 
 ## Call all the APIs!
