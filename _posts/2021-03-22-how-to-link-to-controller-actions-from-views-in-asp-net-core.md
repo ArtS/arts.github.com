@@ -14,8 +14,8 @@ your web app -- like navigating to a details page for a particular record in the
 building a primary, secondary or tertiary navigation. Or logging users in or out. Heck, you need
 links everywhere!
 
-A very obvious (but wrong!) way be hardcoding relative paths to your controller's actions in the View,
-like `<a href="/product/details/1">View product details</a>`. It's super easy, right? What can
+A very obvious (but wrong!) way is to hardcode relative paths to your controller's actions in the
+View, like `<a href="/product/details/1">View product details</a>`. It's super easy, right? What can
 possibly go wrong? Actually, a lot of things. Just the tip of the iceberg:
 
 - to pass parameters, you'll need to do string concatenation/formatting in Razor or Javascript
