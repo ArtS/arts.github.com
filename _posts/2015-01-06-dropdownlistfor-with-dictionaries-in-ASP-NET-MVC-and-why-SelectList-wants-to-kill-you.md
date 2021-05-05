@@ -165,28 +165,7 @@ trees and the air is clean), that's how it would look like:
 Notice the "ME" parameter in the `new SelectList(...)` call above - but remember it's going to be
 ignored by ASP.NET MVC if `Model.State` is not `null`.
 
-{::options parse_block_html="true" /}
-<div id="divCodeDownload">
-## Source code
-Here is a [download link][5] for a complete Visual Studio solution that includes the code used in this
-article. You can [browse the code online][4] or clone the git repository.
-</div>
-
-{% include experiment.html %}
-
-## But Wait, There's More! {#ctaTitle}
-
-{::options parse_block_html="true" /}
-<div id="ctaCopy">
-I hope this article helped you. If you don't want to miss my next post on how to tame the MVC
-beast - subscribe to my mailing list. This way you will get freshly baked articles as soon as I 
-publish them. I never spam, period.
-</div>
-
-{% include alt-cta.html %}
-
-{::options parse_block_html="false" /}
-{% include subscription.html %}
+{% include code-download-cta.html %}
 
 [1]:{% post_url 2014-10-15-using-simple-drop-down-lists-in-ASP-NET-MVC %}
 [2]:{% post_url 2014-11-17-aspnetmvc-dropdowns-with-enums %}

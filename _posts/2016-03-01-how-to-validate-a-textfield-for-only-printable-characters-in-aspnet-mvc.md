@@ -88,33 +88,7 @@ public ActionResult UpdateAccount(AccountModel model)
 If you want to add client-side JavaScript validation, refer to my earlier article, ["How to use
 Bootstrap 3 validation states with ASP.NET MVC Forms"][5].
 
-{::options parse_block_html="true" /}
-<div id="divCodeDownload">
-## Downloading the code 
-You can download the code for this article from GitHub (it comes with FluentValidation enabled
-already!). Here's the [zip file][6] with complete source code, or you can [browse it][7] on GitHub.
-</div>
-
-{% include experiment.html %}
-
-## But Wait, There's More! {#ctaTitle}
-
-{::options parse_block_html="true" /}
-<div id="ctaCopy">
-I hope this article helped you to move forward in your project work.
-
-You can probably recall a time when you were stuck on some problem and the solution seemed so close,
-yet it took hours to figure it out. And when you eventually did that, it was something so
-infuriatingly stupid, you might have wanted to punch the monitor.
-
-Do you want to avoid wasting your time on stupid bugs and traps in .NET? Subscribe to my mailing
-list and save HOURS of your life - I never spam, and I only send useful and actionable advice.
-</div>
-
-{% include alt-cta.html %}
-
-{::options parse_block_html="false" /}
-{% include subscription.html %}
+{% include code-download-cta.html %}
 
 [1]:http://www.asp.net/mvc/overview/getting-started/introduction/adding-validation
 [2]:https://en.wikipedia.org/wiki/ASCII#ASCII_printable_code_chart

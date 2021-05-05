@@ -61,24 +61,15 @@ And that exception is caused by the command just above, one with the title `RPC:
 So in this instance we can clearly tell that certain table is missing its `ID` column, which
 could be a result of missing/incomplete database schema update.
 
-{% comment %}
-{% include experiment.html %}
-{% endcomment %}
-
 ## WANT MORE? SUBSCRIBE HERE {#ctaTitle}
 
-{::options parse_block_html="true" /}
-<div id="ctaCopy">
-I hate wasting my time on stupid bugs, environment problems and trying to make sense of obscure 
-documentation - that's why whenever I find a faster way of doing something I share that with you.
+Do you hate wasting time on stupid bugs, environment problems and trying to make sense of obscure
+documentation? I'm the same! That's why whenever I find a faster or easier way of doing anything 
+related to software development, I share that with you here, on my blog.
 
 So if you don't want to miss my next article, sign up to the mailing list below. There'll be lots
 more time-saving and frustration-avoiding advice there, so sign right up. I never spam, period.
-</div>
-
-{% comment %}
-{% include alt-cta.html %}
-{% endcomment %}
 
 {::options parse_block_html="false" /}
+
 {% include subscription.html %}

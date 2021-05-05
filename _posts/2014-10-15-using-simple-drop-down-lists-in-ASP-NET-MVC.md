@@ -262,28 +262,7 @@ the 'prompt' option of the drop down list. I'd never be able to tell that from t
 Also check out my [next article on how to use `DropDownListFor` with enums][5] - you'll learn how to 
 show enums in readable form in drop down lists and heaps more.
 
-{::options parse_block_html="true" /}
-<div id="divCodeDownload">
-## Download the code
-Here's a download link to the [complete code][3] of the solution used in this article. You can 
-[browse the code][4] online or clone the git repository.
-</div>
-
-{% include experiment.html %}
-
-## But wait, there's more {#ctaTitle}
-
-{::options parse_block_html="true" /}
-<div id="ctaCopy">
-If you don't want to miss my new articles, sign up to my mailing list below, and learn how to 
-tackle complex problems in ASP.NET MVC with ease, and how to stop wasting hours on trivial problems. 
-Stop that vicios frustration cycle and become a better person overall. I never spam, period.
-</div>
-
-{% include alt-cta.html %}
-
-{::options parse_block_html="false" /}
-{% include subscription.html %}
+{% include code-download-cta.html %}
 
 [1]:http://msdn.microsoft.com/en-us/library/system.web.mvc.html.selectextensions.dropdownlistfor(v=vs.118).aspx
 [2]:/img/mvc/dropdowns-1/sign-up.png

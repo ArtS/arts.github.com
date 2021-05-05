@@ -101,10 +101,6 @@ broken links on your site.
 
 <img src="/img/jekyll/w3cvalidator.png" class="img-fluid" alt="W3C Validator tool">
 
-{% comment %}
-{% include experiment.html %}
-{% endcomment %}
-
 ## But Wait, There's More! {#ctaTitle}
 
 {::options parse_block_html="true" /}
@@ -116,10 +112,6 @@ potentially money.
 If you liked this article and want to get more helpful updates - sign up for my mailing list below. 
 I never spam, period.
 </div>
-
-{% comment %}
-{% include alt-cta.html %}
-{% endcomment %}
 
 {::options parse_block_html="false" /}
 {% include subscription.html %}

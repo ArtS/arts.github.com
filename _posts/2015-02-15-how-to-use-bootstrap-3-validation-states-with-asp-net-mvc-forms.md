@@ -142,23 +142,7 @@ of dangerous things, such as knowledge of parameter lists for internal functions
 [FluentValidation][7] is another popular library for ASP.NET MVC, and given it integrates with
 standard validation, you can use solutions listed above to make it work.
 
-{% include experiment.html %}
-
-## DID IT HELP? GET SOME MORE! {#ctaTitle}
-
-{::options parse_block_html="true" /}
-<div id="ctaCopy">
-You can get the source code for the examples used in this article here as a [Zip archive][8] or [browse
-the code][9] on GitHub.
-
-Subscribe to my mailing list to get handy tips on working with the framework, various libraries and
-all sort of surrounding stuff. I never spam, period.
-</div>
-
-{% include alt-cta.html %}
-
-{::options parse_block_html="false" /}
-{% include subscription.html %}
+{% include code-download-cta.html %}
 
 [1]:{% post_url 2015-01-06-dropdownlistfor-with-dictionaries-in-ASP-NET-MVC-and-why-SelectList-wants-to-kill-you %}
 [2]:/img/mvc/bootstrap3/no-style.png

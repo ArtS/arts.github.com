@@ -145,34 +145,7 @@ View code, uses `Model.ContryId` to specify selected value:
 )
 {% endhighlight %}
 
-{::options parse_block_html="true" /}
-<div id="divCodeDownload">
-## Source code
-Feel free to download the complete source code that shows you how to use `SelectedList`/`SelectedListItem`/
-`DropDownListFor` from [this GitHub repo][4].
-</div>
-
-{% include experiment.html %}
-
-## Don't get stuck again, save yourself some precious time! {#ctaTitle}
-
-{::options parse_block_html="true" /}
-<div id="ctaCopy">
-I hope this article helped you to move forward in your work.
-
-You can probably recall a time when you were stuck on some problem and the solution seemed so close,
-yet it took hours to figure it out. And when you eventually did that, it was something so
-infuriatingly stupid, you wanted to punch the monitor.
-
-Do you want to avoid wasting your time on stupid bugs and traps in .NET? Subscribe to my mailing
-list and save HOURS of your life and bring the joy back into programming. I only send useful and 
-actionable advice, no spam ever, and you can unsubscribe at any time.
-</div>
-
-{% include alt-cta.html %}
-
-{::options parse_block_html="false" /}
-{% include subscription.html %}
+{% include code-download-cta.html %}
 
 [1]:{% post_url 2014-10-15-using-simple-drop-down-lists-in-ASP-NET-MVC %}
 [2]:{% post_url 2014-11-17-aspnetmvc-dropdowns-with-enums %}

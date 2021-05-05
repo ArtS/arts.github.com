@@ -194,32 +194,7 @@ new `GetEnumDisplayName`, except for the piece where we broaden the usage of thi
 enum via the generic specification: `<T>(T value) where T: struct`. All it really does is to say:
 _"accept an argument of type T as long this type is a struct"_ (and enums are structs in CLR).
 
-{::options parse_block_html="true" /}
-<div id="divCodeDownload">
-## Source code
-Here are the download links to the [MVC4][4] and [MVC5.1+][5] versions of Visual Studio solutions
-that include the above code. You can browse the code ([MVC4][6], [MVC5.1+][7]) online or clone the
-git repository.
-</div>
-
-{% include experiment.html %}
-
-## But Wait, There's More! {#ctaTitle}
-
-{::options parse_block_html="true" /}
-<div id="ctaCopy">
-Hopefully this article helps you navigate the muddy waters of ASP.NET MVC and saves you few minutes 
-of your time.
-
-If you don't want to miss next article -- sign up to my mailing list below. There'll be lots more 
-actionable advice on how to write apps faster and easier and how to fix things when you get stuck. 
-I never spam, period.
-</div>
-
-{% include alt-cta.html %}
-
-{::options parse_block_html="false" /}
-{% include subscription.html %}
+{% include code-download-cta.html %}
 
 [1]:{% post_url 2014-10-15-using-simple-drop-down-lists-in-ASP-NET-MVC %}
 [2]:http://msdn.microsoft.com/en-us/library/system.web.mvc.html.selectextensions.enumdropdownlistfor(v=vs.118).aspx

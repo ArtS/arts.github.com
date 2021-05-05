@@ -55,7 +55,7 @@ libraries -- although the choice of is somewhat constrained to a pre-defined lis
 
 ## dotnet-script
 
-If you are on macOS or Linux, but still want to use a local C# REPL, you can try [`dotnet-script`][8].
+If you are on macOS or Linux, but still want to use a local C# REPL, you can try [`dotnet-script`][7].
 Although it doesn't have all the standard features such as autocompletion and code highlighting, it
 does the job just fine.
 
@@ -63,7 +63,7 @@ Also, you can use it as a script execution engine for your C# code -- imagine wr
 scripts in C# instead of bash/zsh/PowerShell!
 
 It supports loading of NuGet packages in much better way than C# Interactive. Refer to the 
-documentation for `#r` and `#load` [commands][9]:
+documentation for `#r` and `#load` [commands][8]:
 
 {% highlight shell %}
 ❯ dotnet script
@@ -89,6 +89,5 @@ development.
 [4]:/img/c-sharp-interactive-load-assembly.png
 [5]:https://dotnetfiddle.net/
 [6]:{% post_url 2020-08-10-online-tools-for-dotnet-core-and-web-development %}
-[7]:/img/dotnetfiddle.png
-[8]:https://github.com/filipw/dotnet-script
-[9]:https://github.com/filipw/dotnet-script#inline-nuget-packages
+[7]:https://github.com/filipw/dotnet-script
+[8]:https://github.com/filipw/dotnet-script#inline-nuget-packages
