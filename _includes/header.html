@@ -16,12 +16,6 @@
 
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
 
-    {% comment %}
-    <style type="text/css">
-      {% include critical.css %}
-    </style>
-    {% endcomment %}
-
     <title>{{ page.title }}</title>
 
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" media="none" onload="if(media!='all')media='all'">
@@ -32,6 +26,10 @@
 
     <link rel="stylesheet" href="/assets/css/pygments-manni.css" media="none" onload="if(media!='all')media='all'">
     <noscript><link rel="stylesheet" href="/assets/css/pygments-manni.css"></noscript>
+
+    <style type="text/css">
+      {% include critical.css %}
+    </style>
 
     <script src="/assets/js/jquery-3.5.1.slim.min.js" defer></script>
     {% comment %}
