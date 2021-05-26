@@ -12,8 +12,8 @@ control, and having to spend time trying to make it work, instead of focusing on
 in the given moment -- be it learning a new tech or developing your web app.
 
 ASP.NET Core MVC made is somewhat easier to deal with select lists. Previously in .NET Framework,
-you were awash with various ways of providing data to your Select Lists, to the point where you
-realised it was a decoy and the [bloody thing just wanted to kill you][1].
+you had quite a few ways of supplying data to your Select Lists, to the point where it just got
+ridiculous and it seemed like the [bloody thing just wanted to kill you][1].
 
 Now a lot of ambiguity seems to have been removed, and Tag Helpers for MVC and Razor Pages are much
 easier to use. Let's have a look at how you can set default option for Select List control in ASP.NET Core MVC or
