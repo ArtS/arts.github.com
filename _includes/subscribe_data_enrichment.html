@@ -32,6 +32,11 @@
             if (emailRgx.test(email)) {
             //                    | Category        | Action    | Label
               ga('send', 'event', 'subscribe_clean', logString,  window.location.pathname);
+              gtag('event', 'subscribe_clean', {
+                name: name,
+                email: email,
+                label: window.location.pathname
+              });
             } else {
             //                    | Category        | Action    | Label
               // ga('send', 'event', 'subscribe_dirty', logString,  window.location.pathname);
