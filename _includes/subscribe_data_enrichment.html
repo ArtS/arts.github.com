@@ -2,13 +2,13 @@
   (function() {
 
     function isEmailOk(emailInput) {
-      return emailInput.val() !== '';
+      return !(emailInput == '' || emailInput.endsWith('qq.com'));
     };
 
     window.addEventListener('DOMContentLoaded', function() {
       (function($) {
         $('.btn-subscribe').on('click', function(e) {
-          return isEmailOk($('#mce-EMAIL'));
+          return isEmailOk($('#mce-EMAIL').val());
         });
       })(jQuery);
     });
@@ -22,7 +22,7 @@
         $('#mc-embedded-subscribe').click(function(e) {
             var emailInput = $('#mce-EMAIL');
             var email = emailInput.val();
-            if (!isEmailOk(emailInput)) {
+            if (!isEmailOk(email)) {
               return;
             }
 
