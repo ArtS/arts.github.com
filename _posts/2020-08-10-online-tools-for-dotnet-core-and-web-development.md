@@ -148,9 +148,9 @@ supports tons of different attribute types, such as:
 - Database structures (table/column names)
 - Date information (year/month/day, weekdays, intervals)
 - Financial data (account numbers, credit card details, crypto addresses)
-- Real image URL generation using [picsum.photos][17], [lorempixel.com][18], [placeholder.com][19]
-  and [loremflickr.com][20]. You can specify the type of images (abstract, animals, business, cats,
-  city, food, fashion, people, nightlife, nature, sports, technology, transport)
+- Real image URL generation using [picsum.photos][17], [placeholder.com][19] and [loremflickr.com][20]. 
+  You can specify the type of images (abstract, animals, business, cats, city, food, fashion, people, 
+  nightlife, nature, sports, technology, transport)
 - Internet-related data (emails, user names, MAC/IP addresses, User Agents, URLs, protocols etc)
 - Lorem Ipsum copy (single words, sentences, paragraphs of text)
 - Personal details (names, phone numbers, job titles)
