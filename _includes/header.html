@@ -4,15 +4,19 @@
         }
     </script>
 
-    <link rel="preconnect" href="https://www.google-analytics.com">
-    <link rel="preconnect" href="http://www.google-analytics.com">
+    {% comment %}
+    <!--link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="preconnect" href="http://www.google-analytics.com"-->
+    {% endcomment %}
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Art Skvira">
     <meta name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160 }}{% endif %}" />
 
-    <meta name="google-site-verification" content="949oEyw6Efl_A9xDMrjfUPxYsl2QTE0A5jFJZx0dEN8" />
+    {% comment %}
+    <!--meta name="google-site-verification" content="949oEyw6Efl_A9xDMrjfUPxYsl2QTE0A5jFJZx0dEN8" /-->
+    {% endcomment %}
 
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
 
@@ -33,9 +37,10 @@
     <!-- See which components need the below JS: https://getbootstrap.com/docs/4.5/getting-started/introduction/#components -->
     <!-- script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous" defer></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous" defer></script -->
-    {% endcomment %}
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    {% endcomment %}
 
+    {% comment %}
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-J75HXXMBCE"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -44,3 +49,4 @@
 
       gtag('config', 'G-J75HXXMBCE');
     </script>
+    {% endcomment %}
